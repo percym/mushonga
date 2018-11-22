@@ -22722,3 +22722,7 @@ Unconditional classes:
 2018-11-22 16:19:09.264 DEBUG 2886 --- [http-nio-8090-Acceptor-0] o.apache.tomcat.util.threads.LimitLatch  : Counting up[http-nio-8090-Acceptor-0] latch=0
 2018-11-22 16:19:09.268  INFO 2886 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
 2018-11-22 16:19:09.270  INFO 2886 --- [main] s.h.dashboard.DashboardWebApplication    : Started DashboardWebApplication in 7.376 seconds (JVM running for 7.803)
+2018-11-22 16:19:34.809 DEBUG 2886 --- [SpringBootJPAHikariCP housekeeper] com.zaxxer.hikari.pool.HikariPool        : SpringBootJPAHikariCP - Pool stats (total=5, active=0, idle=5, waiting=0)
+2018-11-22 16:20:04.523 DEBUG 2886 --- [ContainerBackgroundProcessor[StandardEngine[Tomcat]]] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1542896404521 sessioncount 0
+2018-11-22 16:20:04.523 DEBUG 2886 --- [ContainerBackgroundProcessor[StandardEngine[Tomcat]]] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 2 expired sessions: 0
+2018-11-22 16:20:04.809 DEBUG 2886 --- [SpringBootJPAHikariCP housekeeper] com.zaxxer.hikari.pool.HikariPool        : SpringBootJPAHikariCP - Pool stats (total=5, active=0, idle=5, waiting=0)
