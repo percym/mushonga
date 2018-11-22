@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="04d46fb0-1976-44ec-8f89-feb0b1a5a5c7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/dovaLog.log" afterPath="$PROJECT_DIR$/dovaLog.log" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -75,8 +74,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+            <state relative-caret-position="77">
+              <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -560,12 +559,12 @@
       <workItem from="1542874041300" duration="1454000" />
       <workItem from="1542875526910" duration="888000" />
       <workItem from="1542876437830" duration="4419000" />
-      <workItem from="1542881071398" duration="8592000" />
+      <workItem from="1542881071398" duration="8623000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20174000" />
+    <option name="totallyTimeSpent" value="20205000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="928" height="1052" extended-state="0" />
@@ -1006,8 +1005,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        <state relative-caret-position="77">
+          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding />
         </state>
       </provider>
