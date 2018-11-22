@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/dashboard-service-api/dashboard-service-api.iml" filepath="$PROJECT_DIR$/dashboard-service-api/dashboard-service-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/dashboard-service-impl/dashboard-service-impl.iml" filepath="$PROJECT_DIR$/dashboard-service-impl/dashboard-service-impl.iml" />
       <module fileurl="file://$PROJECT_DIR$/dashboard-utility/dashboard-utility.iml" filepath="$PROJECT_DIR$/dashboard-utility/dashboard-utility.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dashboard-web/dashboard-web.iml" filepath="$PROJECT_DIR$/dashboard-web/dashboard-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/dova-dashboard.iml" filepath="$PROJECT_DIR$/dova-dashboard.iml" />
     </modules>
   </component>
