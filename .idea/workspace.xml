@@ -1,10 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04d46fb0-1976-44ec-8f89-feb0b1a5a5c7" name="Default" comment="" />
+    <list default="true" id="04d46fb0-1976-44ec-8f89-feb0b1a5a5c7" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/address/IAddress.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/address/IContactDetails.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/client/IClient.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/client/IFacility.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/client/ILogo.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/IActive.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/IApproved.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/IAuditing.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/IAuditingEntity.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/IBillCosting.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/IGenericNaming.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/IPrimaryKey.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/ISearchCriteria.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/ITimeActiveRecord.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/ITimeActiveRecordEntity.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/group/IGroup.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/location/ILocation.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/permissions/IPermissionConsumption.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/permissions/IPermissions.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/user/ISystemUser.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/address/Address.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/address/ContactDetails.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/client/Client.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/client/Facility.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/client/Logo.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/exceptions/StorageException.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/exceptions/StorageFileNotFoundException.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/Active.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/AuditingEntityBean.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/GeneralNaming.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/PrimaryKeyBean.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/SpecSearchCriteria.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/TimeActiveRecord.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/group/AdminGroup.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/location/Location.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/permissions/AdminPermissions.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/permissions/AdminPermissionsConsumption.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/user/AdminUser.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/client/ClientRepository.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/user/AdminUserRepository.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/client/ClientRepository.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/user/AdminUserRepository.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/client/IClientServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/fileUpload/StorageService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/user/IAdminUserServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-utility/src/main/java/systems/health263/dashboard/utility/enums/AddressType.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-utility/src/main/java/systems/health263/dashboard/utility/enums/ClientDatabase.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-utility/src/main/java/systems/health263/dashboard/utility/enums/ClientType.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-utility/src/main/java/systems/health263/dashboard/utility/enums/IndicatorISOCountryCode.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-utility/src/main/java/systems/health263/dashboard/utility/enums/IndicatorISOCurrency.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-utility/src/main/java/systems/health263/dashboard/utility/enums/SearchOperation.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-utility/src/main/java/systems/health263/dashboard/utility/strings/StringUtils.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/pom.xml" afterPath="$PROJECT_DIR$/dashboard-endpoint/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/app/ApplicationProperties.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/app/ClientDataSourceRouter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/app/ClientDatabaseContextHolder.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/app/ElasticsearchConfiguration.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/app/HttpRequestFilter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/app/JacksonConfiguration.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/app/ResponseUtil.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/app/StorageProperties.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/app/SwaggerConfig.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/app/audit/AuditConfiguration.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/app/audit/SecurityAuditorAware.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/app/errors/BadRequestAlertException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/app/errors/ClientNotFoundException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/app/errors/ErrorConstants.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/app/errors/InvalidArgumentException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/app/util/HeaderUtil.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/app/util/PaginationUtil.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/jwt/JWTConfigurer.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/jwt/JWTFilter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/jwt/TokenProvider.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/security/AppSystemUserDetailService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/security/SecurityConfig.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/controllers/client/ClientController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/fileUpload/FileStorageService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/fileUpload/FileSystemStorageService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/fileUpload/exceptions/FileStorageException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/fileUpload/exceptions/MyFileNotFoundException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/dashboard-model-api.iml" afterPath="$PROJECT_DIR$/dashboard-model-api/dashboard-model-api.iml" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/pom.xml" afterPath="$PROJECT_DIR$/dashboard-model-api/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/dashboard-model-impl.iml" afterPath="$PROJECT_DIR$/dashboard-model-impl/dashboard-model-impl.iml" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/pom.xml" afterPath="$PROJECT_DIR$/dashboard-model-impl/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/pom.xml" afterPath="$PROJECT_DIR$/dashboard-repository/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/dashboard-model/target/" />
+    <ignored path="$PROJECT_DIR$/dashboard-model-api/target/" />
+    <ignored path="$PROJECT_DIR$/dashboard-service-impl/target/" />
+    <ignored path="$PROJECT_DIR$/dashboard-repository/target/" />
+    <ignored path="$PROJECT_DIR$/dashboard-service-api/target/" />
+    <ignored path="$PROJECT_DIR$/dashboard-utility/target/" />
+    <ignored path="$PROJECT_DIR$/dashboard-model-impl/target/" />
+    <ignored path="$PROJECT_DIR$/dashboard-web/target/" />
+    <ignored path="$PROJECT_DIR$/dashboard-endpoint/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,92 +111,104 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ApplicationProperties.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/ApplicationProperties.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-330">
-              <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+            <state relative-caret-position="252">
+              <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-model-api/pom.xml">
+      <file leaf-file-name="SecurityAuditorAware.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/audit/SecurityAuditorAware.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="216">
+              <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-model-impl/pom.xml">
+      <file leaf-file-name="BadRequestAlertException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/errors/BadRequestAlertException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="162">
+              <caret line="14" column="54" lean-forward="false" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-service-api/pom.xml">
+      <file leaf-file-name="ClientNotFoundException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/errors/ClientNotFoundException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="288">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-service-impl/pom.xml">
+      <file leaf-file-name="InvalidArgumentException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/errors/InvalidArgumentException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="162">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-repository/pom.xml">
+      <file leaf-file-name="ClientDatabaseContextHolder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/ClientDatabaseContextHolder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="195">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientDataSourceRouter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/ClientDataSourceRouter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/pom.xml">
+      <file leaf-file-name="ElasticsearchConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/ElasticsearchConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-utility/pom.xml">
+      <file leaf-file-name="JacksonConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/JacksonConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="198">
+              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="HttpRequestFilter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/HttpRequestFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="33">
+              <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -118,7 +228,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/dash-model-api/pom.xml" />
+        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/endpoint/config/app/util/PaginationUtil.java" />
+        <option value="$PROJECT_DIR$/dashboard-model-api/src/main/java/imodel/general/ITimeActiveRecord.java" />
+        <option value="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/ITimeActiveRecord.java" />
+        <option value="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/PrimaryKeyBean.java" />
+        <option value="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/client/ClientRepository.java" />
+        <option value="$PROJECT_DIR$/dashboard-utility/src/main/java/systems/health263/dasboard/utility/enums/SearchOperation.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/dashboard-model-api/pom.xml" />
+        <option value="$PROJECT_DIR$/dashboard-model-impl/pom.xml" />
+        <option value="$PROJECT_DIR$/dashboard-repository/pom.xml" />
+        <option value="$PROJECT_DIR$/dashboard-endpoint/pom.xml" />
+        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/ClientDatabaseContextHolder.java" />
+        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/HttpRequestFilter.java" />
       </list>
     </option>
   </component>
@@ -128,11 +250,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="6" />
-    <option name="y" value="27" />
-    <option name="width" value="963" />
-    <option name="height" value="1026" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="33" />
+    <option name="width" value="938" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -150,10 +271,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,17 +300,123 @@
             <path>
               <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
               <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="audit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="errors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-model-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-model-impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-utility" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-utility" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-utility" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-utility" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
               <item name="dashboard-web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
@@ -201,7 +425,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/dashboard-utility/src/main/java/systems/health263/dasboard/utility" />
+      <recent name="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl" />
+      <recent name="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service" />
+      <recent name="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository" />
+      <recent name="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -265,6 +493,12 @@
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
     </configuration>
+    <configuration name="DashboardWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="systems.health263.dashboard.DashboardWebApplication" />
+      <module name="dashboard-web" />
+      <envs />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -312,46 +546,51 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542869013456</updated>
-      <workItem from="1542869019445" duration="3073000" />
+      <workItem from="1542869019445" duration="4585000" />
+      <workItem from="1542873783485" duration="236000" />
+      <workItem from="1542874041300" duration="750000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3073000" />
+    <option name="totallyTimeSpent" value="5571000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="27" width="963" height="1026" extended-state="0" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25649014" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3280255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12864584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3195329" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,55 +604,281 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dash-model-api/pom.xml">
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/SwaggerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/client/ClientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/util/HeaderUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/util/PaginationUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/client/IFacility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/user/ISystemUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/group/IGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/IBillCosting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/IApproved.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/client/ILogo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/IAuditingEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/ISearchCriteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/IPrimaryKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/ITimeActiveRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/SpecSearchCriteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/permissions/AdminPermissions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/client/Facility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/client/Logo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/exceptions/StorageFileNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/permissions/AdminPermissionsConsumption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/client/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/GeneralNaming.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/Active.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/PrimaryKeyBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/client/ClientRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/client/ClientRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/client/IClientServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-utility/src/main/java/systems/health263/dashboard/utility/enums/IndicatorISOCurrency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-utility/src/main/java/systems/health263/dashboard/utility/enums/ClientDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-utility/src/main/java/systems/health263/dashboard/utility/enums/ClientType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-utility/src/main/java/systems/health263/dashboard/utility/enums/AddressType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-utility/src/main/java/systems/health263/dashboard/utility/strings/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-utility/src/main/java/systems/health263/dashboard/utility/enums/IndicatorISOCountryCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-utility/src/main/java/systems/health263/dashboard/utility/enums/SearchOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        <state relative-caret-position="162">
+          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard-model-api/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="288">
+          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard-model-impl/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-service-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-service-impl/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="396">
+          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard-repository/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/dashboard-endpoint.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -423,24 +888,100 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard-endpoint/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="36">
+          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-utility/pom.xml">
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/audit/AuditConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="216">
+          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/audit/SecurityAuditorAware.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/errors/BadRequestAlertException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="162">
+          <caret line="14" column="54" lean-forward="false" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/errors/ClientNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/errors/InvalidArgumentException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/ApplicationProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/ClientDatabaseContextHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/ClientDataSourceRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/ElasticsearchConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/JacksonConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/HttpRequestFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -448,6 +989,32 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>dova-dashboard:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -471,8 +1038,21 @@
           </splitter-proportions>
         </settings>
       </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web|dashboard-endpoint</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -7,7 +7,7 @@
 	<artifactId>dashboard</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<modules>
-		<module>dashboard-model</module>
+		<module>dashboard-model-api</module>
 		<module>dashboard-model-impl</module>
 		<module>dashboard-service-api</module>
 		<module>dashboard-service-impl</module>

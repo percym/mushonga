@@ -10,6 +10,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>dashboard-model</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>systems.health263.dashboard</groupId>
+            <artifactId>dash-utils</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>systems.health263.dashboard</groupId>
+            <artifactId>dashboard-utility</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 
 </project>

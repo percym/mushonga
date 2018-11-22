@@ -6,11 +6,27 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="dashboard-endpoint" />
         <module name="dashboard-model" />
+        <module name="dashboard-model-api" />
+        <module name="dashboard-model-impl" />
+        <module name="dashboard-repository" />
+        <module name="dashboard-service-api" />
+        <module name="dashboard-service-impl" />
+        <module name="dashboard-utility" />
+        <module name="dashboard-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="dashboard-endpoint" target="1.8" />
       <module name="dashboard-model" target="1.8" />
+      <module name="dashboard-model-api" target="1.8" />
+      <module name="dashboard-model-impl" target="1.8" />
+      <module name="dashboard-repository" target="1.8" />
+      <module name="dashboard-service-api" target="1.8" />
+      <module name="dashboard-service-impl" target="1.8" />
+      <module name="dashboard-utility" target="1.8" />
+      <module name="dashboard-web" target="1.8" />
       <module name="dova-dashboard" target="1.8" />
     </bytecodeTargetLevel>
   </component>
