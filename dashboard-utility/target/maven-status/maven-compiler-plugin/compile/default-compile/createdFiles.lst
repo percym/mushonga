@@ -1,0 +1,9 @@
+systems/health263/dashboard/utility/enums/SearchOperation.class
+systems/health263/dashboard/utility/enums/IndicatorISOCountryCode.class
+systems/health263/dashboard/utility/enums/ClientDatabase.class
+systems/health263/dashboard/utility/strings/StringUtils.class
+systems/health263/dashboard/utility/enums/AddressType.class
+systems/health263/dashboard/utility/enums/ClientDatabase$ClientDatabaseConverter.class
+systems/health263/dashboard/utility/enums/IndicatorISOCurrency.class
+systems/health263/dashboard/utility/enums/ClientType.class
+systems/health263/dashboard/utility/enums/IndicatorISOCountryCode$IndicatorISOCountryCodeConverter.class
