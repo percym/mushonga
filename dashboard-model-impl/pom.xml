@@ -11,6 +11,8 @@
 
     <artifactId>dashboard-model-impl</artifactId>
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/javax.persistence/persistence-api -->
+
         <dependency>
             <groupId>systems.health263.dashboard</groupId>
             <artifactId>dash-utils</artifactId>
@@ -35,6 +37,10 @@
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
             <version>2.1.2.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
         </dependency>
     </dependencies>
 
