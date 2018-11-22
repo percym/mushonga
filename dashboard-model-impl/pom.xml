@@ -11,13 +11,6 @@
 
     <artifactId>dashboard-model-impl</artifactId>
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/javax.persistence/persistence-api -->
-
-        <dependency>
-            <groupId>systems.health263.dashboard</groupId>
-            <artifactId>dash-utils</artifactId>
-            <version>1.0.0</version>
-        </dependency>
         <dependency>
             <groupId>systems.health263.dashboard</groupId>
             <artifactId>dashboard-model</artifactId>
