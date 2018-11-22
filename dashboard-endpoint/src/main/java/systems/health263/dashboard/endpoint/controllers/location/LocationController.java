@@ -86,6 +86,20 @@ public class LocationController {
         return ResponseUtil.wrapOrNotFound(Optional.ofNullable(location));
     }
     /**
+     * GET  /location_client/{clientId} : get the location by "client id" .
+     *
+     * @param clientId the id of the client whose locations you want to retrieve
+     * @return the ResponseEntity with status 200 (OK) and with body the locations, or with status 404 (Not Found)
+     */
+    @GetMapping("/location_client/{clientId}")
+    @Timed
+    public ResponseEntity<List<Location>> getLocationByClient(@PathVariable Long clientId) {
+        log.debug("REST request to get IBill : {}", clientId);
+        List<Location> locations = locationService.findAllByClient_Id(clientId);
+        return ResponseUtil.wrapOrNotFound(Optional.ofNullable(locations));
+    }
+
+    /**
      * POST  /location: create location.
      *@param location  the permission to create
      * @return the ResponseEntity with status 200 (OK) and the updated permissions

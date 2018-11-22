@@ -62,4 +62,9 @@ public class ILocationServiceImpl implements ILocationService {
         return locationRepository.findAll();
     }
 
+    @Override
+    public List<Location> findAllByClient_Id(Long clientId) {
+        return locationRepository.findAllByClient_Id(clientId);
+    }
+
 }

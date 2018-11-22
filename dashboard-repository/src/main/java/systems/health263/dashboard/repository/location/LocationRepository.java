@@ -6,6 +6,8 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 import systems.health263.dashboard.model.location.Location;
 
+import java.util.List;
+
 /**
  * @author Munyaradzi Takayindisa
  * <p>
@@ -13,5 +15,5 @@ import systems.health263.dashboard.model.location.Location;
  */
 @Repository
 public interface LocationRepository extends JpaRepository<Location, Long>, JpaSpecificationExecutor<Location> {
-    
+    List<Location> findAllByClient_Id(Long clientId);
 }

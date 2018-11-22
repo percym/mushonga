@@ -24,4 +24,6 @@ ILocationService {
     Page<Location> findAll(Specification spec, Pageable pageable);
 
     List<Location> findAll();
+
+    List<Location> findAllByClient_Id(Long clientId);
 }
