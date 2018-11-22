@@ -35,7 +35,7 @@ public class IAdminUserServiceImpl implements IAdminUserService {
 
     @Override
     public void delete(Long userId) {
-        adminUserRepository.delete(userId);
+        adminUserRepository.deleteById(userId);
     }
 
     @Override

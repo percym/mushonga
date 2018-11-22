@@ -80,7 +80,7 @@ public class IClientServiceImpl implements IClientService {
     @Override
     public void delete(Long id) {
         log.debug("Request to delete Clients : {}", id);
-        clientRepository.delete(id);
+        clientRepository.deleteById(id);
     }
 
     /**

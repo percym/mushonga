@@ -11,6 +11,7 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -207,7 +208,8 @@ public class ClientController {
 
 
     @GetMapping(value="/logos/{filename:.+}")
-    public @ResponseBody void affichimage(@PathVariable String filename
+    public @ResponseBody
+    void affichimage(@PathVariable String filename
             , HttpServletResponse response, HttpServletRequest request) throws
             IOException,NullPointerException
     {
