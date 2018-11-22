@@ -7,39 +7,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04d46fb0-1976-44ec-8f89-feb0b1a5a5c7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/pom.xml" afterPath="$PROJECT_DIR$/dashboard-endpoint/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/ApplicationProperties.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/ClientDataSourceRouter.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/ClientDatabaseContextHolder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/ElasticsearchConfiguration.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/HttpRequestFilter.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/JacksonConfiguration.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/ResponseUtil.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/StorageProperties.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/SwaggerConfig.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/audit/AuditConfiguration.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/audit/SecurityAuditorAware.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/errors/BadRequestAlertException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/errors/ClientNotFoundException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/errors/ErrorConstants.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/errors/InvalidArgumentException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/util/HeaderUtil.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/util/PaginationUtil.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/jwt/JWTConfigurer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/jwt/JWTFilter.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/jwt/TokenProvider.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/security/AppSystemUserDetailService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/security/SecurityConfig.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/client/ClientController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/fileUpload/FileStorageService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/fileUpload/FileSystemStorageService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/fileUpload/exceptions/FileStorageException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/fileUpload/exceptions/MyFileNotFoundException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard-model-api/dashboard-model-api.iml" afterPath="$PROJECT_DIR$/dashboard-model-api/dashboard-model-api.iml" />
-      <change beforePath="$PROJECT_DIR$/dashboard-model-api/pom.xml" afterPath="$PROJECT_DIR$/dashboard-model-api/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/dashboard-model-impl.iml" afterPath="$PROJECT_DIR$/dashboard-model-impl/dashboard-model-impl.iml" />
-      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/pom.xml" afterPath="$PROJECT_DIR$/dashboard-model-impl/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/SwaggerConfig.java" afterPath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/SwaggerConfig.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/client/ClientController.java" afterPath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/client/ClientController.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/SwaggerConfig.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/SwaggerConfig.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
       <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/AddressType.class" afterPath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/AddressType.class" />
       <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/ClientDatabase$ClientDatabaseConverter.class" afterPath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/ClientDatabase$ClientDatabaseConverter.class" />
       <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/ClientDatabase.class" afterPath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/ClientDatabase.class" />
@@ -49,11 +33,10 @@
       <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/IndicatorISOCurrency.class" afterPath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/IndicatorISOCurrency.class" />
       <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/SearchOperation.class" afterPath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/SearchOperation.class" />
       <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/strings/StringUtils.class" afterPath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/strings/StringUtils.class" />
-      <change beforePath="$PROJECT_DIR$/dashboard-utility/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/dashboard-utility/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
       <change beforePath="$PROJECT_DIR$/dashboard-web/pom.xml" afterPath="$PROJECT_DIR$/dashboard-web/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/dashboard-web/src/main/java/systems/health263/dashboard/DashboardWebApplication.java" afterPath="$PROJECT_DIR$/dashboard-web/src/main/java/systems/health263/dashboard/DashboardWebApplication.java" />
-      <change beforePath="$PROJECT_DIR$/dashboard-web/src/main/resources/application-dev.properties" afterPath="$PROJECT_DIR$/dashboard-web/src/main/resources/application-dev.properties" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/dovaLog.log" afterPath="$PROJECT_DIR$/dovaLog.log" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -85,14 +68,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SwaggerConfig.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SwaggerConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/SwaggerConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+            <state relative-caret-position="666">
+              <caret line="37" column="78" lean-forward="false" selection-start-line="37" selection-start-column="78" selection-end-line="37" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-web/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="449">
+              <caret line="58" column="4" lean-forward="false" selection-start-line="58" selection-start-column="4" selection-end-line="61" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/client/ClientController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -140,41 +153,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-model-api/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-model-impl/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="application-dev.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard-web/src/main/resources/application-dev.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
               <caret line="44" column="16" lean-forward="false" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dovaLog.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dovaLog.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="3306">
-              <caret line="376" column="0" lean-forward="false" selection-start-line="376" selection-start-column="0" selection-end-line="376" selection-end-column="0" />
             </state>
           </provider>
         </entry>
@@ -208,20 +192,22 @@
         <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/ClientDatabaseContextHolder.java" />
         <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/HttpRequestFilter.java" />
         <option value="$PROJECT_DIR$/dashboard-utility/pom.xml" />
-        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/client/ClientController.java" />
         <option value="$PROJECT_DIR$/dashboard-web/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/dashboard-service-api/pom.xml" />
         <option value="$PROJECT_DIR$/dashboard-service-impl/pom.xml" />
         <option value="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/user/IAdminUserServiceImpl.java" />
         <option value="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/client/IClientServiceImpl.java" />
         <option value="$PROJECT_DIR$/dashboard-repository/pom.xml" />
-        <option value="$PROJECT_DIR$/dashboard-web/pom.xml" />
         <option value="$PROJECT_DIR$/dashboard-web/src/main/java/systems/health263/dashboard/DashboardWebApplication.java" />
         <option value="$PROJECT_DIR$/dashboard-model-api/pom.xml" />
         <option value="$PROJECT_DIR$/dashboard-model-impl/pom.xml" />
         <option value="$PROJECT_DIR$/dashboard-web/src/main/resources/application-dev.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/dashboard-endpoint/pom.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/dashboard-web/pom.xml" />
+        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/client/ClientController.java" />
       </list>
     </option>
   </component>
@@ -234,14 +220,15 @@
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="27" />
-    <option name="width" value="960" />
-    <option name="height" value="1053" />
+    <option name="x" value="575" />
+    <option name="y" value="41" />
+    <option name="width" value="943" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -321,6 +308,16 @@
               <item name="endpoint" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
@@ -489,6 +486,7 @@
       <listeners />
     </configuration>
     <configuration name="TomKatsi" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.8.1" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8090/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="dova-dashboard:war">
@@ -499,11 +497,13 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_dova-dashboard" />
+        <option name="DEPLOY_TOMCAT_APPS" value="true" />
+        <option name="HTTP_PORT" value="8090" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Manager" enabled="true" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="true" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
@@ -589,12 +589,12 @@
       <workItem from="1542874041300" duration="1454000" />
       <workItem from="1542875526910" duration="888000" />
       <workItem from="1542876437830" duration="4419000" />
-      <workItem from="1542881071398" duration="4178000" />
+      <workItem from="1542881071398" duration="6901000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15760000" />
+    <option name="totallyTimeSpent" value="18483000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -647,13 +647,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dashboard-utility/src/main/java/systems/health263/dashboard/utility/enums/ClientType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard-utility/src/main/java/systems/health263/dashboard/utility/enums/AddressType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -940,28 +933,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="39" column="60" lean-forward="false" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/client/ClientController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1703">
-          <caret line="61" column="43" lean-forward="false" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dovaLog.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="3306">
-          <caret line="376" column="0" lean-forward="false" selection-start-line="376" selection-start-column="0" selection-end-line="376" selection-end-column="0" />
+        <state relative-caret-position="-3426">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1032,13 +1007,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/SwaggerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        <state relative-caret-position="666">
+          <caret line="37" column="78" lean-forward="false" selection-start-line="37" selection-start-column="78" selection-end-line="37" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="58" column="4" lean-forward="false" selection-start-line="58" selection-start-column="4" selection-end-line="61" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/client/ClientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>

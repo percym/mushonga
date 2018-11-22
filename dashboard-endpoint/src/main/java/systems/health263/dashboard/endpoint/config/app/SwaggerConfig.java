@@ -30,11 +30,11 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfo(
-                "REST API for Dova APP",
+                "REST API for Dova Dashboard APP",
                 "Endpoint for documentation of the API.",
                 "1.0.0.1",
                 "Terms of service",
-                new Contact("Munyaradzi Takayindisa", "www.health263.systems", "mtakayindisa@health263.systems"),
+                new Contact("Percy Mugadza", "www.health263.systems", "percy@health263.systems"),
                 "License of API", "API license URL", Collections.emptyList());
     }
 }
