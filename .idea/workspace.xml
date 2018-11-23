@@ -7,10 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04d46fb0-1976-44ec-8f89-feb0b1a5a5c7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/clinical/DataICD10.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/clinical/Icd10Repository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/clinical/Icd10Service.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/dovaLog.log" afterPath="$PROJECT_DIR$/dovaLog.log" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,28 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="IMedicalAidServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/patient/IMedicalAidServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1458">
-              <caret line="81" column="40" lean-forward="false" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MedicalAidController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/patient/MedicalAidController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-882">
-              <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PrescriptionItem.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/clinical/PrescriptionItem.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -137,11 +111,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Icd10Service.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Icd10Service.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/clinical/Icd10Service.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
+            <state relative-caret-position="-558">
               <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Icd10ServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/clinical/Icd10ServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="84" column="35" lean-forward="false" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Icd10Controller.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/Icd10Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,8 +155,10 @@
       <find>sw</find>
       <find>v</find>
       <find>va</find>
+      <find>com.health263</find>
     </findStrings>
     <replaceStrings>
+      <replace>ystems.health263.dashboard</replace>
       <replace>systems.health263.dashboard</replace>
     </replaceStrings>
   </component>
@@ -173,8 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/PrimaryKeyBean.java" />
-        <option value="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/client/ClientRepository.java" />
         <option value="$PROJECT_DIR$/dashboard-utility/src/main/java/systems/health263/dasboard/utility/enums/SearchOperation.java" />
         <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/ClientDatabaseContextHolder.java" />
         <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/HttpRequestFilter.java" />
@@ -224,6 +222,8 @@
         <option value="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/clinical/Icd10Repository.java" />
         <option value="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/clinical/Icd10ServiceIcd10ServiceIcd10Service.java" />
         <option value="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/clinical/Icd10Service.java" />
+        <option value="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/clinical/Icd10ServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/Icd10Controller.java" />
       </list>
     </option>
   </component>
@@ -624,11 +624,11 @@
       <recent name="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="systems.health263.dashboard.endpoint.controllers.clinical" />
+      <recent name="systems.health263.dashboard.serviceimpl.clinical" />
       <recent name="systems.health263.dashboard.service.clinical" />
       <recent name="systems.health263.dashboard.repository.clinical" />
       <recent name="systems.health263.dashboard.model.clinical" />
-      <recent name="systems.health263.dashboard.endpoint.controllers.clinical" />
-      <recent name="systems.health263.dashboard.serviceimpl.clinical" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/patient" />
@@ -839,16 +839,15 @@
       <workItem from="1542875526910" duration="888000" />
       <workItem from="1542876437830" duration="4419000" />
       <workItem from="1542881071398" duration="6901000" />
-      <workItem from="1542895990771" duration="7887000" />
+      <workItem from="1542895990771" duration="8714000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28338000" />
+    <option name="totallyTimeSpent" value="29165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="933" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -868,9 +867,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5292865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5292865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20979765" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20979765" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -899,21 +898,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/address/ContactDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/client/IClientService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dovaLog.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="-3426">
@@ -1230,7 +1214,7 @@
         <state relative-caret-position="1458">
           <caret line="81" column="40" lean-forward="false" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1321,8 +1305,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/clinical/Icd10Service.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
+        <state relative-caret-position="-558">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/clinical/Icd10ServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="84" column="35" lean-forward="false" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/Icd10Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
