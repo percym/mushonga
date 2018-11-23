@@ -33,7 +33,7 @@ import java.util.stream.Stream;
 @Slf4j
 @CrossOrigin
 @RestController
-@RequestMapping("*/api")
+@RequestMapping("/api")
 public class TariffCodeController {
 
     private static final String ENTITY_NAME = "tariffcode";

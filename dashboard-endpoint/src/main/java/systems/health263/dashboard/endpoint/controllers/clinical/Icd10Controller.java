@@ -26,7 +26,7 @@ import java.util.stream.Stream;
 @Slf4j
 @CrossOrigin
 @RestController
-@RequestMapping("*/api")
+@RequestMapping("/api")
 public class Icd10Controller {
 
     private static final String ENTITY_NAME = "encounter";

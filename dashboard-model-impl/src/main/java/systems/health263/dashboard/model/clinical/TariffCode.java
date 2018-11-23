@@ -1,12 +1,12 @@
 package systems.health263.dashboard.model.clinical;
 
-import com.health263.imodel.clinical.ITariffCodes;
-import com.health263.model.general.TariffRateCode;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import org.hibernate.envers.Audited;
+import systems.health263.dashboard.imodel.clinical.ITariffCodes;
+import systems.health263.dashboard.model.general.TariffRateCode;
 
 import javax.persistence.*;
 

@@ -7,6 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04d46fb0-1976-44ec-8f89-feb0b1a5a5c7" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/group/AdminGroupController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/group/GroupController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/group/Group.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/permissions/Permissions.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/permissions/PermissionsConsumption.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/group/AdminGroupRepository.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/group/GroupRepository.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/group/IAdminGroupService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/group/IGroupService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/group/IAdminGroupServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/group/IGroupServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/Icd10Controller.java" afterPath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/Icd10Controller.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/TariffCodeController.java" afterPath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/TariffCodeController.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/clinical/TariffCode.java" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/clinical/TariffCode.java" />
       <change beforePath="$PROJECT_DIR$/dovaLog.log" afterPath="$PROJECT_DIR$/dovaLog.log" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,11 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PrescriptionItem.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/clinical/PrescriptionItem.java">
+      <file leaf-file-name="AdminGroupRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/group/AdminGroupRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="126">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrescriptionItemRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/clinical/PrescriptionItemRepository.java">
+      <file leaf-file-name="IAdminGroupService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/group/IAdminGroupService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="414">
+              <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrescriptionItemService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/clinical/PrescriptionItemService.java">
+      <file leaf-file-name="IGroupServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/group/IGroupServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1332">
-              <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+            <state relative-caret-position="198">
+              <caret line="46" column="38" lean-forward="false" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IPrescriptionItemServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/clinical/IPrescriptionItemServiceImpl.java">
+      <file leaf-file-name="IAdminGroupServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/group/IAdminGroupServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-94">
-              <caret line="72" column="49" lean-forward="false" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
+            <state relative-caret-position="-72">
+              <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,21 +92,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrescriptionItemController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/PrescriptionItemController.java">
+      <file leaf-file-name="GroupController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/group/GroupController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="6" column="50" lean-forward="false" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+            <state relative-caret-position="378">
+              <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LocationController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/location/LocationController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1368">
+              <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataICD10.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/clinical/DataICD10.java">
+      <file leaf-file-name="MedicalAidController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/patient/MedicalAidController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,47 +126,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Icd10Repository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/clinical/Icd10Repository.java">
+      <file leaf-file-name="AdminGroupController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/group/AdminGroupController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="360">
+              <caret line="65" column="24" lean-forward="false" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Icd10Service.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/clinical/Icd10Service.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-558">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Icd10ServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/clinical/Icd10ServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="84" column="35" lean-forward="false" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Icd10Controller.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Icd10Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/Icd10Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
+            <state relative-caret-position="396">
               <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TariffCodeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/TariffCodeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,6 +159,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -173,26 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dashboard-utility/src/main/java/systems/health263/dasboard/utility/enums/SearchOperation.java" />
-        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/ClientDatabaseContextHolder.java" />
-        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/HttpRequestFilter.java" />
-        <option value="$PROJECT_DIR$/dashboard-utility/pom.xml" />
-        <option value="$PROJECT_DIR$/dashboard-web/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/dashboard-service-api/pom.xml" />
-        <option value="$PROJECT_DIR$/dashboard-service-impl/pom.xml" />
-        <option value="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/client/IClientServiceImpl.java" />
-        <option value="$PROJECT_DIR$/dashboard-web/src/main/java/systems/health263/dashboard/DashboardWebApplication.java" />
-        <option value="$PROJECT_DIR$/dashboard-model-api/pom.xml" />
-        <option value="$PROJECT_DIR$/dashboard-model-impl/pom.xml" />
-        <option value="$PROJECT_DIR$/dashboard-web/src/main/resources/application-dev.properties" />
-        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/SwaggerConfig.java" />
-        <option value="$PROJECT_DIR$/dashboard-web/pom.xml" />
-        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/client/ClientController.java" />
-        <option value="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/clinical/IMedicine.java" />
-        <option value="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/clinical/IDataICD10.java" />
-        <option value="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/clinical/IPrescriptionItem.java" />
-        <option value="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/drugnsundry/IDrugNSundry.java" />
-        <option value="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/billing/IMedicalAidTariff.java" />
         <option value="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/billing/MedicalAidTariff.java" />
         <option value="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/patient/IPatientInsurance.java" />
         <option value="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/patient/IMedicalAid.java" />
@@ -223,7 +221,27 @@
         <option value="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/clinical/Icd10ServiceIcd10ServiceIcd10Service.java" />
         <option value="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/clinical/Icd10Service.java" />
         <option value="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/clinical/Icd10ServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/clinical/ITariffCodes.java" />
+        <option value="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/TariffRateCode.java" />
+        <option value="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/clinical/TariffCodeRepository.java" />
+        <option value="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/clinical/TariffCodeService.java" />
+        <option value="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/clinical/ITariffCodeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/clinical/TariffCode.java" />
+        <option value="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/permissions/PermissionsConsumptionPermissionsConsumptionPermissionsConsumption.java" />
+        <option value="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/permissions/Permissions.java" />
+        <option value="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/permissions/PermissionsConsumption.java" />
+        <option value="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/group/Group.java" />
+        <option value="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/group/GroupRepository.java" />
+        <option value="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/group.fxml" />
+        <option value="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/group/IGroupService.java" />
+        <option value="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/group/IAdminGroupService.java" />
+        <option value="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/group/IGroupServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/group/IAdminGroupServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/group/AdminGroupRepository.java" />
         <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/Icd10Controller.java" />
+        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/TariffCodeController.java" />
+        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/group/GroupController.java" />
+        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/group/AdminGroupController.java" />
       </list>
     </option>
   </component>
@@ -245,9 +263,10 @@
     <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="962" />
     <option name="y" value="27" />
-    <option name="width" value="933" />
+    <option name="width" value="928" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -343,6 +362,39 @@
             <path>
               <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
               <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="group" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="location" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="patient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
               <item name="dashboard-model-api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -383,7 +435,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="imodel" type="462c0819:PsiDirectoryNode" />
-              <item name="clinical" type="462c0819:PsiDirectoryNode" />
+              <item name="group" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
@@ -429,6 +481,36 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="clinical" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-model-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="general" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-model-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="group" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-model-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="location" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
@@ -443,6 +525,16 @@
             <path>
               <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
               <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-model-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="permissions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
               <item name="dashboard-repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -484,6 +576,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
               <item name="clinical" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-repository" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="group" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
@@ -539,6 +641,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="clinical" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-service-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="group" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
@@ -584,16 +696,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="serviceimpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceimpl" type="462c0819:PsiDirectoryNode" />
-              <item name="clinical" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -624,11 +726,11 @@
       <recent name="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="systems.health263.dashboard.endpoint.controllers.clinical" />
-      <recent name="systems.health263.dashboard.serviceimpl.clinical" />
-      <recent name="systems.health263.dashboard.service.clinical" />
-      <recent name="systems.health263.dashboard.repository.clinical" />
-      <recent name="systems.health263.dashboard.model.clinical" />
+      <recent name="systems.health263.dashboard.endpoint.controllers.group" />
+      <recent name="systems.health263.dashboard.serviceimpl.group" />
+      <recent name="systems.health263.dashboard.service.group" />
+      <recent name="systems.health263.dashboard.repository.group" />
+      <recent name="systems.health263.dashboard.model.permissions" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/patient" />
@@ -839,15 +941,15 @@
       <workItem from="1542875526910" duration="888000" />
       <workItem from="1542876437830" duration="4419000" />
       <workItem from="1542881071398" duration="6901000" />
-      <workItem from="1542895990771" duration="8714000" />
+      <workItem from="1542895990771" duration="12310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29165000" />
+    <option name="totallyTimeSpent" value="32761000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="933" height="1050" extended-state="0" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -861,16 +963,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32161874" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3195329" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5292865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2087327" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20979765" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20912951" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12864584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -898,153 +1000,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dovaLog.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-3426">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-web/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="44" column="16" lean-forward="false" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-web/src/main/java/systems/health263/dashboard/DashboardWebApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="22" column="56" lean-forward="false" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
-          <folding>
-            <element signature="e#1421#1422#0" expanded="false" />
-            <element signature="e#1468#1469#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-web/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/HttpRequestFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="37" column="78" lean-forward="false" selection-start-line="37" selection-start-column="78" selection-end-line="37" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/client/ClientController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/clinical/IDataICD10.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/clinical/IPrescriptionItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/clinical/ITariffCodes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/drugnsundry/IDrugNSundry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/billing/IMedicalAidTariff.java" />
-    <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/billing/MedicalAidTariff.java" />
-    <entry file="file://$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/patient/IPatientInsurance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-model-impl/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-repository/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-service-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-utility/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="68" column="4" lean-forward="false" selection-start-line="68" selection-start-column="4" selection-end-line="72" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/user/AdminUserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -1147,14 +1102,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/location/LocationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/patient/IMedicalAid.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -1219,14 +1166,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/patient/MedicalAidController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-882">
-          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/clinical/IMedicine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1240,7 +1179,7 @@
         <state relative-caret-position="36">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1250,7 +1189,7 @@
         <state relative-caret-position="324">
           <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1260,7 +1199,7 @@
         <state relative-caret-position="1332">
           <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1270,7 +1209,7 @@
         <state relative-caret-position="-94">
           <caret line="72" column="49" lean-forward="false" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1288,7 +1227,7 @@
         <state relative-caret-position="36">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1298,7 +1237,7 @@
         <state relative-caret-position="180">
           <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1308,7 +1247,7 @@
         <state relative-caret-position="-558">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1318,6 +1257,173 @@
         <state relative-caret-position="324">
           <caret line="84" column="35" lean-forward="false" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
           <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/clinical/ITariffCodes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/TariffRateCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="19" column="51" lean-forward="false" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/clinical/TariffCodeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="114" lean-forward="false" selection-start-line="15" selection-start-column="114" selection-end-line="15" selection-end-column="114" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/clinical/TariffCodeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-592">
+          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/clinical/ITariffCodeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="85" column="40" lean-forward="false" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/clinical/TariffCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="41" column="25" lean-forward="false" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/group/AdminGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/permissions/Permissions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/permissions/PermissionsConsumption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/group/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/group/GroupRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/group.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="68" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/group/IGroupService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/group/IGroupServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="46" column="38" lean-forward="false" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/group/IAdminGroupService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/group/AdminGroupRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/group/IAdminGroupServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1325,11 +1431,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/Icd10Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
+        <state relative-caret-position="396">
           <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/TariffCodeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/location/LocationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/patient/MedicalAidController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/group/GroupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/group/AdminGroupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="65" column="24" lean-forward="false" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
