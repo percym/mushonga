@@ -26,6 +26,11 @@
             <artifactId>dashboard-model-impl</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>io.dropwizard.metrics</groupId>
+            <artifactId>metrics-annotation</artifactId>
+            <version>3.1.5</version>
+        </dependency>
     </dependencies>
 
 
