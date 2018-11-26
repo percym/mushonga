@@ -1,6 +1,5 @@
-package com.health263.model.user;
+package systems.health263.dashboard.model.user;
 
-import com.health263.imodel.user.IUser;
 import lombok.Data;
 import lombok.ToString;
 

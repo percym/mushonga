@@ -1,13 +1,13 @@
-package com.health263.model.user;
+package systems.health263.dashboard.model.user;
 
-import com.health263.imodel.user.IUser;
+import systems.health263.dashboard.imodel.user.ISystemUser;
 import lombok.Data;
 import lombok.ToString;
 
 /**
  * @author Munyaradzi Takayindisa
  * <p>
- * Implementation of the {@link IUser User} for Login
+ * Implementation of the {@link ISystemUser User} for Login
  */
 @Data
 @ToString(callSuper = true)

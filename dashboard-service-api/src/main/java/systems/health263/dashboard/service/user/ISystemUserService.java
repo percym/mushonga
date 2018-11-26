@@ -1,9 +1,7 @@
-package com.health263.service.user;
+package systems.health263.dashboard.service.user;
 
-import com.health263.imodel.user.ISystemUser;
-import com.health263.imodel.user.IUser;
-import com.health263.model.user.SystemUser;
-import com.health263.model.user.User;
+
+import systems.health263.dashboard.model.user.SystemUser;
 
 import java.util.List;
 

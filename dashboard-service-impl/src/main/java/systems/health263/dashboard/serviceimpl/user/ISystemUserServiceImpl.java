@@ -1,9 +1,8 @@
-package com.health263.serviceimpl.user;
+package systems.health263.dashboard.serviceimpl.user;
 
-import com.health263.imodel.user.ISystemUser;
-import com.health263.model.user.SystemUser;
-import com.health263.repository.user.SystemUserRepository;
-import com.health263.service.user.ISystemUserService;
+import systems.health263.dashboard.model.user.SystemUser;
+import systems.health263.dashboard.repository.user.SystemUserRepository;
+import systems.health263.dashboard.service.user.ISystemUserService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -36,12 +35,12 @@ public class ISystemUserServiceImpl implements ISystemUserService {
 
     @Override
     public void deleteSystemUser(Long userId) {
-        systemUserRepository.delete(userId);
+        systemUserRepository.deleteById(userId);
     }
 
     @Override
     public SystemUser getSystemUserById(Long id) {
-        return systemUserRepository.findOne(id);
+        return systemUserRepository.getOne(id);
     }
 
     @Override

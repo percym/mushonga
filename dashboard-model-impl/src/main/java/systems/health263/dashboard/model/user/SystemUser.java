@@ -1,21 +1,14 @@
-package com.health263.model.user;
+package systems.health263.dashboard.model.user;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.health263.imodel.client.IClient;
-import com.health263.imodel.client.IFacility;
-import com.health263.imodel.group.IGroup;
-import com.health263.imodel.location.ILocation;
-import com.health263.imodel.user.ISystemUser;
-import com.health263.imodel.user.IUser;
-import com.health263.model.client.Client;
-import com.health263.model.client.Facility;
-import com.health263.model.general.Active;
-import com.health263.model.group.Group;
-import com.health263.model.location.Location;
-import com.health263.util.enums.IndicatorISOCountryCode;
-import com.health263.util.enums.IndicatorISOLanguage;
+import systems.health263.dashboard.imodel.client.IFacility;
+import systems.health263.dashboard.imodel.group.IGroup;
+import systems.health263.dashboard.imodel.location.ILocation;
+import systems.health263.dashboard.imodel.user.ISystemUser;
+import systems.health263.dashboard.model.client.Facility;
+import systems.health263.dashboard.model.general.Active;
+import systems.health263.dashboard.model.group.Group;
+import systems.health263.dashboard.model.location.Location;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -23,7 +16,6 @@ import lombok.ToString;
 import org.hibernate.envers.Audited;
 import org.hibernate.validator.constraints.Email;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-import org.springframework.security.crypto.password.PasswordEncoder;
 
 import javax.persistence.*;
 import javax.validation.Valid;

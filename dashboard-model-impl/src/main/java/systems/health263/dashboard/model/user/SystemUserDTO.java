@@ -1,15 +1,15 @@
-package com.health263.model.user;
+package systems.health263.dashboard.model.user;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.health263.imodel.client.IFacility;
-import com.health263.imodel.group.IGroup;
-import com.health263.imodel.location.ILocation;
-import com.health263.imodel.user.ISystemUser;
-import com.health263.model.client.Facility;
-import com.health263.model.general.Active;
-import com.health263.model.group.Group;
-import com.health263.model.location.Location;
+import systems.health263.dashboard.imodel.client.IFacility;
+import systems.health263.dashboard.imodel.group.IGroup;
+import systems.health263.dashboard.imodel.location.ILocation;
+import systems.health263.dashboard.imodel.user.ISystemUser;
+import systems.health263.dashboard.model.client.Facility;
+import systems.health263.dashboard.model.general.Active;
+import systems.health263.dashboard.model.group.Group;
+import systems.health263.dashboard.model.location.Location;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
