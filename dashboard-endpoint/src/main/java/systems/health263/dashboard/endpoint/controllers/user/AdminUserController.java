@@ -76,8 +76,8 @@ public class AdminUserController {
             String jwt = this.tokenProvider.createToken(loginUserDTO.getEmail());
             HttpHeaders httpHeaders = new HttpHeaders();
             httpHeaders.add(JWTConfigurer.AUTHORIZATION_HEADER, "Bearer " + jwt);
-            ISystemUser systemUser = adminUserService.getSystemUserByEmail(loginUserDTO.getEmail());
-            return new ResponseEntity<>(new SystemUserWithJWTToken(jwt, (SystemUser) systemUser), httpHeaders, HttpStatus.OK);
+            ISystemUser systemUser = adminUserService.getAdminUserByEmail(loginUserDTO.getEmail());
+            return new ResponseEntity<>(new SystemUserWithJWTToken(jwt, (AdminUser) systemUser), httpHeaders, HttpStatus.OK);
         } catch (AuthenticationException e) {
             log.info("Security exception {}", e.getMessage());
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
@@ -86,7 +86,7 @@ public class AdminUserController {
     }
 
     @PostMapping("/update_password/{userId}")
-    public ResponseEntity<SystemUser> updateUserPassword(@PathVariable("userId")Long userId, @Valid @RequestBody UserDetailsUpdateDTO detailsUpdateDTO,
+    public ResponseEntity<AdminUser> updateUserPassword(@PathVariable("userId")Long userId, @Valid @RequestBody UserDetailsUpdateDTO detailsUpdateDTO,
                                                          HttpServletResponse response) {
         AdminUser systemUser = adminUserService.getAdminUserById(userId);
         if (systemUser.getId() == null) {
@@ -97,9 +97,9 @@ public class AdminUserController {
         }
         String encryptedPassword = this.passwordEncoder.encode(detailsUpdateDTO.getNewPassword());
         systemUser.setPassword(encryptedPassword);
-        SystemUser savedSystemUser = (SystemUser) adminUserService.saveSystemUser(systemUser);
+        AdminUser savedSystemUser = (AdminUser) adminUserService.save(systemUser);
         return ResponseEntity.ok()
-                .headers(HeaderUtil.createEntityUpdateAlert(SystemUser.class.getCanonicalName(), systemUser.getId().toString()))
+                .headers(HeaderUtil.createEntityUpdateAlert(AdminUser.class.getCanonicalName(), systemUser.getId().toString()))
                 .body(savedSystemUser);
          }
 
@@ -125,7 +125,7 @@ public class AdminUserController {
                                                                   HttpServletResponse response) {
         List<AdminUser> systemUser = adminUserService.findAllByLocation_Client_Id(clientId);
         return ResponseEntity.ok()
-                .headers(HeaderUtil.createEntityUpdateAlert(SystemUser.class.getCanonicalName(), String.valueOf(systemUser.size())))
+                .headers(HeaderUtil.createEntityUpdateAlert(AdminUser.class.getCanonicalName(), String.valueOf(systemUser.size())))
                 .body(systemUser);
     }
 
