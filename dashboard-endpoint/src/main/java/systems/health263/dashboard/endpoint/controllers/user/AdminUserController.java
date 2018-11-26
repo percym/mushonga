@@ -54,7 +54,7 @@ public class AdminUserController {
     }
 
     @SuppressWarnings("unused")
-    @PostMapping("/register")
+    @PostMapping("/admin_register")
     public ResponseEntity<ISystemUser> register(@Valid @RequestBody AdminUser systemUser,
                                                 HttpServletResponse response) {
         systemUser.setPassword(this.passwordEncoder.encode(systemUser.getPassword()));

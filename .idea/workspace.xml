@@ -7,7 +7,184 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8340012d-1543-44ec-808e-6735844a3fc8" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/PersistenceJNDIConfig.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/PrescriptionItemController.java" afterPath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/PrescriptionItemController.java" />
       <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.java" afterPath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/ApplicationProperties.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/ApplicationProperties.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/ClientDatabaseContextHolder.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/ClientDatabaseContextHolder.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/HttpRequestFilter.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/HttpRequestFilter.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/ResponseUtil.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/ResponseUtil.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/StorageProperties.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/StorageProperties.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/errors/BadRequestAlertException.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/errors/BadRequestAlertException.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/errors/ClientNotFoundException.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/errors/ClientNotFoundException.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/errors/InvalidArgumentException.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/errors/InvalidArgumentException.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/util/HeaderUtil.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/util/HeaderUtil.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/util/PaginationUtil.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/util/PaginationUtil.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/jwt/JWTConfigurer.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/jwt/JWTConfigurer.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/jwt/JWTFilter.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/jwt/JWTFilter.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/jwt/TokenProvider.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/jwt/TokenProvider.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/security/AppSystemUserDetailService.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/security/AppSystemUserDetailService.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/security/SecurityConfig.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/security/SecurityConfig.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/client/ClientController.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/client/ClientController.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/clinical/Icd10Controller.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/clinical/Icd10Controller.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/clinical/PrescriptionItemController.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/clinical/PrescriptionItemController.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/clinical/TariffCodeController.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/clinical/TariffCodeController.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/group/AdminGroupController.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/group/AdminGroupController.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/group/GroupController.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/group/GroupController.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/location/LocationController.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/location/LocationController.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/patient/MedicalAidController.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/patient/MedicalAidController.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/permissions/AdminPermissionsController.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/permissions/AdminPermissionsController.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/permissions/PermissionsController.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/permissions/PermissionsController.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/user/SystemUserController.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/user/SystemUserController.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/fileUpload/FileStorageService.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/fileUpload/FileStorageService.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/fileUpload/FileSystemStorageService.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/fileUpload/FileSystemStorageService.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/fileUpload/exceptions/FileStorageException.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/fileUpload/exceptions/FileStorageException.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/fileUpload/exceptions/MyFileNotFoundException.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/fileUpload/exceptions/MyFileNotFoundException.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/address/IAddress.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/address/IAddress.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/address/IContactDetails.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/address/IContactDetails.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/client/IClient.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/client/IClient.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/client/IFacility.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/client/IFacility.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/client/ILogo.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/client/ILogo.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/clinical/IDataICD10.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/clinical/IDataICD10.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/clinical/ITariffCodes.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/clinical/ITariffCodes.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/drugnsundry/IDrugNSundry.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/drugnsundry/IDrugNSundry.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/IActive.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/IActive.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/IApproved.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/IApproved.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/IAuditing.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/IAuditing.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/IAuditingEntity.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/IAuditingEntity.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/IBillCosting.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/IBillCosting.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/IGenericNaming.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/IGenericNaming.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/IPrimaryKey.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/IPrimaryKey.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/ISearchCriteria.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/ISearchCriteria.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/ITimeActiveRecord.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/ITimeActiveRecord.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/ITimeActiveRecordEntity.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/ITimeActiveRecordEntity.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/group/IGroup.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/group/IGroup.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/location/ILocation.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/location/ILocation.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/patient/IMedicalAid.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/patient/IMedicalAid.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/permissions/IPermissionConsumption.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/permissions/IPermissionConsumption.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/permissions/IPermissions.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/permissions/IPermissions.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/user/ISystemUser.class" afterPath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/user/ISystemUser.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/address/Address.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/address/Address.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/address/ContactDetails.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/address/ContactDetails.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/client/Client.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/client/Client.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/client/Facility.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/client/Facility.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/client/Logo.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/client/Logo.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/clinical/DataICD10.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/clinical/DataICD10.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/clinical/PrescriptionItem.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/clinical/PrescriptionItem.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/clinical/TariffCode.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/clinical/TariffCode.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/exceptions/StorageException.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/exceptions/StorageException.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/exceptions/StorageFileNotFoundException.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/exceptions/StorageFileNotFoundException.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/general/Active.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/general/Active.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/general/AuditingEntityBean.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/general/AuditingEntityBean.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/general/GeneralNaming.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/general/GeneralNaming.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/general/PrimaryKeyBean.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/general/PrimaryKeyBean.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/general/SpecSearchCriteria.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/general/SpecSearchCriteria.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/general/TariffRateCode.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/general/TariffRateCode.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/general/TimeActiveRecord.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/general/TimeActiveRecord.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/group/AdminGroup.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/group/AdminGroup.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/group/Group.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/group/Group.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/location/Location.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/location/Location.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/patient/MedicalAid.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/patient/MedicalAid.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/permissions/AdminPermissions.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/permissions/AdminPermissions.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/permissions/AdminPermissionsConsumption.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/permissions/AdminPermissionsConsumption.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/permissions/Permissions.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/permissions/Permissions.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/permissions/PermissionsConsumption.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/permissions/PermissionsConsumption.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/user/AdminUser.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/user/AdminUser.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/user/LoginSystemUserDTO.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/user/LoginSystemUserDTO.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/user/SystemUser.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/user/SystemUser.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/user/SystemUserDTO.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/user/SystemUserDTO.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/user/UserDetailsUpdateDTO.class" afterPath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/user/UserDetailsUpdateDTO.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/client/ClientRepository.class" afterPath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/client/ClientRepository.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/clinical/Icd10Repository.class" afterPath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/clinical/Icd10Repository.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/group/AdminGroupRepository.class" afterPath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/group/AdminGroupRepository.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/group/GroupRepository.class" afterPath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/group/GroupRepository.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/location/LocationRepository.class" afterPath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/location/LocationRepository.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/permissions/AdminPermissionsRepository.class" afterPath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/permissions/AdminPermissionsRepository.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/permissions/PermissionsRepository.class" afterPath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/permissions/PermissionsRepository.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/user/AdminUserRepository.class" afterPath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/user/AdminUserRepository.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/user/SystemUserRepository.class" afterPath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/user/SystemUserRepository.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/CriteriaParser$Operator.class" afterPath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/CriteriaParser$Operator.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/CriteriaParser.class" afterPath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/CriteriaParser.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/GenericSpecificationsBuilder.class" afterPath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/GenericSpecificationsBuilder.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/ModelSpecification.class" afterPath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/ModelSpecification.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/client/IClientService.class" afterPath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/client/IClientService.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/clinical/Icd10Service.class" afterPath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/clinical/Icd10Service.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/clinical/PrescriptionItemService.class" afterPath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/clinical/PrescriptionItemService.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/clinical/TariffCodeService.class" afterPath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/clinical/TariffCodeService.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/group/IAdminGroupService.class" afterPath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/group/IAdminGroupService.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/group/IGroupService.class" afterPath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/group/IGroupService.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/location/ILocationService.class" afterPath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/location/ILocationService.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/patient/IMedicalAidService.class" afterPath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/patient/IMedicalAidService.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/permissions/IAdminPermissionsService.class" afterPath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/permissions/IAdminPermissionsService.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/permissions/IPermissionsService.class" afterPath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/permissions/IPermissionsService.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/user/IAdminUserService.class" afterPath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/user/IAdminUserService.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/user/ISystemUserService.class" afterPath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/user/ISystemUserService.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/client/IClientServiceImpl.class" afterPath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/client/IClientServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/clinical/IPrescriptionItemServiceImpl.class" afterPath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/clinical/IPrescriptionItemServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/clinical/ITariffCodeServiceImpl.class" afterPath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/clinical/ITariffCodeServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/clinical/Icd10ServiceImpl.class" afterPath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/clinical/Icd10ServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/fileUpload/StorageService.class" afterPath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/fileUpload/StorageService.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/group/IAdminGroupServiceImpl.class" afterPath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/group/IAdminGroupServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/group/IGroupServiceImpl.class" afterPath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/group/IGroupServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/location/ILocationServiceImpl.class" afterPath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/location/ILocationServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/patient/IMedicalAidServiceImpl.class" afterPath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/patient/IMedicalAidServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/permissions/IAdminPermissionsServiceImpl.class" afterPath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/permissions/IAdminPermissionsServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/permissions/IPermissionsServiceImpl.class" afterPath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/permissions/IPermissionsServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/user/IAdminUserServiceImpl.class" afterPath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/user/IAdminUserServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/user/ISystemUserServiceImpl.class" afterPath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/user/ISystemUserServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/AddressType.class" afterPath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/AddressType.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/ClientDatabase$ClientDatabaseConverter.class" afterPath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/ClientDatabase$ClientDatabaseConverter.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/ClientDatabase.class" afterPath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/ClientDatabase.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/ClientType.class" afterPath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/ClientType.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/IndicatorISOCountryCode$IndicatorISOCountryCodeConverter.class" afterPath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/IndicatorISOCountryCode$IndicatorISOCountryCodeConverter.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/IndicatorISOCountryCode.class" afterPath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/IndicatorISOCountryCode.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/IndicatorISOCurrency.class" afterPath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/IndicatorISOCurrency.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/SearchOperation.class" afterPath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/SearchOperation.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/strings/StringUtils.class" afterPath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/strings/StringUtils.class" />
+      <change beforePath="$PROJECT_DIR$/dashboard-web/src/main/resources/application-dev.properties" afterPath="$PROJECT_DIR$/dashboard-web/src/main/resources/application-dev.properties" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT.war" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/classmate-1.4.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/evo-inflector-1.2.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-validator-6.0.13.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.9.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-core-2.9.7.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-databind-2.9.7.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-datatype-jdk8-2.9.7.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-datatype-jsr310-2.9.7.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-module-parameter-names-2.9.7.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/javax.annotation-api-1.3.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/jul-to-slf4j-1.7.25.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-api-2.11.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-to-slf4j-2.11.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/logback-core-1.2.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.25.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/snakeyaml-1.23.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aop-5.1.2.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/spring-beans-5.1.2.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-2.1.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-autoconfigure-2.1.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-2.1.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-data-rest-2.1.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-json-2.1.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-logging-2.1.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-web-2.1.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-5.1.2.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/spring-core-5.1.2.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/spring-data-commons-2.1.2.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/spring-data-rest-core-3.1.2.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/spring-data-rest-webmvc-3.1.2.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/spring-expression-5.1.2.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/spring-hateoas-0.25.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jcl-5.1.2.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/spring-plugin-core-1.2.0.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/spring-tx-5.1.2.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-5.1.2.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.1.2.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/dashboard-0.0.1-SNAPSHOT/WEB-INF/lib/validation-api-2.0.1.Final.jar" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/dashboard-service-impl/target/" />
     <ignored path="$PROJECT_DIR$/dashboard-model-impl/target/" />
@@ -27,12 +204,106 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="AdminUserController.java" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AdminUserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="62" lean-forward="true" selection-start-line="0" selection-start-column="62" selection-end-line="0" selection-end-column="62" />
+            <state relative-caret-position="522">
+              <caret line="56" column="25" lean-forward="false" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SystemUserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/SystemUserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientDatabaseContextHolder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/ClientDatabaseContextHolder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientDataSourceRouter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/ClientDataSourceRouter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersistenceJNDIConfig.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/PersistenceJNDIConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="466">
+              <caret line="47" column="83" lean-forward="false" selection-start-line="47" selection-start-column="83" selection-end-line="47" selection-end-column="83" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpRequestFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/HttpRequestFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-442">
+              <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GroupController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/group/GroupController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LocationController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/location/LocationController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminPermissionsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/permissions/AdminPermissionsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PermissionsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/permissions/PermissionsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -51,7 +322,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/dashboard-web/src/main/resources/application-dev.properties" />
         <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.java" />
+        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/PrescriptionItemController.java" />
+        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/PersistenceJNDIConfig.java" />
       </list>
     </option>
   </component>
@@ -69,10 +343,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="973" />
-    <option name="y" value="27" />
-    <option name="width" value="947" />
-    <option name="height" value="1050" />
+    <option name="x" value="346" />
+    <option name="y" value="136" />
+    <option name="width" value="927" />
+    <option name="height" value="796" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -89,7 +363,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -97,18 +374,167 @@
               <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
               <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="clinical" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="group" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="location" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="patient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="permissions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mushongainfobackend" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="systems.health263.dashboard.endpoint.config.app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -209,7 +635,8 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_dova-dashboard_2" />
-        <option name="HTTP_PORT" value="8090" />
+        <option name="HTTP_PORT" value="8091" />
+        <option name="JNDI_PORT" value="1098" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -266,7 +693,9 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <method>
-        <option name="BuildArtifacts" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="dashboard-web:war" />
+        </option>
       </method>
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.81" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="/usr/java/latest/jre">
@@ -356,47 +785,50 @@
       <option name="presentableId" value="Default" />
       <updated>1543221719316</updated>
       <workItem from="1543221720700" duration="1559000" />
+      <workItem from="1543224777362" duration="1043000" />
+      <workItem from="1543229926026" duration="2926000" />
+      <workItem from="1543244425654" duration="995000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1559000" />
+    <option name="totallyTimeSpent" value="6767000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12552084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,8 +845,187 @@
     <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-web/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="62" lean-forward="true" selection-start-line="0" selection-start-column="62" selection-end-line="0" selection-end-column="62" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="127" column="69" lean-forward="false" selection-start-line="127" selection-start-column="69" selection-end-line="127" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-web/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/client/ClientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/Icd10Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/PrescriptionItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/TariffCodeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/group/AdminGroupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/group/GroupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/location/LocationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/permissions/AdminPermissionsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/permissions/PermissionsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="56" column="25" lean-forward="false" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/SystemUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/HttpRequestFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-442">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/ClientDatabaseContextHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/ClientDataSourceRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/PersistenceJNDIConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="47" column="83" lean-forward="false" selection-start-line="47" selection-start-column="83" selection-end-line="47" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

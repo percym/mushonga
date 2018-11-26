@@ -37,7 +37,7 @@ import java.util.stream.Stream;
 @Slf4j
 @CrossOrigin
 @RestController
-@RequestMapping("*/api")
+@RequestMapping("/api")
 public class PrescriptionItemController {
 
     private static final String ENTITY_NAME = "prescription_item";
