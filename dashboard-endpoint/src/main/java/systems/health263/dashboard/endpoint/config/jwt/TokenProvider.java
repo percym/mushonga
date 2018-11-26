@@ -7,7 +7,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Component;
-import systems.health263.dashboard.endpoint.config.app.ApplicationProperties;
+import systems.health263.dashboard.endpoint.config.app.util.ApplicationProperties;
 
 import java.nio.charset.Charset;
 import java.util.Base64;
@@ -28,9 +28,13 @@ public class TokenProvider {
 
     private final UserDetailsService userService;
 
-    public TokenProvider(ApplicationProperties config, UserDetailsService userService) {
-        this.secretKey = Base64.getEncoder().encodeToString(config.getSecret().getBytes(Charset.forName("UTF-8")));
-        this.tokenValidityInMilliseconds = 1000 * config.getTokenValidityInSeconds();
+//    @Value("${app.jwtSecret}")
+    private String secret ;
+
+
+    public TokenProvider(ApplicationProperties properties, UserDetailsService userService) {
+        this.secretKey = Base64.getEncoder().encodeToString(properties.getSecret().getBytes(Charset.forName("UTF-8")));
+        this.tokenValidityInMilliseconds = (properties.getTokenValidityInSeconds()*1000 );
         this.userService = userService;
     }
 
