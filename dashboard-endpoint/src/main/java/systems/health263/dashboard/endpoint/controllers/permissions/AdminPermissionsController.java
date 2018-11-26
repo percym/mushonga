@@ -153,7 +153,7 @@ public class AdminPermissionsController {
         GenericSpecificationsBuilder<AdminPermissions> specBuilder = new GenericSpecificationsBuilder<>();
         Specification<AdminPermissions> spec = specBuilder.build(parser.parse(query), ModelSpecification::new);
         Page<AdminPermissions> page = adminPermissionsService.findAll(spec, pageable);
-        HttpHeaders headers = PaginationUtil.generateSearchPaginationHttpHeaders(query, page, "/api/_search/bill");
+        HttpHeaders headers = PaginationUtil.generateSearchPaginationHttpHeaders(query, page, "/api/_search/admin_permissions");
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
     }
 
