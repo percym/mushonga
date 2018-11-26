@@ -33,7 +33,7 @@ import java.util.List;
 @RestController
 @CrossOrigin
 @Slf4j
-@RequestMapping("*/api")
+@RequestMapping("/api")
 public class AdminUserController {
     private final TokenProvider tokenProvider;
 
@@ -65,7 +65,7 @@ public class AdminUserController {
         return new ResponseEntity<>(systemUserSaved, HttpStatus.OK);
     }
     
-    @PostMapping("/login")
+    @PostMapping("/admin_login")
     public ResponseEntity<SystemUserWithJWTToken> authorize(@Valid @RequestBody LoginSystemUserDTO loginUserDTO,
                                                             HttpServletResponse response) {
         UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(
@@ -85,7 +85,7 @@ public class AdminUserController {
         }
     }
 
-    @PostMapping("/update_password/{userId}")
+    @PostMapping("/admin_update_password/{userId}")
     public ResponseEntity<AdminUser> updateUserPassword(@PathVariable("userId")Long userId, @Valid @RequestBody UserDetailsUpdateDTO detailsUpdateDTO,
                                                          HttpServletResponse response) {
         AdminUser systemUser = adminUserService.getAdminUserById(userId);
@@ -103,7 +103,7 @@ public class AdminUserController {
                 .body(savedSystemUser);
          }
 
-    @PutMapping("/update_user")
+    @PutMapping("/admin_update_user")
     public ResponseEntity<AdminUser> updateSystemUser(@Valid @RequestBody AdminUser systemUser,
                                                        HttpServletResponse response) {
         if (systemUser.getId() == null) {
@@ -120,7 +120,7 @@ public class AdminUserController {
                 .body(savedSystemUser);
     }
 
-    @GetMapping("/users/{clientId}")
+    @GetMapping("/admin_users/{clientId}")
     public ResponseEntity<List<AdminUser>> getAllUsersByClientId(@PathVariable("clientId")Long clientId,
                                                                   HttpServletResponse response) {
         List<AdminUser> systemUser = adminUserService.findAllByLocation_Client_Id(clientId);
@@ -129,7 +129,7 @@ public class AdminUserController {
                 .body(systemUser);
     }
 
-    @GetMapping("/users")
+    @GetMapping("/admin_users")
     public ResponseEntity<List<AdminUser>> getAllUsers(HttpServletResponse response) {
         List<AdminUser> systemUser = adminUserService.findAll();
         return ResponseEntity.ok()
