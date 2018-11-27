@@ -92,9 +92,29 @@ public class DrugNSundryController {
     @PostMapping("/drugnsundry")
     @Timed
     public ResponseEntity<DrugNSundry> createDrugNSundry(@Valid @RequestBody DrugNSundry drugNSundry) throws URISyntaxException {
-        log.debug("REST request to save ITariff : {}", drugNSundry);
+        log.debug("REST request to save drug or sundry : {}", drugNSundry);
         if (drugNSundry.getId() != null) {
             throw new BadRequestAlertException("A new drugNSundry cannot already have an ID", ENTITY_NAME, "id exists");
+        }
+        DrugNSundry result = drugNSundryService.save(drugNSundry);
+        return ResponseEntity.created(new URI("/api/drugnsundry/" + result.getId()))
+                .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, result.getId().toString()))
+                .body(result);
+    }
+    /**
+     * PUT  /drugnsundry : update a new drug or sundry.
+     *
+     * @param drugNSundry the drug or sundry to update
+     * @return the ResponseEntity with status 201 (Created) and with body the updated drug or sundry
+     * , or with status 400 (Bad Request) if the drug or sundry does not have an ID
+     * @throws URISyntaxException if the Location URI syntax is incorrect
+     */
+    @PutMapping("/drugnsundry")
+    @Timed
+    public ResponseEntity<DrugNSundry> createDrugNSundry(@Valid @RequestBody DrugNSundry drugNSundry) throws URISyntaxException {
+        log.debug("REST request to save drug or sundry : {}", drugNSundry);
+        if (drugNSundry.getId() == null) {
+            throw new BadRequestAlertException("A drugNSundry needs an id", ENTITY_NAME, " no id");
         }
         DrugNSundry result = drugNSundryService.save(drugNSundry);
         return ResponseEntity.created(new URI("/api/drugnsundry/" + result.getId()))
