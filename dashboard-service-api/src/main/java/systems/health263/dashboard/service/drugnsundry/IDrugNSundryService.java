@@ -30,5 +30,14 @@ public interface IDrugNSundryService {
      */
     Stream<DrugNSundry> getAllByGenericCodeNotNull();
 
+    /**
+     * Save aDrugNSundry.
+     *
+     * @param drugNSundry the entity to save
+     * @return the persisted entity
+     */
+    DrugNSundry save(DrugNSundry drugNSundry);
+
+
 
 }

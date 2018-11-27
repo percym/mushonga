@@ -49,4 +49,9 @@ public class IDrugNSundryServiceImpl implements IDrugNSundryService {
     public Stream<DrugNSundry> getAllByGenericCodeNotNull() {
         return drugNSundryRepository.getAllByGenericCodeNotNull();
     }
+
+    @Override
+    public DrugNSundry save(DrugNSundry drugNSundry) {
+        return this.drugNSundryRepository.save(drugNSundry);
+    }
 }

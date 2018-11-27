@@ -1,6 +1,9 @@
 package systems.health263.dashboard.endpoint.controllers.drugnsundry;
 
 import com.codahale.metrics.annotation.Timed;
+import systems.health263.dashboard.endpoint.config.app.errors.BadRequestAlertException;
+import systems.health263.dashboard.endpoint.config.app.util.HeaderUtil;
+import systems.health263.dashboard.model.clinical.TariffCode;
 import systems.health263.dashboard.model.drugnsundry.DrugNSundry;
 import systems.health263.dashboard.service.drugnsundry.IDrugNSundryService;
 import lombok.extern.slf4j.Slf4j;
@@ -9,6 +12,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -73,5 +79,26 @@ public class DrugNSundryController {
         try(Stream<DrugNSundry> stream = drugNSundryService.getAllByGenericCodeNotNull()){
             return   stream.collect(Collectors.toList());
         }
+    }
+
+    /**
+     * POST  /drugnsundry : Create a new drug or sundry.
+     *
+     * @param drugNSundry the drug or sundry to create
+     * @return the ResponseEntity with status 201 (Created) and with body the new drug or sundry
+     * , or with status 400 (Bad Request) if the drug or sundry has already an ID
+     * @throws URISyntaxException if the Location URI syntax is incorrect
+     */
+    @PostMapping("/drugnsundry")
+    @Timed
+    public ResponseEntity<DrugNSundry> createDrugNSundry(@Valid @RequestBody DrugNSundry drugNSundry) throws URISyntaxException {
+        log.debug("REST request to save ITariff : {}", drugNSundry);
+        if (drugNSundry.getId() != null) {
+            throw new BadRequestAlertException("A new drugNSundry cannot already have an ID", ENTITY_NAME, "id exists");
+        }
+        DrugNSundry result = drugNSundryService.save(drugNSundry);
+        return ResponseEntity.created(new URI("/api/drugnsundry/" + result.getId()))
+                .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, result.getId().toString()))
+                .body(result);
     }
 }
