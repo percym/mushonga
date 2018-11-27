@@ -1,5 +1,6 @@
 package systems.health263.dashboard.endpoint.config.app.audit;
 
+import org.apache.catalina.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.domain.AuditorAware;
@@ -10,10 +11,10 @@ import systems.health263.dashboard.endpoint.config.security.AppSystemUserDetailS
  * @author percym
  */
 @Configuration
-@EnableJpaAuditing(auditorAwareRef = "auditorProvider")
+@EnableJpaAuditing(auditorAwareRef = "securityAuditorAware")
 public class AuditConfiguration {
     @Bean
-    public AuditorAware<AppSystemUserDetailService> auditorProvider() {
+    public AuditorAware<String> auditorProvider() {
         return new SecurityAuditorAware();
     }
 }

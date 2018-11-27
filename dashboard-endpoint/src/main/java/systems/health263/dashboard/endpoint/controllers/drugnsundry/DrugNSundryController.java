@@ -111,7 +111,7 @@ public class DrugNSundryController {
      */
     @PutMapping("/drugnsundry")
     @Timed
-    public ResponseEntity<DrugNSundry> createDrugNSundry(@Valid @RequestBody DrugNSundry drugNSundry) throws URISyntaxException {
+    public ResponseEntity<DrugNSundry> updateDrugNSundry(@Valid @RequestBody DrugNSundry drugNSundry) throws URISyntaxException {
         log.debug("REST request to save drug or sundry : {}", drugNSundry);
         if (drugNSundry.getId() == null) {
             throw new BadRequestAlertException("A drugNSundry needs an id", ENTITY_NAME, " no id");

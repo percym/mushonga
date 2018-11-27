@@ -106,6 +106,7 @@
             <artifactId>metrics-annotation</artifactId>
             <version>3.1.5</version>
         </dependency>
+
         <dependency>
             <groupId>systems.health263.dashboard</groupId>
             <artifactId>dashboard-model-impl</artifactId>
@@ -117,12 +118,11 @@
             <artifactId>spring-aspects</artifactId>
             <version>5.1.2.RELEASE</version>
         </dependency>
+
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
             <version>2.9.2</version>
         </dependency>
-
-
     </dependencies>
 </project>
