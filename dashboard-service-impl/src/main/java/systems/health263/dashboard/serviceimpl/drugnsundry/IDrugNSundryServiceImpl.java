@@ -34,7 +34,7 @@ public class IDrugNSundryServiceImpl implements IDrugNSundryService {
      */
     @Override
     public DrugNSundry findOne(Long id) {
-        return drugNSundryRepository.findOne(id);
+        return drugNSundryRepository.getOne(id);
     }
     /**
      * Get all the DrugNSundry.

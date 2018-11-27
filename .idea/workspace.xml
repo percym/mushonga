@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8340012d-1543-44ec-808e-6735844a3fc8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/drugnsundry/DrugNSundry.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/drugnsundry/DrugsNSundryRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/drugnsundry/IDrugNSundryService.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/drugnsundry/IDrugNSundryServiceImpl.java" afterPath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/drugnsundry/IDrugNSundryServiceImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/dashboard-service-impl/target/" />
     <ignored path="$PROJECT_DIR$/dashboard-model-impl/target/" />
@@ -31,28 +28,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AdminUserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="56" column="25" lean-forward="false" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SystemUserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/SystemUserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
@@ -100,8 +75,8 @@
       <file leaf-file-name="DrugsNSundryRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/drugnsundry/DrugsNSundryRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="116" lean-forward="false" selection-start-line="9" selection-start-column="116" selection-end-line="9" selection-end-column="116" />
+            <state relative-caret-position="216">
+              <caret line="12" column="53" lean-forward="false" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,12 +84,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IDrugNSundryService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IDrugNSundryService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/drugnsundry/IDrugNSundryService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
-              <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-              <folding />
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IDrugNSundryServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/drugnsundry/IDrugNSundryServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="36" column="44" lean-forward="false" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1104#1105#0" expanded="true" />
+                <element signature="e#1159#1160#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DrugNSundryController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/drugnsundry/DrugNSundryController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-106">
+              <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,6 +152,9 @@
     </option>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>com.health263</find>
+    </findStrings>
     <replaceStrings>
       <replace>systems.health263.dashboard</replace>
     </replaceStrings>
@@ -173,8 +179,10 @@
         <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/jwt/TokenProvider.java" />
         <option value="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/drugnsundry/IDrugNSundry.java" />
         <option value="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/drugnsundry/DrugNSundry.java" />
-        <option value="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/drugnsundry/DrugsNSundryRepository.java" />
         <option value="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/drugnsundry/IDrugNSundryService.java" />
+        <option value="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/drugnsundry/DrugsNSundryRepository.java" />
+        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/drugnsundry/DrugNSundryController.java" />
+        <option value="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/drugnsundry/IDrugNSundryServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -271,50 +279,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="jwt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -326,152 +290,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="endpoint" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="clinical" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="group" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="location" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="patient" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="permissions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="imodel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="drugnsundry" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -512,6 +330,16 @@
             <path>
               <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
               <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-repository" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="drugnsundry" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
               <item name="dashboard-service-api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -557,6 +385,51 @@
             <path>
               <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
               <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-service-impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="serviceimpl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="serviceimpl" type="462c0819:PsiDirectoryNode" />
+              <item name="drugnsundry" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
               <item name="dashboard-web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -578,11 +451,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="systems.health263.dashboard.endpoint.controllers.drugnsundry" />
+      <recent name="systems.health263.dashboard.serviceimpl.drugnsundry" />
       <recent name="systems.health263.dashboard.service.drugnsundry" />
       <recent name="systems.health263.dashboard.model.drugnsundry" />
       <recent name="systems.health263.dashboard.imodel.drugnsundry" />
-      <recent name="systems.health263.dashboard.endpoint.config.app.util" />
-      <recent name="systems.health263.dashboard.endpoint.config.jwt" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -839,12 +712,12 @@
       <workItem from="1543221720700" duration="1559000" />
       <workItem from="1543224777362" duration="1043000" />
       <workItem from="1543229926026" duration="2926000" />
-      <workItem from="1543244425654" duration="4637000" />
+      <workItem from="1543244425654" duration="5123000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10409000" />
+    <option name="totallyTimeSpent" value="10895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -868,9 +741,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3301486" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3301486" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1141,21 +1014,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/drugnsundry/DrugsNSundryRepository.java">
+    <entry file="file://$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/drugnsundry/IDrugNSundryService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="116" lean-forward="false" selection-start-line="9" selection-start-column="116" selection-end-line="9" selection-end-column="116" />
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/drugnsundry/IDrugNSundryService.java">
+    <entry file="file://$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/drugnsundry/DrugsNSundryRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="216">
+          <caret line="12" column="53" lean-forward="false" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/drugnsundry/DrugNSundryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-106">
+          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/drugnsundry/IDrugNSundryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="36" column="44" lean-forward="false" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1104#1105#0" expanded="true" />
+            <element signature="e#1159#1160#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
