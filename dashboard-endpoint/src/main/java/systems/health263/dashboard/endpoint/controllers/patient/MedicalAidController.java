@@ -45,7 +45,7 @@ import java.util.Optional;
 @Slf4j
 @CrossOrigin
 @RestController
-@RequestMapping("*/api")
+@RequestMapping("/api")
 public class MedicalAidController {
 
     private static final String ENTITY_NAME = "medical_aid";

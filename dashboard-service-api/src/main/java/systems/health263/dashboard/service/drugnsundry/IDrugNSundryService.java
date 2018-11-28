@@ -31,13 +31,18 @@ public interface IDrugNSundryService {
     Stream<DrugNSundry> getAllByGenericCodeNotNull();
 
     /**
-     * Save aDrugNSundry.
+     * Save DrugNSundry.
      *
      * @param drugNSundry the entity to save
      * @return the persisted entity
      */
     DrugNSundry save(DrugNSundry drugNSundry);
 
-
+    /**
+     * find last DrugNSundry.
+     *
+     * @return the last entity
+     */
+    DrugNSundry  findFirstByOrderByIdDesc();
 
 }

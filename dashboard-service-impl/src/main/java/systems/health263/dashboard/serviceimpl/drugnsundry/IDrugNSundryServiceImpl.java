@@ -54,4 +54,9 @@ public class IDrugNSundryServiceImpl implements IDrugNSundryService {
     public DrugNSundry save(DrugNSundry drugNSundry) {
         return this.drugNSundryRepository.save(drugNSundry);
     }
+
+    @Override
+    public DrugNSundry findFirstByOrderByIdDesc() {
+        return drugNSundryRepository.findFirstByOrderByIdDesc();
+    }
 }

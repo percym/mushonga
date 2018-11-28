@@ -11,4 +11,5 @@ import java.util.stream.Stream;
  */
 public interface DrugsNSundryRepository extends JpaRepository<DrugNSundry,Long>,JpaSpecificationExecutor<DrugNSundry> {
     Stream<DrugNSundry> getAllByGenericCodeNotNull();
+    DrugNSundry findFirstByOrderByIdDesc();
 }

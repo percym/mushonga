@@ -1,8 +1,10 @@
 package systems.health263.dashboard.endpoint.controllers.drugnsundry;
 
 import com.codahale.metrics.annotation.Timed;
+import org.springframework.util.ObjectUtils;
 import systems.health263.dashboard.endpoint.config.app.errors.BadRequestAlertException;
 import systems.health263.dashboard.endpoint.config.app.util.HeaderUtil;
+import systems.health263.dashboard.endpoint.dto.DrugNSundryDtO;
 import systems.health263.dashboard.model.clinical.TariffCode;
 import systems.health263.dashboard.model.drugnsundry.DrugNSundry;
 import systems.health263.dashboard.service.drugnsundry.IDrugNSundryService;
@@ -31,7 +33,7 @@ import java.util.stream.Stream;
 @Slf4j
 @CrossOrigin
 @RestController
-@RequestMapping("*/api")
+@RequestMapping("/api")
 public class DrugNSundryController {
     private static final String ENTITY_NAME = "drugNsundry";
 
@@ -91,12 +93,25 @@ public class DrugNSundryController {
      */
     @PostMapping("/drugnsundry")
     @Timed
-    public ResponseEntity<DrugNSundry> createDrugNSundry(@Valid @RequestBody DrugNSundry drugNSundry) throws URISyntaxException {
-        log.debug("REST request to save drug or sundry : {}", drugNSundry);
-        if (drugNSundry.getId() != null) {
-            throw new BadRequestAlertException("A new drugNSundry cannot already have an ID", ENTITY_NAME, "id exists");
+    public ResponseEntity<DrugNSundry> createDrugNSundry(@Valid @RequestBody DrugNSundryDtO drugNSundryDtO) throws URISyntaxException {
+        log.debug("REST request to save drug or sundry : {}", drugNSundryDtO);
+
+        DrugNSundry lastNSundry = drugNSundryService.findFirstByOrderByIdDesc();
+        if(ObjectUtils.isEmpty(lastNSundry)){
+            throw new BadRequestAlertException("A drugNSundry needs an id", ENTITY_NAME, " empty drugs and sundry");
         }
-        DrugNSundry result = drugNSundryService.save(drugNSundry);
+        Long drugNSundrySystemsId =  Long.valueOf(lastNSundry.getSystemId());
+        Long drugNSundryId =  Long.valueOf(lastNSundry.getId());
+        drugNSundryId = drugNSundryId + Long.valueOf(1);
+        drugNSundrySystemsId = drugNSundrySystemsId + Long.valueOf(1);
+        DrugNSundry drugNSundryToSave = new DrugNSundry();
+        drugNSundryToSave.setId(drugNSundryId);
+        drugNSundryToSave.setSystemId(drugNSundrySystemsId.toString());
+        drugNSundryToSave.setDrugORSundry(drugNSundryDtO.getDrugORSundry());
+        drugNSundryToSave.setActive(drugNSundryDtO.getActive());
+        drugNSundryToSave.setGenericCode((drugNSundryDtO.getGenericCode()== null)?" ":drugNSundryDtO.getGenericCode());
+        drugNSundryToSave.setGenericName((drugNSundryDtO.getGenericName() ==null)?" ":drugNSundryDtO.getGenericName());
+        DrugNSundry result = drugNSundryService.save(drugNSundryToSave);
         return ResponseEntity.created(new URI("/api/drugnsundry/" + result.getId()))
                 .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, result.getId().toString()))
                 .body(result);

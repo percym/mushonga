@@ -1,12 +1,12 @@
 package systems.health263.dashboard.model.drugnsundry;
 
-import systems.health263.dashboard.imodel.drugnsundry.IDrugNSundry;
-import systems.health263.dashboard.model.general.GeneralNaming;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import org.hibernate.envers.Audited;
+import systems.health263.dashboard.imodel.drugnsundry.IDrugNSundry;
+import systems.health263.dashboard.model.general.GeneralNaming;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -35,7 +35,7 @@ import javax.validation.constraints.NotNull;
         @AttributeOverride(name = "genericCode", column = @Column(name = "drug_n_sundry_generic_code")),
         @AttributeOverride(name = "genericName", column = @Column(name = "drug_n_sundry_generic_name"))
 })
-@SequenceGenerator(name = "default_seq", schema = "static", sequenceName = "drug_n_sundry_seq", allocationSize = 1)
+@SequenceGenerator(name = "default_seq", schema = "data", sequenceName = "drug_n_sundry_seq", allocationSize = 1)
 public class DrugNSundry extends GeneralNaming implements IDrugNSundry {
 
     @NotNull
