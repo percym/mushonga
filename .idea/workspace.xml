@@ -2,20 +2,385 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="dashboard-web:war" />
+      <artifact name="mushonga-web:war" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8340012d-1543-44ec-808e-6735844a3fc8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/dto/DrugNSundryDtO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/account/IAccount.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/account/IPayment.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/account/ISearchTransaction.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/account/ITransaction.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/general/ICosting.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/general/IMedicine.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/general/IPrimaryKey.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/general/IProductDescription.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/general/ISearcheableRecordEntity.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/general/IStatistics.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/pharmacy/IPharmacy.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/product/IProduct.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/search/ISearch.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/user/ISystemUser.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/account/Account.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/account/Payment.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/account/SearchTransaction.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/Costing.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/Medicine.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/ProductDescription.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/Statistics.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/pharmacy/Pharmacy.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/product/Product.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-service-api/src/main/java/info/mushonga/search/service/user/ISystemUserService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-utility/src/main/java/info/mushonga/search/utility/enums/AccountType.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-utility/src/main/java/info/mushonga/search/utility/enums/AddressType.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-utility/src/main/java/info/mushonga/search/utility/enums/IndicatorISOCountryCode.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-utility/src/main/java/info/mushonga/search/utility/enums/IndicatorISOCurrency.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-utility/src/main/java/info/mushonga/search/utility/enums/PaymentMethod.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-utility/src/main/java/info/mushonga/search/utility/enums/UserType.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dashboard_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/dashboard_web_war_exploded.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dova_dashboard_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/dova_dashboard_war_exploded.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_gag_gag_1_0_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_annotation_3_1_5.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_annotation_4_0_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_7_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_bean_validators_2_9_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_9_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_9_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_9_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_9_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_20.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_20.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_envers_5_3_7_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_1_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_1_1_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_1_1_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_1_1_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_2_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_zalando_problem_0_20_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/drugnsundry/DrugNSundryController.java" afterPath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/drugnsundry/DrugNSundryController.java" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/patient/MedicalAidController.java" afterPath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/patient/MedicalAidController.java" />
-      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/patient/MedicalAidController.class" afterPath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/patient/MedicalAidController.class" />
-      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/drugnsundry/DrugNSundry.java" afterPath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/drugnsundry/DrugNSundry.java" />
-      <change beforePath="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/drugnsundry/DrugsNSundryRepository.java" afterPath="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/drugnsundry/DrugsNSundryRepository.java" />
-      <change beforePath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/drugnsundry/IDrugNSundryService.java" afterPath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/drugnsundry/IDrugNSundryService.java" />
-      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/drugnsundry/IDrugNSundryServiceImpl.java" afterPath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/drugnsundry/IDrugNSundryServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/dashboard-endpoint.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/pom.xml" afterPath="$PROJECT_DIR$/mushonga-endpoint/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/JacksonConfiguration.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/app/JacksonConfiguration.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/ResponseUtil.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/app/ResponseUtil.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/StorageProperties.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/app/StorageProperties.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/SwaggerConfig.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/app/SwaggerConfig.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/audit/AuditConfiguration.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/app/audit/AuditConfiguration.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/audit/SecurityAuditorAware.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/app/audit/SecurityAuditorAware.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/errors/BadRequestAlertException.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/app/errors/BadRequestAlertException.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/errors/ClientNotFoundException.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/app/errors/ClientNotFoundException.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/errors/ErrorConstants.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/app/errors/ErrorConstants.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/errors/InvalidArgumentException.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/app/errors/InvalidArgumentException.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/util/ApplicationProperties.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/app/util/ApplicationProperties.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/util/HeaderUtil.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/app/util/HeaderUtil.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/util/PaginationUtil.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/app/util/PaginationUtil.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/jwt/JWTConfigurer.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/jwt/JWTConfigurer.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/jwt/JWTFilter.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/jwt/JWTFilter.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/jwt/TokenProvider.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/jwt/TokenProvider.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/security/AppSystemUserDetailService.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/security/AppSystemUserDetailService.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/security/SecurityConfig.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/security/SecurityConfig.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/client/ClientController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/Icd10Controller.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/PrescriptionItemController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/TariffCodeController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/drugnsundry/DrugNSundryController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/group/AdminGroupController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/group/GroupController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/location/LocationController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/patient/MedicalAidController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/permissions/AdminPermissionsController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/permissions/PermissionsController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/SystemUserController.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/SystemUserController.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/dto/DrugNSundryDtO.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/dto/DrugNSundryDtO.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/fileUpload/FileStorageService.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/fileUpload/FileStorageService.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/fileUpload/FileSystemStorageService.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/fileUpload/FileSystemStorageService.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/fileUpload/exceptions/FileStorageException.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/fileUpload/exceptions/FileStorageException.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/fileUpload/exceptions/MyFileNotFoundException.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/fileUpload/exceptions/MyFileNotFoundException.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/JacksonConfiguration.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/ResponseUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/StorageProperties.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/SwaggerConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/audit/AuditConfiguration.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/audit/SecurityAuditorAware.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/errors/BadRequestAlertException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/errors/ClientNotFoundException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/errors/ErrorConstants.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/errors/InvalidArgumentException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/util/HeaderUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/app/util/PaginationUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/jwt/JWTConfigurer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/jwt/JWTFilter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/jwt/TokenProvider.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/security/AppSystemUserDetailService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/config/security/SecurityConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/client/ClientController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/clinical/Icd10Controller.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/clinical/PrescriptionItemController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/clinical/TariffCodeController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/group/AdminGroupController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/group/GroupController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/location/LocationController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/patient/MedicalAidController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/permissions/AdminPermissionsController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/permissions/PermissionsController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/user/AdminUserController$SystemUserWithJWTToken.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/controllers/user/SystemUserController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/fileUpload/FileStorageService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/fileUpload/FileSystemStorageService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/fileUpload/exceptions/FileStorageException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-endpoint/target/classes/systems/health263/dashboard/endpoint/fileUpload/exceptions/MyFileNotFoundException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/dashboard-model-api.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/pom.xml" afterPath="$PROJECT_DIR$/mushonga-model-api/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/address/IAddress.java" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/address/IAddress.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/address/IContactDetails.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/client/IClient.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/client/IFacility.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/client/ILogo.java" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/logo/ILogo.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/clinical/IDataICD10.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/clinical/IPrescriptionItem.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/clinical/ITariffCodes.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/drugnsundry/IDrugNSundry.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/IActive.java" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/general/IActive.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/IApproved.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/IAuditing.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/IAuditingEntity.java" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/general/IAuditingEntity.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/IBillCosting.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/IGenericNaming.java" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/general/IGenericNaming.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/IPrimaryKey.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/ISearchCriteria.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/ITimeActiveRecord.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/general/ITimeActiveRecordEntity.java" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/general/ITimeActiveRecordEntity.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/group/IGroup.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/location/ILocation.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/patient/IMedicalAid.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/permissions/IPermissionConsumption.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/permissions/IPermissions.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/user/ISystemUser.java" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/user/IPharmacySystemUser.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/address/IAddress.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/address/IContactDetails.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/client/IClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/client/IFacility.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/client/ILogo.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/clinical/IDataICD10.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/clinical/IPrescriptionItem.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/clinical/ITariffCodes.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/drugnsundry/IDrugNSundry.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/IActive.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/IApproved.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/IAuditing.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/IAuditingEntity.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/IBillCosting.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/IGenericNaming.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/IPrimaryKey.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/ISearchCriteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/ITimeActiveRecord.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/general/ITimeActiveRecordEntity.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/group/IGroup.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/location/ILocation.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/patient/IMedicalAid.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/permissions/IPermissionConsumption.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/permissions/IPermissions.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-api/target/classes/systems/health263/dashboard/imodel/user/ISystemUser.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/dashboard-model-impl.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/pom.xml" afterPath="$PROJECT_DIR$/mushonga-model-impl/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/address/Address.java" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/address/Address.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/address/ContactDetails.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/client/Client.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/client/Facility.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/client/Logo.java" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/logo/Logo.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/clinical/DataICD10.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/clinical/PrescriptionItem.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/clinical/TariffCode.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/drugnsundry/DrugNSundry.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/exceptions/StorageException.java" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/exceptions/StorageException.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/exceptions/StorageFileNotFoundException.java" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/exceptions/StorageFileNotFoundException.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/Active.java" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/Active.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/AuditingEntityBean.java" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/AuditingEntityBean.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/GeneralNaming.java" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/GeneralNaming.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/PrimaryKeyBean.java" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/PrimaryKeyBean.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/SpecSearchCriteria.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/TariffRateCode.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/TimeActiveRecord.java" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/TimeActiveRecord.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/group/AdminGroup.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/group/Group.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/location/Location.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/patient/MedicalAid.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/permissions/AdminPermissions.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/permissions/AdminPermissionsConsumption.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/permissions/Permissions.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/permissions/PermissionsConsumption.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/user/AdminUser.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/user/LoginSystemUserDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/user/SystemUser.java" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/user/SystemUser.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/user/SystemUserDTO.java" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/user/SystemUserDTO.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/user/UserDetailsUpdateDTO.java" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/user/UserDetailsUpdateDTO.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/address/Address.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/address/ContactDetails.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/client/Client.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/client/Facility.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/client/Logo.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/clinical/DataICD10.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/clinical/PrescriptionItem.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/clinical/TariffCode.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/exceptions/StorageException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/exceptions/StorageFileNotFoundException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/general/Active.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/general/AuditingEntityBean.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/general/GeneralNaming.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/general/PrimaryKeyBean.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/general/SpecSearchCriteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/general/TariffRateCode.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/general/TimeActiveRecord.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/group/AdminGroup.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/group/Group.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/location/Location.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/patient/MedicalAid.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/permissions/AdminPermissions.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/permissions/AdminPermissionsConsumption.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/permissions/Permissions.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/permissions/PermissionsConsumption.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/user/AdminUser.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/user/LoginSystemUserDTO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/user/SystemUser.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/user/SystemUserDTO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-model-impl/target/classes/systems/health263/dashboard/model/user/UserDetailsUpdateDTO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/dashboard-repository.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/pom.xml" afterPath="$PROJECT_DIR$/mushonga-repository/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/client/ClientRepository.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/clinical/Icd10Repository.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/clinical/PrescriptionItemRepository.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/clinical/TariffCodeRepository.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/drugnsundry/DrugsNSundryRepository.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/group/AdminGroupRepository.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/group/GroupRepository.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/location/LocationRepository.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/patient/MedicalAidRepository.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/permissions/AdminPermissionsRepository.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/permissions/PermissionsRepository.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/user/AdminUserRepository.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/user/SystemUserRepository.java" afterPath="$PROJECT_DIR$/mushonga-repository/src/main/java/info/mushonga/search/repository/user/SystemUserRepository.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/client/ClientRepository.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/clinical/Icd10Repository.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/clinical/PrescriptionItemRepository.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/clinical/TariffCodeRepository.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/group/AdminGroupRepository.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/group/GroupRepository.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/location/LocationRepository.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/patient/MedicalAidRepository.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/permissions/AdminPermissionsRepository.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/permissions/PermissionsRepository.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/user/AdminUserRepository.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-repository/target/classes/systems/health263/dashboard/repository/user/SystemUserRepository.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/dashboard-service-api.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/pom.xml" afterPath="$PROJECT_DIR$/mushonga-service-api/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/CriteriaParser.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/GenericSpecificationsBuilder.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/ModelSpecification.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/client/IClientService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/clinical/Icd10Service.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/clinical/PrescriptionItemService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/clinical/TariffCodeService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/drugnsundry/IDrugNSundryService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/group/IAdminGroupService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/group/IGroupService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/location/ILocationService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/patient/IMedicalAidService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/permissions/IAdminPermissionsService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/permissions/IPermissionsService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/user/IAdminUserService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/CriteriaParser$Operator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/CriteriaParser.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/GenericSpecificationsBuilder.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/ModelSpecification$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/ModelSpecification.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/client/IClientService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/clinical/Icd10Service.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/clinical/PrescriptionItemService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/clinical/TariffCodeService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/group/IAdminGroupService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/group/IGroupService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/location/ILocationService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/patient/IMedicalAidService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/permissions/IAdminPermissionsService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/permissions/IPermissionsService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/user/IAdminUserService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-api/target/classes/systems/health263/dashboard/service/user/ISystemUserService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/dashboard-service-impl.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/pom.xml" afterPath="$PROJECT_DIR$/mushonga-service-impl/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/client/IClientServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/clinical/IPrescriptionItemServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/clinical/ITariffCodeServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/clinical/Icd10ServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/drugnsundry/IDrugNSundryServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/fileUpload/StorageService.java" afterPath="$PROJECT_DIR$/mushonga-service-api/src/main/java/info/mushonga/search/service/fileupload/StorageService.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/group/IAdminGroupServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/group/IGroupServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/location/ILocationServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/patient/IMedicalAidServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/permissions/IAdminPermissionsServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/permissions/IPermissionsServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/user/IAdminUserServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/user/ISystemUserServiceImpl.java" afterPath="$PROJECT_DIR$/mushonga-service-impl/src/main/java/info/mushonga/search/iservice/user/ISystemUserServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/client/IClientServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/clinical/IPrescriptionItemServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/clinical/ITariffCodeServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/clinical/Icd10ServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/fileUpload/StorageService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/group/IAdminGroupServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/group/IGroupServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/location/ILocationServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/patient/IMedicalAidServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/permissions/IAdminPermissionsServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/permissions/IPermissionsServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/user/IAdminUserServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service-impl/target/classes/systems/health263/dashboard/serviceimpl/user/ISystemUserServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/dashboard-utility.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/pom.xml" afterPath="$PROJECT_DIR$/mushonga-utility/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/AddressType.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/ClientDatabase$ClientDatabaseConverter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/ClientDatabase.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/ClientType.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/IndicatorISOCountryCode$IndicatorISOCountryCodeConverter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/IndicatorISOCountryCode.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/IndicatorISOCurrency.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/enums/SearchOperation.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-utility/target/classes/systems/health263/dashboard/utility/strings/StringUtils.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard-web/.gitignore" afterPath="$PROJECT_DIR$/mushonga-web/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/dashboard-web/.mvn/wrapper/maven-wrapper.jar" afterPath="$PROJECT_DIR$/mushonga-web/.mvn/wrapper/maven-wrapper.jar" />
+      <change beforePath="$PROJECT_DIR$/dashboard-web/.mvn/wrapper/maven-wrapper.properties" afterPath="$PROJECT_DIR$/mushonga-web/.mvn/wrapper/maven-wrapper.properties" />
+      <change beforePath="$PROJECT_DIR$/dashboard-web/mvnw" afterPath="$PROJECT_DIR$/mushonga-web/mvnw" />
+      <change beforePath="$PROJECT_DIR$/dashboard-web/mvnw.cmd" afterPath="$PROJECT_DIR$/mushonga-web/mvnw.cmd" />
+      <change beforePath="$PROJECT_DIR$/dashboard-web/pom.xml" afterPath="$PROJECT_DIR$/mushonga-web/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/dashboard-web/src/main/java/systems/health263/dashboard/DashboardWebApplication.java" afterPath="$PROJECT_DIR$/mushonga-web/src/main/java/info/mushonga/search/web/MushongaWebApplication.java" />
+      <change beforePath="$PROJECT_DIR$/dashboard-web/src/main/resources/application-dev.properties" afterPath="$PROJECT_DIR$/mushonga-web/src/main/resources/application-dev.properties" />
+      <change beforePath="$PROJECT_DIR$/dashboard-web/src/main/resources/application-prod.properties" afterPath="$PROJECT_DIR$/mushonga-web/src/main/resources/application-prod.properties" />
+      <change beforePath="$PROJECT_DIR$/dashboard-web/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/mushonga-web/src/main/resources/application.properties" />
+      <change beforePath="$PROJECT_DIR$/dashboard-web/src/main/resources/banner.txt" afterPath="$PROJECT_DIR$/mushonga-web/src/main/resources/banner.txt" />
+      <change beforePath="$PROJECT_DIR$/dashboard-web/src/test/java/systems/health263/dashboard/DashboardWebApplicationTests.java" afterPath="$PROJECT_DIR$/mushonga-web/src/test/java/systems/health263/dashboard/DashboardWebApplicationTests.java" />
+      <change beforePath="$PROJECT_DIR$/dova-dashboard.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mushonga-service-api/src/main/java/systems/health263/dashboard/iservice/fileUpload/user/ISystemUserService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mushonga-utility/src/main/java/systems/health263/dashboard/utility/enums/AddressType.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mushonga-utility/src/main/java/systems/health263/dashboard/utility/enums/ClientDatabase.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mushonga-utility/src/main/java/systems/health263/dashboard/utility/enums/ClientType.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mushonga-utility/src/main/java/systems/health263/dashboard/utility/enums/IndicatorISOCountryCode.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mushonga-utility/src/main/java/systems/health263/dashboard/utility/enums/IndicatorISOCurrency.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mushonga-utility/src/main/java/systems/health263/dashboard/utility/enums/SearchOperation.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mushonga-utility/src/main/java/systems/health263/dashboard/utility/strings/StringUtils.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/dashboard-service-impl/target/" />
     <ignored path="$PROJECT_DIR$/dashboard-model-impl/target/" />
@@ -27,6 +392,14 @@
     <ignored path="$PROJECT_DIR$/dashboard-model/target/" />
     <ignored path="$PROJECT_DIR$/dashboard-web/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/mushonga-model-api/target/" />
+    <ignored path="$PROJECT_DIR$/mushonga-utility/target/" />
+    <ignored path="$PROJECT_DIR$/mushonga-repository/target/" />
+    <ignored path="$PROJECT_DIR$/mushonga-service-api/target/" />
+    <ignored path="$PROJECT_DIR$/mushonga-service-impl/target/" />
+    <ignored path="$PROJECT_DIR$/mushonga-model-impl/target/" />
+    <ignored path="$PROJECT_DIR$/mushonga-endpoint/target/" />
+    <ignored path="$PROJECT_DIR$/mushonga-web/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,11 +409,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DrugNSundryController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/drugnsundry/DrugNSundryController.java">
+      <file leaf-file-name="Address.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/address/Address.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="113" column="59" lean-forward="false" selection-start-line="113" selection-start-column="59" selection-end-line="113" selection-end-column="59" />
+            <state relative-caret-position="-492">
+              <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Account.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/account/Account.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,54 +431,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DrugsNSundryRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/drugnsundry/DrugsNSundryRepository.java">
+      <file leaf-file-name="Pharmacy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/pharmacy/Pharmacy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="13" column="40" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="40" />
+            <state relative-caret-position="552">
+              <caret line="64" column="97" lean-forward="false" selection-start-line="64" selection-start-column="97" selection-end-line="64" selection-end-column="97" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IDrugNSundryService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/drugnsundry/IDrugNSundryService.java">
+      <file leaf-file-name="SystemUserRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mushonga-repository/src/main/java/info/mushonga/search/repository/user/SystemUserRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="45" column="41" lean-forward="false" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+            <state relative-caret-position="288">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IDrugNSundryServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/drugnsundry/IDrugNSundryServiceImpl.java">
+      <file leaf-file-name="ISystemUserServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mushonga-service-impl/src/main/java/info/mushonga/search/iservice/user/ISystemUserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-262">
-              <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-              <folding>
-                <element signature="e#1707#1708#0" expanded="true" />
-                <element signature="e#1778#1779#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GeneralNaming.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/GeneralNaming.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-260">
-              <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DrugNSundry.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/drugnsundry/DrugNSundry.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="37" column="55" lean-forward="false" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+            <state relative-caret-position="33">
+              <caret line="19" column="57" lean-forward="false" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,11 +463,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DrugNSundryDtO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/dto/DrugNSundryDtO.java">
+      <file leaf-file-name="ISystemUserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mushonga-service-api/src/main/java/info/mushonga/search/service/user/ISystemUserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+            <state relative-caret-position="306">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SystemUserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/SystemUserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="588">
+              <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,32 +485,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/security/SecurityConfig.java">
+      <file leaf-file-name="SearchTransaction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/account/SearchTransaction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppSystemUserDetailService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/security/AppSystemUserDetailService.java">
+      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/product/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="108">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="2" selection-end-line="41" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MedicalAidController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/patient/MedicalAidController.java">
+      <file leaf-file-name="Payment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/account/Payment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="108">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="40" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,6 +531,9 @@
     <findStrings>
       <find>com.health263</find>
       <find>data</find>
+      <find>web</find>
+      <find>conte</find>
+      <find>contexr</find>
     </findStrings>
     <replaceStrings>
       <replace>systems.health263.dashboard</replace>
@@ -175,24 +550,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dashboard-web/src/main/resources/application-dev.properties" />
-        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.java" />
-        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/PrescriptionItemController.java" />
-        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/PersistenceJNDIConfig.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/util/ApplicationProperties.java" />
-        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/jwt/TokenProvider.java" />
-        <option value="$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/drugnsundry/IDrugNSundry.java" />
-        <option value="$PROJECT_DIR$/dashboard-endpoint/pom.xml" />
-        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/audit/AuditConfiguration.java" />
-        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/audit/SecurityAuditorAware.java" />
-        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/patient/MedicalAidController.java" />
-        <option value="$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/drugnsundry/DrugsNSundryRepository.java" />
-        <option value="$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/drugnsundry/IDrugNSundryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/drugnsundry/IDrugNSundryService.java" />
-        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/dto/DrugNSundryDtO.java" />
-        <option value="$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/drugnsundry/DrugNSundryController.java" />
-        <option value="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/drugnsundry/DrugNSundry.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-api/pom.xml" />
+        <option value="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/account/IPayment.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/logo/ILogo.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/pharmacy/IPharmacy.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/search/ISearch.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/address/IAddress.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/account/PaymentMethod.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/Active.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/AuditingEntityBean.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/GeneralNaming.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/Medicine.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/PrimaryKeyBean.java" />
+        <option value="$PROJECT_DIR$/mushonga-service-api/src/main/java/systems/health263/dashboard/service/user/ISystemUserService.java" />
+        <option value="$PROJECT_DIR$/mushonga-service-impl/src/main/java/info/mshonga/search/user/ISystemUserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/mushonga-web/src/main/java/info/mushonga/search/web/DashboardWebApplication.java" />
+        <option value="$PROJECT_DIR$/mushonga-web/src/main/java/info/mushonga/search/web/MushongaWebApplication.java" />
+        <option value="$PROJECT_DIR$/mushonga-web/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/mushonga-service-impl/pom.xml" />
+        <option value="$PROJECT_DIR$/mushonga-service-api/pom.xml" />
+        <option value="$PROJECT_DIR$/mushonga-endpoint/pom.xml" />
+        <option value="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/user/IPharmacySystemUser.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/logo/Logo.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/TimeActiveRecord.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/address/Address.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/Statistics.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/ProductDescription.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/user/ISystemUser.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/user/SystemUser.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/user/SystemUserDTO.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/exceptions/StorageException.java" />
+        <option value="$PROJECT_DIR$/mushonga-service-impl/src/main/java/info/mushonga/search/iservice/ISystemUserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/mushonga-service-api/src/main/java/systems/health263/dashboard/service/user/fileUpload/StorageService.java" />
+        <option value="$PROJECT_DIR$/mushonga-service-api/src/main/java/systems/health263/dashboard/iservice/fileUpload/StorageService.java" />
+        <option value="$PROJECT_DIR$/mushonga-service-api/src/main/java/systems/health263/dashboard/user/ISystemUserService.java" />
+        <option value="$PROJECT_DIR$/mushonga-service-api/src/main/java/systems/health263/dashboard/iservice/fileUpload/user/ISystemUserService.java" />
+        <option value="$PROJECT_DIR$/mushonga-service-api/src/main/java/info/mushonga/search/service/fileupload/StorageService.java" />
+        <option value="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/security/AppSystemUserDetailService.java" />
+        <option value="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/fileUpload/FileSystemStorageService.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/Costing.java" />
+        <option value="$PROJECT_DIR$/mushonga-web/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/mushonga-web/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/account/Payment.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/account/SearchTransaction.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/pharmacy/Pharmacy.java" />
+        <option value="$PROJECT_DIR$/mushonga-repository/src/main/java/info/mushonga/search/repository/user/SystemUserRepository.java" />
+        <option value="$PROJECT_DIR$/mushonga-service-impl/src/main/java/info/mushonga/search/iservice/user/ISystemUserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/mushonga-service-api/src/main/java/info/mushonga/search/service/user/ISystemUserService.java" />
+        <option value="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/SystemUserController.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/product/Product.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/account/Account.java" />
       </list>
     </option>
   </component>
@@ -214,11 +622,11 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="962" />
-    <option name="y" value="27" />
-    <option name="width" value="940" />
-    <option name="height" value="1051" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="927" />
+    <option name="y" value="114" />
+    <option name="width" value="920" />
+    <option name="height" value="796" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -235,340 +643,176 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-endpoint" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-model-impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-model-impl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-api" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-model-impl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-api" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-model-impl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="imodel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="imodel" type="462c0819:PsiDirectoryNode" />
-              <item name="drugnsundry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-model-impl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-model-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-model-impl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="drugnsundry" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-repository" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-model-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="address" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-repository" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-model-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="pharmacy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-model-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-model-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-repository" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-repository" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-repository" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-repository" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-repository" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-repository" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-repository" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-repository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="drugnsundry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-repository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="group" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-service-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-service-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-service-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-service-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-service-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-service-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="drugnsundry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-service-impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceimpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceimpl" type="462c0819:PsiDirectoryNode" />
-              <item name="drugnsundry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dova-dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dova-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mushongainfobackend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mushonga-service-api/src/main/java/info/mushonga/search/service/user" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model" />
+      <recent name="$PROJECT_DIR$/mushonga-utility/src/main/java/info/mushonga/search/utility/enums" />
+      <recent name="$PROJECT_DIR$/mushonga-model-api/src/main/java/systems/health263/dashboard/imodel" />
+      <recent name="$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="systems.health263.dashboard.service.user.fileUpload" />
+      <recent name="info.mushonga.search.repositry.user" />
       <recent name="systems.health263.dashboard.model.drugnsundry" />
       <recent name="systems.health263.dashboard.endpoint.controllers.drugnsundry" />
       <recent name="systems.health263.dashboard.serviceimpl.drugnsundry" />
-      <recent name="systems.health263.dashboard.service.drugnsundry" />
-      <recent name="systems.health263.dashboard.imodel.drugnsundry" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="info.mushonga.search.model.account" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -625,6 +869,18 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="dashboard-endpoint" />
+      <envs />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -662,7 +918,7 @@
     <configuration name="TomGora" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.81" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="/usr/java/latest/jre">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="dashboard-web:war">
+        <artifact name="mushonga-web:war">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -729,7 +985,7 @@
       </ConfigurationWrapper>
       <method>
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="dashboard-web:war" />
+          <artifact name="mushonga-web:war" />
         </option>
       </method>
     </configuration>
@@ -828,15 +1084,41 @@
       <workItem from="1543323900192" duration="1110000" />
       <workItem from="1543393029518" duration="124000" />
       <workItem from="1543395588576" duration="8012000" />
+      <workItem from="1543832539299" duration="1071000" />
+      <workItem from="1543835313451" duration="758000" />
+      <workItem from="1543836787233" duration="596000" />
+      <workItem from="1543837618593" duration="3105000" />
+      <workItem from="1543843121475" duration="2181000" />
+      <workItem from="1543845514582" duration="2095000" />
+      <workItem from="1543849230616" duration="2560000" />
+      <workItem from="1543852897131" duration="3557000" />
+      <workItem from="1543908145052" duration="1658000" />
+      <workItem from="1543910163687" duration="352000" />
+      <workItem from="1543910547115" duration="717000" />
+      <workItem from="1543911536159" duration="233000" />
+      <workItem from="1543911843158" duration="49000" />
+      <workItem from="1543911913945" duration="913000" />
+      <workItem from="1543913155592" duration="1139000" />
+      <workItem from="1543914345790" duration="1205000" />
+      <workItem from="1543925837554" duration="118000" />
+      <workItem from="1543927698872" duration="619000" />
+      <workItem from="1543928902520" duration="1775000" />
+      <workItem from="1543931892561" duration="9000" />
+      <workItem from="1543931979305" duration="315000" />
+      <workItem from="1543936571509" duration="17000" />
+      <workItem from="1543936625379" duration="176000" />
+      <workItem from="1543994396315" duration="1618000" />
+      <workItem from="1543996060927" duration="1397000" />
+      <workItem from="1543997511511" duration="1131000" />
+      <workItem from="1543998902960" duration="3104000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22043000" />
+    <option name="totallyTimeSpent" value="58287000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="962" y="27" width="940" height="1051" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -848,18 +1130,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39915073" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3269639" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32590234" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42993632" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3301486" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50851065" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44585988" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18802084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -882,25 +1164,25 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/drugnsundry/DrugNSundryController.java</url>
+          <url>file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/drugnsundry/DrugNSundryController.java</url>
           <line>113</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/drugnsundry/DrugNSundryController.java</url>
+          <url>file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/drugnsundry/DrugNSundryController.java</url>
           <line>106</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/drugnsundry/DrugNSundryController.java</url>
+          <url>file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/drugnsundry/DrugNSundryController.java</url>
           <line>105</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/drugnsundry/DrugNSundryController.java</url>
+          <url>file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/drugnsundry/DrugNSundryController.java</url>
           <line>114</line>
           <properties />
           <option name="timeStamp" value="6" />
@@ -911,374 +1193,487 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/drugnsundry/IDrugNSundryService.java">
+    <entry file="file://$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/pharmacy/IPharmacy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        <state relative-caret-position="183">
+          <caret line="102" column="6" lean-forward="false" selection-start-line="102" selection-start-column="6" selection-end-line="102" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/drugnsundry/IDrugNSundryServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/product/IProduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="54" column="58" lean-forward="false" selection-start-line="54" selection-start-column="58" selection-end-line="54" selection-end-column="58" />
+        <state relative-caret-position="-54">
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/PrescriptionItemController.java">
+    <entry file="file://$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/search/ISearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-907">
-          <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="-156">
+          <caret line="14" column="77" lean-forward="false" selection-start-line="14" selection-start-column="77" selection-end-line="14" selection-end-column="77" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/TariffCodeController.java">
+    <entry file="file://$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/address/IAddress.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="47" column="5" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="64" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="204">
+          <caret line="118" column="16" lean-forward="false" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/drugnsundry/DrugNSundryController.java">
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/account/PaymentMethod.java" />
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/GeneralNaming.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-65">
-          <caret line="94" column="54" lean-forward="false" selection-start-line="94" selection-start-column="54" selection-end-line="94" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-306">
+          <caret line="20" column="71" lean-forward="false" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="62" lean-forward="true" selection-start-line="0" selection-start-column="62" selection-end-line="0" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/Icd10Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-web/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="62" lean-forward="true" selection-start-line="0" selection-start-column="62" selection-end-line="0" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="127" column="69" lean-forward="false" selection-start-line="127" selection-start-column="69" selection-end-line="127" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-web/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/client/ClientController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/location/LocationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/ClientDatabaseContextHolder.java" />
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/ClientDataSourceRouter.java" />
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/PersistenceJNDIConfig.java" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/HttpRequestFilter.java" />
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/ApplicationProperties.java" />
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/util/ApplicationProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.1.RELEASE/spring-security-core-5.1.1.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetailsService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/jwt/TokenProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="34" column="69" lean-forward="false" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-model-api/src/main/java/systems/health263/dashboard/imodel/drugnsundry/IDrugNSundry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/group/AdminGroupRepository.java">
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/Medicine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding />
+          <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/jwt/JWTFilter.java">
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/Active.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.1.2.RELEASE/spring-data-commons-2.1.2.RELEASE.jar!/org/springframework/data/domain/AuditorAware.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/audit/AuditConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="13" column="58" lean-forward="false" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/app/audit/SecurityAuditorAware.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        <state relative-caret-position="-112">
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/SystemUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/user/AdminUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="56" column="25" lean-forward="false" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/permissions/AdminPermissionsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/permissions/PermissionsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/group/GroupController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/group/AdminGroupController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/TariffCodeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="47" column="5" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="64" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/PrescriptionItemController.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/clinical/Icd10Controller.java">
+    <entry file="file://$PROJECT_DIR$/mushonga-utility/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        <state relative-caret-position="106">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/security/SecurityConfig.java">
+    <entry file="file://$PROJECT_DIR$/mushonga-service-impl/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-service-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-repository/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-endpoint/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/user/IPharmacySystemUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="91" column="11" lean-forward="false" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/Statistics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/ProductDescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="18" column="77" lean-forward="false" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.jar!/javax/persistence/Entity.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.2/lombok-1.18.2.jar!/lombok/Data.class" />
+    <entry file="file://$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/account/IAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/user/ISystemUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="101" column="30" lean-forward="false" selection-start-line="101" selection-start-column="30" selection-end-line="101" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/user/SystemUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/user/SystemUserDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="732">
+          <caret line="74" column="34" lean-forward="false" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/jwt/JWTFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/exceptions/StorageFileNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/exceptions/StorageException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-service-api/src/main/java/systems/health263/dashboard/iservice/fileUpload/user/ISystemUserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/config/security/AppSystemUserDetailService.java">
+    <entry file="file://$PROJECT_DIR$/mushonga-service-api/src/main/java/info/mushonga/search/service/fileupload/StorageService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/patient/MedicalAidController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-repository/src/main/java/systems/health263/dashboard/repository/drugnsundry/DrugsNSundryRepository.java">
+    <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/security/AppSystemUserDetailService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="13" column="40" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="40" />
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-service-api/src/main/java/systems/health263/dashboard/service/drugnsundry/IDrugNSundryService.java">
+    <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/fileUpload/FileSystemStorageService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="45" column="41" lean-forward="false" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-service-impl/src/main/java/systems/health263/dashboard/serviceimpl/drugnsundry/IDrugNSundryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-262">
-          <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        <state relative-caret-position="354">
+          <caret line="95" column="26" lean-forward="false" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
           <folding>
-            <element signature="e#1707#1708#0" expanded="true" />
-            <element signature="e#1778#1779#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/dto/DrugNSundryDtO.java">
+    <entry file="file://$PROJECT_DIR$/mushonga-web/src/main/java/info/mushonga/search/web/MushongaWebApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        <state relative-caret-position="126">
+          <caret line="19" column="78" lean-forward="false" selection-start-line="19" selection-start-column="78" selection-end-line="19" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/logo/Logo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="36" column="86" lean-forward="false" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-web/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="35" lean-forward="false" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/Costing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/TimeActiveRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="21" column="51" lean-forward="false" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/AuditingEntityBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="28" column="52" lean-forward="false" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/general/PrimaryKeyBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-web/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="36" column="24" lean-forward="false" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/account/Payment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="40" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-endpoint/src/main/java/systems/health263/dashboard/endpoint/controllers/drugnsundry/DrugNSundryController.java">
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/address/Address.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="113" column="59" lean-forward="false" selection-start-line="113" selection-start-column="59" selection-end-line="113" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/general/GeneralNaming.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-260">
-          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="-492">
+          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard-model-impl/src/main/java/systems/health263/dashboard/model/drugnsundry/DrugNSundry.java">
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/account/SearchTransaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="37" column="55" lean-forward="false" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+        <state relative-caret-position="108">
+          <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-repository/src/main/java/info/mushonga/search/repository/user/SystemUserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-service-impl/src/main/java/info/mushonga/search/iservice/user/ISystemUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="19" column="57" lean-forward="false" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-service-api/src/main/java/info/mushonga/search/service/user/ISystemUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/SystemUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/product/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="2" selection-end-line="41" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/pharmacy/Pharmacy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="64" column="97" lean-forward="false" selection-start-line="64" selection-start-column="97" selection-end-line="64" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/account/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>dashboard-web:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>dashboard-service-impl</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: org.springframework.boot:spring-boot-starter-data-jpa:2.0.4.RELEASE</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.5645617" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

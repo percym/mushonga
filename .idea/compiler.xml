@@ -15,19 +15,36 @@
         <module name="dashboard-service-impl" />
         <module name="dashboard-utility" />
         <module name="dashboard-web" />
+        <module name="mushonga-endpoint" />
+        <module name="mushonga-model-api" />
+        <module name="mushonga-model-impl" />
+        <module name="mushonga-repository" />
+        <module name="mushonga-service-api" />
+        <module name="mushonga-service-impl" />
+        <module name="mushonga-utility" />
+        <module name="mushonga-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="dashboard-endpoint" target="1.8" />
+      <module name="dashboard-endpoint" target="1.5" />
       <module name="dashboard-model" target="1.8" />
       <module name="dashboard-model-api" target="1.8" />
       <module name="dashboard-model-impl" target="1.8" />
-      <module name="dashboard-repository" target="1.8" />
-      <module name="dashboard-service-api" target="1.8" />
+      <module name="dashboard-repository" target="1.5" />
+      <module name="dashboard-service-api" target="1.5" />
       <module name="dashboard-service-impl" target="1.8" />
-      <module name="dashboard-utility" target="1.8" />
+      <module name="dashboard-utility" target="1.5" />
       <module name="dashboard-web" target="1.8" />
       <module name="dova-dashboard" target="1.8" />
+      <module name="mushonga-endpoint" target="1.8" />
+      <module name="mushonga-info" target="1.8" />
+      <module name="mushonga-model-api" target="1.8" />
+      <module name="mushonga-model-impl" target="1.8" />
+      <module name="mushonga-repository" target="1.8" />
+      <module name="mushonga-service-api" target="1.8" />
+      <module name="mushonga-service-impl" target="1.8" />
+      <module name="mushonga-utility" target="1.8" />
+      <module name="mushonga-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

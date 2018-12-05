@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/dashboard-endpoint/dashboard-endpoint.iml" filepath="$PROJECT_DIR$/dashboard-endpoint/dashboard-endpoint.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dashboard-model-api/dashboard-model-api.iml" filepath="$PROJECT_DIR$/dashboard-model-api/dashboard-model-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dashboard-model-impl/dashboard-model-impl.iml" filepath="$PROJECT_DIR$/dashboard-model-impl/dashboard-model-impl.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dashboard-repository/dashboard-repository.iml" filepath="$PROJECT_DIR$/dashboard-repository/dashboard-repository.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dashboard-service-api/dashboard-service-api.iml" filepath="$PROJECT_DIR$/dashboard-service-api/dashboard-service-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dashboard-service-impl/dashboard-service-impl.iml" filepath="$PROJECT_DIR$/dashboard-service-impl/dashboard-service-impl.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dashboard-utility/dashboard-utility.iml" filepath="$PROJECT_DIR$/dashboard-utility/dashboard-utility.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dashboard-web/dashboard-web.iml" filepath="$PROJECT_DIR$/dashboard-web/dashboard-web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dova-dashboard.iml" filepath="$PROJECT_DIR$/dova-dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mushonga-endpoint/mushonga-endpoint.iml" filepath="$PROJECT_DIR$/mushonga-endpoint/mushonga-endpoint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mushonga-info.iml" filepath="$PROJECT_DIR$/mushonga-info.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mushonga-model-api/mushonga-model-api.iml" filepath="$PROJECT_DIR$/mushonga-model-api/mushonga-model-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mushonga-model-impl/mushonga-model-impl.iml" filepath="$PROJECT_DIR$/mushonga-model-impl/mushonga-model-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mushonga-repository/mushonga-repository.iml" filepath="$PROJECT_DIR$/mushonga-repository/mushonga-repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mushonga-service-api/mushonga-service-api.iml" filepath="$PROJECT_DIR$/mushonga-service-api/mushonga-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mushonga-service-impl/mushonga-service-impl.iml" filepath="$PROJECT_DIR$/mushonga-service-impl/mushonga-service-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mushonga-utility/mushonga-utility.iml" filepath="$PROJECT_DIR$/mushonga-utility/mushonga-utility.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mushonga-web/mushonga-web.iml" filepath="$PROJECT_DIR$/mushonga-web/mushonga-web.iml" />
     </modules>
   </component>
 </project>

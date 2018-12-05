@@ -3,21 +3,22 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>systems.health263.dashboard</groupId>
-	<artifactId>dashboard</artifactId>
+	<groupId>info.mushonga.search</groupId>
+	<artifactId>mushongaapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<modules>
-		<module>dashboard-model-api</module>
-		<module>dashboard-model-impl</module>
-		<module>dashboard-service-api</module>
-		<module>dashboard-service-impl</module>
-		<module>dashboard-repository</module>
-		<module>dashboard-endpoint</module>
-		<module>dashboard-utility</module>
+		<module>mushonga-model-api</module>
+		<module>mushonga-model-impl</module>
+		<module>mushonga-service-api</module>
+		<module>mushonga-service-impl</module>
+		<module>mushonga-repository</module>
+		<module>mushonga-endpoint</module>
+		<module>mushonga-utility</module>
+		<module>mushonga-web</module>
 	</modules>
 	<packaging>pom</packaging>
 
-	<name>dashboard</name>
+	<name>mushongaapp</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
