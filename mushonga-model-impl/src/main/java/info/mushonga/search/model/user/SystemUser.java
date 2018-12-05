@@ -3,6 +3,7 @@ package info.mushonga.search.model.user;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
 import info.mushonga.search.imodel.account.IAccount;
+import info.mushonga.search.imodel.pharmacy.IPharmacy;
 import info.mushonga.search.imodel.user.ISystemUser;
 import info.mushonga.search.model.account.Account;
 import info.mushonga.search.model.general.Active;
@@ -86,7 +87,6 @@ public class SystemUser extends Active implements ISystemUser<Pharmacy>{
     private IAccount<?,?> account;
 
     @Valid
-    @JsonDeserialize(as = Pharmacy.class)
     @ManyToMany(mappedBy = "systemUsers")
     private Collection<Pharmacy> pharmacies;
 

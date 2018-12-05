@@ -23,19 +23,18 @@ public class Costing extends TimeActiveRecord implements ICosting {
 
     private static final long serialVersionUID = 6254169787797145038L;
 
-    @NotNull
     @DecimalMin("0.00")
     @DecimalMax("999999999999.00")
     @Column(name = "zz_amount_balance", columnDefinition = "numeric(12,2) default '0.00'")
     private BigDecimal amountBalance;
 
-    @NotNull
+
     @DecimalMin("0.00")
     @DecimalMax("999999999999.00")
     @Column(name = "zz_search_balance", columnDefinition = "numeric(12,2) default '0.00'")
     private BigDecimal searchBalance;
 
-    @NotNull
+
     @Column(name = "zz_expiry_date", updatable = false)
     private LocalDate expiryDate;
 
