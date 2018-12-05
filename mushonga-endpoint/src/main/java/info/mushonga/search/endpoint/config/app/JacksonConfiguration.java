@@ -22,6 +22,7 @@ public class JacksonConfiguration {
         return Jackson2ObjectMapperBuilder.json()
                 .serializationInclusion(JsonInclude.Include.NON_NULL) // Don’t include null values
                 .featuresToDisable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS) //ISODate
+                .featuresToDisable(SerializationFeature.FAIL_ON_EMPTY_BEANS)
                 .modules(new JSR310Module())
                 .build();
 
