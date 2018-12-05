@@ -5,10 +5,13 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import info.mushonga.search.imodel.address.IAddress;
 import info.mushonga.search.imodel.logo.ILogo;
 import info.mushonga.search.imodel.pharmacy.IPharmacy;
+import info.mushonga.search.imodel.user.IPharmacySystemUser;
+import info.mushonga.search.imodel.user.ISystemUser;
 import info.mushonga.search.model.address.Address;
 import info.mushonga.search.model.general.Active;
 import info.mushonga.search.model.logo.Logo;
 import info.mushonga.search.model.product.Product;
+import info.mushonga.search.model.user.PharmacySystemUser;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -42,7 +45,7 @@ import java.util.Collection;
         @AttributeOverride(name = "updatedOn", column = @Column(name = "pharmacy_updated_on")),
         @AttributeOverride(name = "active", column = @Column(name = "pharmacy_is_active"))
 })
-public class Pharmacy extends Active implements IPharmacy<Product> {
+public class Pharmacy extends Active implements IPharmacy<Product,PharmacySystemUser> {
 
     @NotNull
     @Size(max = 100)
@@ -73,5 +76,11 @@ public class Pharmacy extends Active implements IPharmacy<Product> {
     @JsonDeserialize(as = Logo.class)
     @OneToOne(fetch = FetchType.EAGER , cascade = CascadeType.ALL, targetEntity = Logo.class)
     ILogo logo;
+
+
+    @Valid
+    @ManyToMany(fetch = FetchType.LAZY,   cascade = {CascadeType.ALL})
+    private Collection<IPharmacySystemUser<?>> pharmacySystemUsers = new ArrayList<>();
+
 
 }

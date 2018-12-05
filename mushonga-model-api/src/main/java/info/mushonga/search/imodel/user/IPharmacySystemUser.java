@@ -5,12 +5,14 @@ import info.mushonga.search.imodel.general.IActive;
 import info.mushonga.search.imodel.pharmacy.IPharmacy;
 import info.mushonga.search.utility.enums.UserType;
 
+import java.util.Collection;
+
 /**
  * IUser interface for the IPharmacySystemUser
- *
- * @author percym
+ *@param <T> any class that implememts IPharmarcy
+ *@author percym
  */
-public interface IPharmacySystemUser extends IActive {
+public interface IPharmacySystemUser<T extends IPharmacy<?,?>> extends IActive {
 
     /**
      * Returns the userName of the user.
@@ -89,15 +91,14 @@ public interface IPharmacySystemUser extends IActive {
      * @return the list of {@link IPharmacy IPharmacy} for this user.
      */
 
-    IPharmacy<?> getPharmacy();
+    Collection<IPharmacy<?,?>> getPharmacies();
 
     /**
      * sets the list of {@link IPharmacy pharmacy} for this user.
      *
-     * @param pharmacy the  list of {@link IPharmacy pharmacy} for this user.
+     * @param pharmacies the  list of {@link IPharmacy pharmacy} for this user.
      */
-
-    IPharmacy<?> setPharmacy(IPharmacy<?> pharmacy);
+    IPharmacy<?,?> setPharmacies(Collection<IPharmacy<?,?>> pharmacies);
 
 
 }

@@ -2,10 +2,13 @@ package info.mushonga.search.model.user;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import info.mushonga.search.imodel.account.IAccount;
+import info.mushonga.search.imodel.pharmacy.IPharmacy;
 import info.mushonga.search.imodel.user.IPharmacySystemUser;
 import info.mushonga.search.imodel.user.ISystemUser;
 import info.mushonga.search.model.account.Account;
+import info.mushonga.search.model.account.SearchTransaction;
 import info.mushonga.search.model.general.Active;
+import info.mushonga.search.model.pharmacy.Pharmacy;
 import info.mushonga.search.utility.enums.AccountType;
 import info.mushonga.search.utility.enums.UserType;
 import lombok.Data;
@@ -20,6 +23,8 @@ import javax.persistence.*;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.ArrayList;
+import java.util.Collection;
 
 /**
  * @author Munyaradzi Takayindisa
@@ -82,4 +87,12 @@ public class PharmacySystemUser extends Active implements IPharmacySystemUser {
     @JsonDeserialize(as= Account.class)
     @OneToOne(fetch = FetchType.LAZY, targetEntity = Account.class, cascade = CascadeType.ALL)
     private IAccount<?,?> account;
+
+
+    @Valid
+    @JsonDeserialize(as = Pharmacy.class)
+    @ManyToMany(fetch = FetchType.LAZY,   cascade = {CascadeType.ALL})
+    private Collection<IPharmacy<?,?>> pharmacies;
+
+
 }
