@@ -1,21 +1,22 @@
-package info.mushonga.search.endpoint.securityPharmacy;
+package info.mushonga.search.endpoint.config.security;
 
-import info.mushonga.search.endpoint.config.jwt.JWTConfigurer;
-import info.mushonga.search.endpoint.config.jwt.TokenProvider;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import info.mushonga.search.endpoint.config.jwt.JWTConfigurer;
+import info.mushonga.search.endpoint.config.jwt.TokenProvider;
 
 @Configuration
 
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
+public class UserSecurityConfig extends WebSecurityConfigurerAdapter {
 
     private final TokenProvider tokenProvider;
 
-    public SecurityConfig(TokenProvider tokenProvider) {
+    public UserSecurityConfig(TokenProvider tokenProvider) {
         this.tokenProvider = tokenProvider;
     }
 
@@ -39,9 +40,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //                .httpBasic() // optional, if you want to access
 //                  .and()     // the services from a browser
                 .authorizeRequests()
-                .antMatchers("/pharmacy/signup").permitAll()
-                .antMatchers("/api/pharmacy/login").permitAll()
-                .antMatchers("/api/pharmacy/register").permitAll()
+                .antMatchers("/signup").permitAll()
+                .antMatchers("/*/api/login").permitAll()
+                .antMatchers("/*/api/register").permitAll()
                 .antMatchers("/public").permitAll()
                 .antMatchers("/**").permitAll()
                 .anyRequest().authenticated()

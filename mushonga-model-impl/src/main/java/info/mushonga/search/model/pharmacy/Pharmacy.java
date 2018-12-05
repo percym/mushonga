@@ -12,6 +12,7 @@ import info.mushonga.search.model.general.Active;
 import info.mushonga.search.model.logo.Logo;
 import info.mushonga.search.model.product.Product;
 import info.mushonga.search.model.user.PharmacySystemUser;
+import info.mushonga.search.model.user.SystemUser;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -45,7 +46,7 @@ import java.util.Collection;
         @AttributeOverride(name = "updatedOn", column = @Column(name = "pharmacy_updated_on")),
         @AttributeOverride(name = "active", column = @Column(name = "pharmacy_is_active"))
 })
-public class Pharmacy extends Active implements IPharmacy<Product,PharmacySystemUser> {
+public class Pharmacy extends Active implements IPharmacy<Product,SystemUser> {
 
     @NotNull
     @Size(max = 100)
@@ -80,7 +81,7 @@ public class Pharmacy extends Active implements IPharmacy<Product,PharmacySystem
 
     @Valid
     @ManyToMany(fetch = FetchType.LAZY,   cascade = {CascadeType.ALL})
-    private Collection<IPharmacySystemUser<?>> pharmacySystemUsers = new ArrayList<>();
+    private Collection<SystemUser> systemUsers = new ArrayList<>();
 
 
 }

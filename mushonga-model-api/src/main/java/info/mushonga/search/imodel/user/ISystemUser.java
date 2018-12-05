@@ -3,15 +3,18 @@ package info.mushonga.search.imodel.user;
 
 import info.mushonga.search.imodel.account.IAccount;
 import info.mushonga.search.imodel.general.IActive;
+import info.mushonga.search.imodel.pharmacy.IPharmacy;
 import info.mushonga.search.utility.enums.AccountType;
 import info.mushonga.search.utility.enums.UserType;
 
+import java.util.Collection;
+
 /**
  * IUser interface for the User class
- *
- * @author Munyaradzi Takayindisa
+ *@param <T> any class that implememts IPharmarcy
+ *@author Munyaradzi Takayindisa
  */
-public interface ISystemUser extends IActive {
+public interface ISystemUser <T extends IPharmacy <?,?>> extends IActive {
 
     /**
      * Returns the userName of the user.
@@ -111,5 +114,20 @@ public interface ISystemUser extends IActive {
      * @param  account {@link IAccount<?,?> account}  for this ISystemUser.
      */
     void setAccount(IAccount<?,?> account);
+
+    /**
+     * Returns the list of {@link IPharmacy pharmacy} for this user.
+     *
+     * @return the list of {@link IPharmacy IPharmacy} for this user.
+     */
+
+    Collection<T> getPharmacies();
+
+    /**
+     * sets the list of {@link IPharmacy pharmacy} for this user.
+     *
+     * @param pharmacies the  list of {@link IPharmacy pharmacy} for this user.
+     */
+    void setPharmacies(Collection<T> pharmacies);
 
 }

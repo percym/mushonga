@@ -6,6 +6,7 @@ import info.mushonga.search.imodel.account.IAccount;
 import info.mushonga.search.imodel.user.ISystemUser;
 import info.mushonga.search.model.account.Account;
 import info.mushonga.search.model.general.Active;
+import info.mushonga.search.model.pharmacy.Pharmacy;
 import info.mushonga.search.utility.enums.AccountType;
 import info.mushonga.search.utility.enums.UserType;
 import lombok.Data;
@@ -20,6 +21,7 @@ import javax.persistence.*;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.Collection;
 
 /**
  * @author Munyaradzi Takayindisa
@@ -46,7 +48,7 @@ import javax.validation.constraints.Size;
         @AttributeOverride(name = "active", column = @Column(name = "system_user_is_active"))
 })
 @SequenceGenerator(name = "default_seq", schema = "data", sequenceName = "system_user_serial_seq", allocationSize = 1)
-public class SystemUser extends Active implements ISystemUser {
+public class SystemUser extends Active implements ISystemUser<Pharmacy>{
 
     private static final long serialVersionUID = -5803233040844849239L;
 
@@ -82,4 +84,10 @@ public class SystemUser extends Active implements ISystemUser {
     @JsonDeserialize(as= Account.class)
     @OneToOne(fetch = FetchType.LAZY, targetEntity = Account.class, cascade = CascadeType.ALL)
     private IAccount<?,?> account;
+
+    @Valid
+    @JsonDeserialize(as = Pharmacy.class)
+    @ManyToMany(mappedBy = "systemUsers")
+    private Collection<Pharmacy> pharmacies;
+
 }

@@ -6,6 +6,7 @@ import info.mushonga.search.imodel.general.IActive;
 import info.mushonga.search.imodel.logo.ILogo;
 import info.mushonga.search.imodel.product.IProduct;
 import info.mushonga.search.imodel.user.IPharmacySystemUser;
+import info.mushonga.search.imodel.user.ISystemUser;
 
 import java.util.Collection;
 
@@ -15,7 +16,7 @@ import java.util.Collection;
  * @param <T> any class that extends IProduct
  * @author percym
  */
-public interface IPharmacy<T extends IProduct,U extends IPharmacySystemUser> extends IActive {
+public interface IPharmacy<T extends IProduct,U extends ISystemUser<?>> extends IActive {
 
     /**
      * Returns the tradingName for this pharmacy.
@@ -112,19 +113,19 @@ public interface IPharmacy<T extends IProduct,U extends IPharmacySystemUser> ext
     void setLogo(ILogo logo);
 
     /**
-     * Returns the PharmacySystemUsers for this pharmacy.
+     * Returns the systemUsers for this pharmacy.
      *
-     * @return the PharmacySystemUsers for this pharmacy.
+     * @return the systemUsers for this pharmacy.
      */
 
-    Collection<IPharmacySystemUser> getPharmacySystemUsers();
+    Collection<U> getSystemUsers();
 
     /**
-     * Sets the pharmacySystemUsers for this pharmacy.
+     * Sets the systemUsers for this pharmacy.
      *
-     * @param pharmacySystemUsers for this pharmacy.
+     * @param systemUsers for this pharmacy.
      */
 
-   void setPharmacySystemUsers(Collection<IPharmacySystemUser> pharmacySystemUsers);
+   void setSystemUsers(Collection<U> systemUsers);
 
 }

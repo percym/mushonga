@@ -12,7 +12,7 @@ import java.util.Collection;
  *@param <T> any class that implememts IPharmarcy
  *@author percym
  */
-public interface IPharmacySystemUser<T extends IPharmacy<?,?>> extends IActive {
+public interface IPharmacySystemUser<T extends IPharmacy <?,?>> extends IActive {
 
     /**
      * Returns the userName of the user.
@@ -91,14 +91,14 @@ public interface IPharmacySystemUser<T extends IPharmacy<?,?>> extends IActive {
      * @return the list of {@link IPharmacy IPharmacy} for this user.
      */
 
-    Collection<IPharmacy<?,?>> getPharmacies();
+    Collection<T> getPharmacies();
 
     /**
      * sets the list of {@link IPharmacy pharmacy} for this user.
      *
      * @param pharmacies the  list of {@link IPharmacy pharmacy} for this user.
      */
-    IPharmacy<?,?> setPharmacies(Collection<IPharmacy<?,?>> pharmacies);
+    void setPharmacies(Collection<T> pharmacies);
 
 
 }

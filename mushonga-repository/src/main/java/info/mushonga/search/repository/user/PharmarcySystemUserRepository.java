@@ -1,6 +1,7 @@
 package info.mushonga.search.repository.user;
 
 
+import info.mushonga.search.model.user.PharmacySystemUser;
 import info.mushonga.search.model.user.SystemUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
@@ -14,12 +15,13 @@ import java.util.List;
  * Repository for User entity
  */
 @Repository
-public interface PharmarcySystemUserRepository extends JpaRepository<SystemUser, Long>, JpaSpecificationExecutor<SystemUser> {
+public interface PharmarcySystemUserRepository extends JpaRepository<PharmacySystemUser, Long>, JpaSpecificationExecutor<SystemUser> {
 
-    SystemUser getSystemUserByUserName(String userName);
+    PharmacySystemUser getPharmacySystemUsersByUserName(String userName);
 
-    SystemUser getSystemUserByEmail(String email);
+    PharmacySystemUser getPharmacySystemUsersByEmail(String email);
 
-    List<SystemUser> findAll();
+    PharmacySystemUser getPharmacySystemUsersById(Long id);
+
 
 }
