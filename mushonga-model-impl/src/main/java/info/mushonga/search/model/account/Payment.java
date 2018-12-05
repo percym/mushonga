@@ -27,18 +27,18 @@ import java.math.BigDecimal;
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
 @Table(schema = "data", name = "payment")
-//@AttributeOverrides({
-//        @AttributeOverride(name = "id", column = @Column(name = "payment_serial")),
-//        @AttributeOverride(name = "startDate", column = @Column(name = "payment_start_date")),
-//        @AttributeOverride(name = "endDate", column = @Column(name = "payment_end_date")),
-//        @AttributeOverride(name = "createdBy", column = @Column(name = "payment_created_by")),
-//        @AttributeOverride(name = "createdOn", column = @Column(name = "payment_created_on")),
-//        @AttributeOverride(name = "updatedBy", column = @Column(name = "payment_updated_by")),
-//        @AttributeOverride(name = "updatedOn", column = @Column(name = "payment_updated_on")),
-//        @AttributeOverride(name = "amountBalance", column = @Column(name = "payment_amount_balance")),
-//        @AttributeOverride(name = "searchBalance", column = @Column(name = "payment_search_balance")),
-//        @AttributeOverride(name = "expiryDate", column = @Column(name = "payment_expiry_date"))
-//})
+@AttributeOverrides({
+        @AttributeOverride(name = "id", column = @Column(name = "payment_serial")),
+        @AttributeOverride(name = "startDate", column = @Column(name = "payment_start_date")),
+        @AttributeOverride(name = "endDate", column = @Column(name = "payment_end_date")),
+        @AttributeOverride(name = "createdBy", column = @Column(name = "payment_created_by")),
+        @AttributeOverride(name = "createdOn", column = @Column(name = "payment_created_on")),
+        @AttributeOverride(name = "updatedBy", column = @Column(name = "payment_updated_by")),
+        @AttributeOverride(name = "updatedOn", column = @Column(name = "payment_updated_on")),
+        @AttributeOverride(name = "amountBalance", column = @Column(name = "payment_amount_balance")),
+        @AttributeOverride(name = "searchBalance", column = @Column(name = "payment_search_balance")),
+        @AttributeOverride(name = "expiryDate", column = @Column(name = "payment_expiry_date"))
+})
 @SequenceGenerator(name = "default_seq", schema = "data", sequenceName = "payment_serial_seq", allocationSize = 1)
 public class Payment extends Costing implements IPayment {
 

@@ -83,7 +83,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
 				<configuration>
-					<warName>dashboard</warName>
+					<warName>mushonga</warName>
 				</configuration>
 				<version>3.2.2</version>
 			</plugin>

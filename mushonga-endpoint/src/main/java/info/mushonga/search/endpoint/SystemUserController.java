@@ -4,6 +4,7 @@ import info.mushonga.search.endpoint.config.app.errors.BadRequestAlertException;
 import info.mushonga.search.endpoint.config.app.util.HeaderUtil;
 import info.mushonga.search.endpoint.config.jwt.TokenProvider;
 import info.mushonga.search.imodel.user.ISystemUser;
+import info.mushonga.search.model.account.Account;
 import info.mushonga.search.model.user.SystemUser;
 import info.mushonga.search.model.user.UserDetailsUpdateDTO;
 import info.mushonga.search.service.user.ISystemUserService;
@@ -48,7 +49,11 @@ public class SystemUserController {
         systemUser.setStartDate(now);
 
         ISystemUser systemUserSaved = this.systemUserService.saveSystemUser(systemUser);
-        return new ResponseEntity<>(systemUserSaved, HttpStatus.OK);
+        Account account = new Account();
+        account.setAccountNumber(systemUserSaved.getId().toString());
+        systemUserSaved.setAccount(account);
+        ISystemUser systemUserWithAcc  = this.systemUserService.saveSystemUser((SystemUser)systemUserSaved);
+        return new ResponseEntity<>(systemUserWithAcc, HttpStatus.OK);
     }
 
     @PostMapping("/update_password/{userId}")

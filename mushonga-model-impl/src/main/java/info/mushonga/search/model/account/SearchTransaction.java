@@ -25,18 +25,18 @@ import java.math.BigDecimal;
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
 @Table(schema = "data", name = "search_transaction")
-//@AttributeOverrides({
-//        @AttributeOverride(name = "id", column = @Column(name = "search_serial")),
-//        @AttributeOverride(name = "startDate", column = @Column(name = "search_start_date")),
-//        @AttributeOverride(name = "endDate", column = @Column(name = "search_end_date")),
-//        @AttributeOverride(name = "createdBy", column = @Column(name = "search_created_by")),
-//        @AttributeOverride(name = "createdOn", column = @Column(name = "search_created_on")),
-//        @AttributeOverride(name = "updatedBy", column = @Column(name = "search_updated_by")),
-//        @AttributeOverride(name = "updatedOn", column = @Column(name = "search_updated_on")),
-//        @AttributeOverride(name = "amountBalance", column = @Column(name = "search_amount_balance")),
-//        @AttributeOverride(name = "searchBalance", column = @Column(name = "search_search_balance")),
-//        @AttributeOverride(name = "expiryDate", column = @Column(name = "search_expiry_date"))
-//})
+@AttributeOverrides({
+        @AttributeOverride(name = "id", column = @Column(name = "search_serial")),
+        @AttributeOverride(name = "startDate", column = @Column(name = "search_start_date")),
+        @AttributeOverride(name = "endDate", column = @Column(name = "search_end_date")),
+        @AttributeOverride(name = "createdBy", column = @Column(name = "search_created_by")),
+        @AttributeOverride(name = "createdOn", column = @Column(name = "search_created_on")),
+        @AttributeOverride(name = "updatedBy", column = @Column(name = "search_updated_by")),
+        @AttributeOverride(name = "updatedOn", column = @Column(name = "search_updated_on")),
+        @AttributeOverride(name = "amountBalance", column = @Column(name = "search_amount_balance")),
+        @AttributeOverride(name = "searchBalance", column = @Column(name = "search_search_balance")),
+        @AttributeOverride(name = "expiryDate", column = @Column(name = "search_expiry_date"))
+})
 @SequenceGenerator(name = "default_seq", schema = "data", sequenceName = "search_transaction_serial_seq", allocationSize = 1)
 public class SearchTransaction extends Costing implements ISearchTransaction {
 
