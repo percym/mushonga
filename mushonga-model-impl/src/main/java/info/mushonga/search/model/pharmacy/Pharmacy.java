@@ -1,5 +1,6 @@
 package info.mushonga.search.model.pharmacy;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
 import info.mushonga.search.imodel.address.IAddress;
@@ -81,6 +82,7 @@ public class Pharmacy extends Active implements IPharmacy<Product,SystemUser> {
 
 
     @Valid
+    @JsonManagedReference
     @OneToMany(fetch = FetchType.LAZY,   cascade = {CascadeType.ALL})
     private Collection<SystemUser> systemUsers = new ArrayList<>();
 

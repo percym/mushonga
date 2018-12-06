@@ -1,5 +1,6 @@
 package info.mushonga.search.model.user;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
 import info.mushonga.search.imodel.account.IAccount;
@@ -87,6 +88,7 @@ public class SystemUser extends Active implements ISystemUser{
     private IAccount<?,?> account;
 
     @Valid
+    @JsonBackReference
     @JsonDeserialize(as= Pharmacy.class)
     @ManyToOne(targetEntity = Pharmacy.class)
     private IPharmacy<?,?> pharmacy;
