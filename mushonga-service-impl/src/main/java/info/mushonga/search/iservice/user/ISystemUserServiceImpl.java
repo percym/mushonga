@@ -3,6 +3,7 @@ package info.mushonga.search.iservice.user;
 import info.mushonga.search.model.user.SystemUser;
 import info.mushonga.search.repository.user.SystemUserRepository;
 import info.mushonga.search.service.user.ISystemUserService;
+import info.mushonga.search.utility.enums.UserType;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -51,6 +52,16 @@ public class ISystemUserServiceImpl implements ISystemUserService {
     @Override
     public SystemUser getSystemUserByEmail(String email) {
         return systemUserRepository.getSystemUserByEmail(email);
+    }
+
+    @Override
+    public List<SystemUser> findAllByActive(Boolean active) {
+        return systemUserRepository.findAllByActive(active);
+    }
+
+    @Override
+    public List<SystemUser> findAllByUserType(UserType userType) {
+        return systemUserRepository.findAllByUserType(userType);
     }
 
 

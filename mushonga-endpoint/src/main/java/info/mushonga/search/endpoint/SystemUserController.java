@@ -7,9 +7,11 @@ import info.mushonga.search.endpoint.config.jwt.JWTConfigurer;
 import info.mushonga.search.endpoint.config.jwt.TokenProvider;
 import info.mushonga.search.imodel.user.ISystemUser;
 import info.mushonga.search.model.account.Account;
+import info.mushonga.search.model.user.LoginSystemUserDTO;
 import info.mushonga.search.model.user.SystemUser;
 import info.mushonga.search.model.user.UserDetailsUpdateDTO;
 import info.mushonga.search.service.user.ISystemUserService;
+import info.mushonga.search.utility.enums.UserType;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -123,6 +125,23 @@ public class SystemUserController {
     @GetMapping("/users")
     public ResponseEntity<List<SystemUser>> getAllUsers(HttpServletResponse response) {
         List<SystemUser> systemUser = systemUserService.findAll();
+        return ResponseEntity.ok()
+                .headers(HeaderUtil.createEntityUpdateAlert(SystemUser.class.getCanonicalName(), String.valueOf(systemUser.size())))
+                .body(systemUser);
+    }
+
+    @GetMapping("/users_active/{active}")
+    public ResponseEntity<List<SystemUser>> getAllUsersByActive(@PathVariable Boolean active) {
+        List<SystemUser> systemUser = systemUserService.findAllByActive(active);
+        return ResponseEntity.ok()
+                .headers(HeaderUtil.createEntityUpdateAlert(SystemUser.class.getCanonicalName(), String.valueOf(systemUser.size())))
+                .body(systemUser);
+    }
+
+
+    @GetMapping("/users_type/{userType}")
+    public ResponseEntity<List<SystemUser>> getAllUsersByType(@PathVariable UserType userType) {
+        List<SystemUser> systemUser = systemUserService.findAllByUserType(userType);
         return ResponseEntity.ok()
                 .headers(HeaderUtil.createEntityUpdateAlert(SystemUser.class.getCanonicalName(), String.valueOf(systemUser.size())))
                 .body(systemUser);
