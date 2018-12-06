@@ -3,6 +3,7 @@ package info.mushonga.search.iservice.pharmacy;
 import info.mushonga.search.model.pharmacy.Pharmacy;
 import info.mushonga.search.repository.pharmarcy.PharmacyRepository;
 import info.mushonga.search.service.pharmacy.IPharmacyService;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -44,6 +45,11 @@ public class IPharmacyServiceImpl implements IPharmacyService {
     @Override
     public Pharmacy findPharmacyByRegNumber(String regNumber) {
         return pharmacyRepository.findPharmacyByRegNumber(regNumber);
+    }
+
+    @Override
+    public List<Pharmacy> findAll(Specification specification) {
+        return pharmacyRepository.findAll(specification);
     }
 
 

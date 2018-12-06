@@ -1,6 +1,7 @@
 package info.mushonga.search.service.pharmacy;
 
 import info.mushonga.search.model.pharmacy.Pharmacy;
+import org.springframework.data.jpa.domain.Specification;
 
 import java.util.List;
 
@@ -16,6 +17,9 @@ public interface IPharmacyService {
     Pharmacy findPharmacyById(Long id );
 
     Pharmacy findPharmacyByRegNumber(String regNumber );
+
+    List<Pharmacy> findAll(Specification specification);
+
 
 
 }

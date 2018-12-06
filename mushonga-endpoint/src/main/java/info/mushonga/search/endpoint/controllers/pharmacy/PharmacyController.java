@@ -3,9 +3,11 @@ package info.mushonga.search.endpoint.controllers.pharmacy;
 import com.codahale.metrics.annotation.Timed;
 import info.mushonga.search.endpoint.config.app.errors.BadRequestAlertException;
 import info.mushonga.search.endpoint.config.app.util.HeaderUtil;
+import info.mushonga.search.iservice.specifications.PharmacyByUserId;
 import info.mushonga.search.model.pharmacy.Pharmacy;
 import info.mushonga.search.model.pharmacy.PharmacyDTO;
 import info.mushonga.search.model.user.SystemUser;
+import info.mushonga.search.repository.pharmarcy.PharmacyRepository;
 import info.mushonga.search.service.pharmacy.IPharmacyService;
 import info.mushonga.search.service.user.ISystemUserService;
 import info.mushonga.search.utility.enums.UserType;
@@ -74,6 +76,26 @@ public class PharmacyController {
                 .body(pharmacy);
     }
 
+
+
+    /**
+     * GET  /pharmacy_user/{id} : get all pharmacy by userId
+     *
+     * @return the ResponseEntity with status 201 (Created) and with the pharmacy
+     * , or with status 400 (Bad Request)
+     * @throws URISyntaxException if the pharmacy URI syntax is incorrect
+     */
+    @GetMapping("/pharmacy_user/{id}")
+    @Timed
+    public ResponseEntity<List<Pharmacy>> getPharmacyByUserId(@PathVariable Long id) throws URISyntaxException {
+        log.debug("REST request to get pharmacy : {}", "");
+        SystemUser systemUser = systemUserService.getSystemUserById(id);
+        PharmacyByUserId pharmacyByUserId = new PharmacyByUserId(systemUser);
+        List<Pharmacy> pharmacies = pharmacyService.findAll(pharmacyByUserId);
+        return ResponseEntity.created(new URI("/pharmacy_user/" + pharmacies.size()))
+                .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, String.valueOf(pharmacies.size())))
+                .body(pharmacies);
+    }
     /**
      * POST  /pharmacy : Create a new pharmacy.
      *

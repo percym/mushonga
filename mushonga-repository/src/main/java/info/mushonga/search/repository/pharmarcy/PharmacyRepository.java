@@ -1,9 +1,12 @@
 package info.mushonga.search.repository.pharmarcy;
 
 import info.mushonga.search.model.pharmacy.Pharmacy;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 /**
  * @author percym
@@ -15,5 +18,5 @@ public interface PharmacyRepository extends JpaRepository<Pharmacy,Long>, JpaSpe
 
     Pharmacy findPharmacyByRegNumber(String regNumber);
 
-
+    List<Pharmacy> findAll(Specification specification);
 }
