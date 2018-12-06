@@ -14,9 +14,10 @@ import java.util.Collection;
  * IProduct interface for the product class and related entities
  *
  * @param <T> any class that extends IProduct
+ * @param <T> any class that extends ISystemUser
  * @author percym
  */
-public interface IPharmacy<T extends IProduct,U extends ISystemUser<?>> extends IActive {
+public interface IPharmacy<T extends IProduct,U extends ISystemUser> extends IActive {
 
     /**
      * Returns the tradingName for this pharmacy.

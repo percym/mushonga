@@ -49,7 +49,7 @@ import java.util.Collection;
         @AttributeOverride(name = "active", column = @Column(name = "system_user_is_active"))
 })
 @SequenceGenerator(name = "default_seq", schema = "data", sequenceName = "system_user_serial_seq", allocationSize = 1)
-public class SystemUser extends Active implements ISystemUser<Pharmacy>{
+public class SystemUser extends Active implements ISystemUser{
 
     private static final long serialVersionUID = -5803233040844849239L;
 
@@ -87,7 +87,8 @@ public class SystemUser extends Active implements ISystemUser<Pharmacy>{
     private IAccount<?,?> account;
 
     @Valid
-    @ManyToMany(mappedBy = "systemUsers")
-    private Collection<Pharmacy> pharmacies;
+    @JsonDeserialize(as= Pharmacy.class)
+    @ManyToOne(targetEntity = Pharmacy.class)
+    private IPharmacy<?,?> pharmacy;
 
 }

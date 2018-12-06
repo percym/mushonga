@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
 import info.mushonga.search.imodel.account.IAccount;
+import info.mushonga.search.imodel.pharmacy.IPharmacy;
 import info.mushonga.search.imodel.user.ISystemUser;
 import info.mushonga.search.model.account.Account;
 import info.mushonga.search.model.general.Active;
@@ -30,7 +31,7 @@ import java.util.Collection;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
-public class SystemUserDTO extends Active implements ISystemUser<Pharmacy> {
+public class SystemUserDTO extends Active implements ISystemUser {
 
     private static final long serialVersionUID = -5803233040844849239L;
 
@@ -64,6 +65,7 @@ public class SystemUserDTO extends Active implements ISystemUser<Pharmacy> {
     private IAccount<?,?> account;
 
     @Valid
-    private Collection<Pharmacy> pharmacies;
+    @JsonDeserialize(as = Pharmacy.class)
+    private IPharmacy<?,?> pharmacy;
 
 }

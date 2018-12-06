@@ -35,7 +35,7 @@ import java.util.Collection;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
-@Table(schema = "data", name = "location")
+@Table(schema = "data", name = "pharmacy")
 @AttributeOverrides({
         @AttributeOverride(name = "id", column = @Column(name = "pharmacy_serial")),
         @AttributeOverride(name = "startDate", column = @Column(name = "pharmacy_start_date")),
@@ -46,6 +46,7 @@ import java.util.Collection;
         @AttributeOverride(name = "updatedOn", column = @Column(name = "pharmacy_updated_on")),
         @AttributeOverride(name = "active", column = @Column(name = "pharmacy_is_active"))
 })
+@SequenceGenerator(name = "default_seq", schema = "data", sequenceName = "pharmacy_serial_seq", allocationSize = 1)
 public class Pharmacy extends Active implements IPharmacy<Product,SystemUser> {
 
     @NotNull
@@ -80,7 +81,7 @@ public class Pharmacy extends Active implements IPharmacy<Product,SystemUser> {
 
 
     @Valid
-    @ManyToMany(fetch = FetchType.LAZY,   cascade = {CascadeType.ALL})
+    @OneToMany(fetch = FetchType.LAZY,   cascade = {CascadeType.ALL})
     private Collection<SystemUser> systemUsers = new ArrayList<>();
 
 

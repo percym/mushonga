@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
  * @author percym
  */
 @Repository
-public interface PharmarcyRepository  extends JpaRepository<Pharmacy,Long>, JpaSpecificationExecutor<Pharmacy>{
+public interface PharmacyRepository extends JpaRepository<Pharmacy,Long>, JpaSpecificationExecutor<Pharmacy>{
 
 
 
