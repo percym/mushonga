@@ -1,0 +1,9 @@
+    ---------------------------------------PharmacyDTO------------------------	
+    @Valid
+    private Collection<Product> products = new ArrayList<>();
+
+    @Valid
+    @JsonDeserialize(as = Logo.class)
+    @OneToOne(fetch = FetchType.EAGER , cascade = CascadeType.ALL, targetEntity = Logo.class)
+    ILogo logo;
+

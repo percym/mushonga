@@ -1,4 +1,4 @@
-package info.mushonga.search.endpoint;
+package info.mushonga.search.endpoint.controllers.user;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import info.mushonga.search.endpoint.config.app.errors.BadRequestAlertException;
