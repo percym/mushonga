@@ -57,6 +57,24 @@ public class PharmacyController {
     }
 
     /**
+     * GET  /pharmacy/{id} : get all pharmacy by id
+     *
+     * @return the ResponseEntity with status 201 (Created) and with the pharmacy
+     * , or with status 400 (Bad Request)
+     * @throws URISyntaxException if the pharmacy URI syntax is incorrect
+     */
+    @GetMapping("/pharmacy/{id}")
+    @Timed
+    public ResponseEntity<Pharmacy> getPharmacyById(@PathVariable Long id) throws URISyntaxException {
+        log.debug("REST request to get pharmacy : {}", "");
+        Pharmacy pharmacy = pharmacyService.findPharmacyById(id);
+
+        return ResponseEntity.created(new URI("/api/pharmacy/" + pharmacy.getId()))
+                .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, String.valueOf(pharmacy.getId())))
+                .body(pharmacy);
+    }
+
+    /**
      * POST  /pharmacy : Create a new pharmacy.
      *
      * @param pharmacyDTO the pharmacy to create
@@ -97,4 +115,6 @@ public class PharmacyController {
                 .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, pharmacy.getId().toString()))
                 .body(pharmacy);
     }
+
+
 }
