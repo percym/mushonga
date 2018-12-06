@@ -30,7 +30,7 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfo(
-                "REST API for Dova Dashboard APP",
+                "REST API for MUSHONGA.INFO APP",
                 "Endpoint for documentation of the API.",
                 "1.0.0.1",
                 "Terms of service",
