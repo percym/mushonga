@@ -13,4 +13,9 @@ public interface IPharmacyService {
 
     List<Pharmacy> findAll();
 
+    Pharmacy findPharmacyById(Long id );
+
+    Pharmacy findPharmacyByRegNumber(String regNumber );
+
+
 }

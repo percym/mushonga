@@ -36,5 +36,15 @@ public class IPharmacyServiceImpl implements IPharmacyService {
         return  pharmacyRepository.findAll();
     }
 
+    @Override
+    public Pharmacy findPharmacyById(Long id) {
+        return pharmacyRepository.findPharmacyById(id);
+    }
+
+    @Override
+    public Pharmacy findPharmacyByRegNumber(String regNumber) {
+        return pharmacyRepository.findPharmacyByRegNumber(regNumber);
+    }
+
 
 }
