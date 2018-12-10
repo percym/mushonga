@@ -26,11 +26,23 @@ import java.util.Collection;
  * <p>
  * Implementation for the IUser class
  */
+@Entity
 @Data
 @Audited
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
+@Table(schema = "data", name = "system_user_pham")
+@AttributeOverrides({
+        @AttributeOverride(name = "id", column = @Column(name = "system_user_serial")),
+        @AttributeOverride(name = "startDate", column = @Column(name = "system_user_start_date")),
+        @AttributeOverride(name = "endDate", column = @Column(name = "system_user_end_date")),
+        @AttributeOverride(name = "createdBy", column = @Column(name = "system_user_created_by")),
+        @AttributeOverride(name = "createdOn", column = @Column(name = "system_user_created_on")),
+        @AttributeOverride(name = "updatedBy", column = @Column(name = "system_user_updated_by")),
+        @AttributeOverride(name = "updatedOn", column = @Column(name = "system_user_updated_on")),
+        @AttributeOverride(name = "active", column = @Column(name = "system_user_is_active"))
+})
 public class SystemUserDTO extends Active implements ISystemUser {
 
     private static final long serialVersionUID = -5803233040844849239L;

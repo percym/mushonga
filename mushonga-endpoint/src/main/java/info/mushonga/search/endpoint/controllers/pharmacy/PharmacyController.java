@@ -3,6 +3,7 @@ package info.mushonga.search.endpoint.controllers.pharmacy;
 import com.codahale.metrics.annotation.Timed;
 import info.mushonga.search.endpoint.config.app.errors.BadRequestAlertException;
 import info.mushonga.search.endpoint.config.app.util.HeaderUtil;
+import info.mushonga.search.imodel.user.ISystemUser;
 import info.mushonga.search.iservice.specifications.pharmacy.PharmacyByUserId;
 import info.mushonga.search.iservice.specifications.product.PharmacyByProductId;
 import info.mushonga.search.model.pharmacy.Pharmacy;
@@ -231,17 +232,18 @@ public class PharmacyController {
      */
     @GetMapping("/pharmacy_product/{prodId}")
     @Timed
-    public ResponseEntity<Optional<Pharmacy>> getPharmacyByProductId(@PathVariable Long prodId) throws URISyntaxException {
+    public ResponseEntity<Pharmacy> getPharmacyByProductId(@PathVariable Long prodId) throws URISyntaxException {
         log.debug("REST request to get  pharmacy by product id: {}", prodId);
         PharmacyByProductId pharmacyByProductId = new PharmacyByProductId(prodId);
         Pharmacy pharmacyExists = new Pharmacy();
         Optional<Pharmacy> pharmacy = pharmacyService.findOne(pharmacyByProductId);
-
-
+        if (pharmacy.isPresent()){
+            pharmacyExists = pharmacy.get();
+        }
 
         return ResponseEntity.created(new URI("/api/pharmacy"))
                 .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME,String.valueOf(prodId)))
-                .body(pharmacy);
+                .body(pharmacyExists);
     }
 
 

@@ -1,6 +1,7 @@
 package info.mushonga.search.model.user;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
 import info.mushonga.search.imodel.account.IAccount;
@@ -50,6 +51,7 @@ import java.util.Collection;
         @AttributeOverride(name = "active", column = @Column(name = "system_user_is_active"))
 })
 @SequenceGenerator(name = "default_seq", schema = "data", sequenceName = "system_user_serial_seq", allocationSize = 1)
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class SystemUser extends Active implements ISystemUser{
 
     private static final long serialVersionUID = -5803233040844849239L;

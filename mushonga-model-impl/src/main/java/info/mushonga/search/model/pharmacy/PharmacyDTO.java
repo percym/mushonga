@@ -7,6 +7,7 @@ import info.mushonga.search.model.address.Address;
 import info.mushonga.search.model.logo.Logo;
 import info.mushonga.search.model.product.Product;
 import info.mushonga.search.model.user.SystemUser;
+import info.mushonga.search.model.user.SystemUserDTO;
 import lombok.Data;
 
 import javax.persistence.*;

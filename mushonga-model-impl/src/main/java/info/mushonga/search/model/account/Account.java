@@ -1,6 +1,7 @@
 package info.mushonga.search.model.account;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import info.mushonga.search.imodel.account.IAccount;
 import info.mushonga.search.model.general.Costing;
 import lombok.Data;
@@ -44,6 +45,7 @@ import java.util.Collection;
         @AttributeOverride(name = "expiryDate", column = @Column(name = "account_expiry_date"))
 })
 @SequenceGenerator(name = "default_seq", schema = "data", sequenceName = "account_serial_seq", allocationSize = 1)
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Account extends Costing implements IAccount<Payment,SearchTransaction> {
 
     @NotNull

@@ -1,5 +1,6 @@
 package info.mushonga.search.model.pharmacy;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
@@ -14,6 +15,7 @@ import info.mushonga.search.model.logo.Logo;
 import info.mushonga.search.model.product.Product;
 import info.mushonga.search.model.user.PharmacySystemUser;
 import info.mushonga.search.model.user.SystemUser;
+import info.mushonga.search.model.user.SystemUserDTO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
