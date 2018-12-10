@@ -139,4 +139,34 @@ public class PharmacyController {
     }
 
 
+    /**
+     * PUT  /pharmacy: update pharmarcy
+     *
+     * @return the ResponseEntity with status 201 (Updated) and with the pharmacy
+     * , or with status 400 (Bad Request)
+     * @throws URISyntaxException if the pharmacy URI syntax is incorrect
+     */
+    @PutMapping("/pharmacy")
+    @Timed
+    public ResponseEntity<Pharmacy> putPharmacy(@Valid @RequestBody Pharmacy pharmacy) throws URISyntaxException {
+        log.debug("REST request to update pharmacy : {}", "");
+
+        if (pharmacy.getId()== null){
+            throw new BadRequestAlertException("Invalid pharmacy id", ENTITY_NAME, "  pharmacy id null ");
+        }
+
+        if (pharmacy.getId()<= 0){
+            throw new BadRequestAlertException("Invalid pharmacy id", ENTITY_NAME, "  pharmacy id is 0 ");
+        }
+
+        Pharmacy savedPharmacy = pharmacyService.save(pharmacy);
+
+        return ResponseEntity.created(new URI("/pharmacy/"))
+                .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, String.valueOf(pharmacy.getId())))
+                .body(savedPharmacy);
+    }
+
+
+
+
 }
