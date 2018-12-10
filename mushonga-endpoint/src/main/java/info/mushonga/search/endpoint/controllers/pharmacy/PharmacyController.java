@@ -6,6 +6,7 @@ import info.mushonga.search.endpoint.config.app.util.HeaderUtil;
 import info.mushonga.search.iservice.specifications.PharmacyByUserId;
 import info.mushonga.search.model.pharmacy.Pharmacy;
 import info.mushonga.search.model.pharmacy.PharmacyDTO;
+import info.mushonga.search.model.product.Product;
 import info.mushonga.search.model.user.SystemUser;
 import info.mushonga.search.repository.pharmarcy.PharmacyRepository;
 import info.mushonga.search.service.pharmacy.IPharmacyService;
@@ -41,7 +42,7 @@ public class PharmacyController {
     }
 
     /**
-     * GET  /pharmacy : get all pharmacies.
+     * POST  /pharmacy : get all pharmacies.
      *
      * @return the ResponseEntity with status 201 (Created) and with all pharmacies
      * , or with status 400 (Bad Request)
@@ -165,6 +166,42 @@ public class PharmacyController {
                 .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, String.valueOf(pharmacy.getId())))
                 .body(savedPharmacy);
     }
+
+    /**
+     * POST /pharmacy_product/{pharmId}:  add product to a pharmacy
+     *
+     * @return the ResponseEntity with status 201 (Updated) and with the pharmacy with updated product
+     * , or with status 400 (Bad Request)
+     * @throws URISyntaxException if the pharmacy URI syntax is incorrect
+     */
+    @PostMapping("/pharmacy_product/{pharmId}")
+    @Timed
+    public ResponseEntity<Pharmacy> putPharmacyProduct(@Valid @RequestBody Product product, @PathVariable Long pharmId) throws URISyntaxException {
+        log.debug("REST request to update pharmacy  with a product: {}", "");
+
+        Pharmacy pharmacy = pharmacyService.findPharmacyById(pharmId);
+
+        if (pharmacy.getId()== null){
+            throw new BadRequestAlertException("Invalid pharmacy id", ENTITY_NAME, "  pharmacy id null ");
+        }
+
+        if (pharmacy.getId()<= 0){
+            throw new BadRequestAlertException("Invalid pharmacy id", ENTITY_NAME, "  pharmacy id is 0 ");
+        }
+
+        if (product.getId()!= null){
+            throw new BadRequestAlertException("Invalid product id", ENTITY_NAME, "  product id null ");
+        }
+
+        pharmacy.getProducts().add(product);
+
+        Pharmacy savedPharmacy = pharmacyService.save(pharmacy);
+
+        return ResponseEntity.created(new URI("/pharmacy_product/"+ pharmId))
+                .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, String.valueOf(pharmacy.getId())))
+                .body(savedPharmacy);
+    }
+
 
 
 
