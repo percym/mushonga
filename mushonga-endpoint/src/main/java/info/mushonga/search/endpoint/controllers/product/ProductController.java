@@ -40,7 +40,7 @@ public class ProductController {
      */
     @PutMapping("/product")
     @Timed
-    public ResponseEntity<Product> putPharmacy(@Valid @RequestBody Product product) throws URISyntaxException {
+    public ResponseEntity<Product> putProduct(@Valid @RequestBody Product product) throws URISyntaxException {
         log.debug("REST request to update product : {}", "");
 
         if (product.getId()== null){
@@ -57,5 +57,6 @@ public class ProductController {
                 .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, String.valueOf(product.getId())))
                 .body(savedProduct);
     }
+
 
 }

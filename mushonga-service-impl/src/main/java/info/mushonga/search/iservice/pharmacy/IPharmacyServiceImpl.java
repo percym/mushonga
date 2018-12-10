@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * @author percym
@@ -50,6 +51,11 @@ public class IPharmacyServiceImpl implements IPharmacyService {
     @Override
     public List<Pharmacy> findAll(Specification specification) {
         return pharmacyRepository.findAll(specification);
+    }
+
+    @Override
+    public Optional<Pharmacy> findOne(Specification<Pharmacy> specification) {
+        return pharmacyRepository.findOne(specification);
     }
 
 

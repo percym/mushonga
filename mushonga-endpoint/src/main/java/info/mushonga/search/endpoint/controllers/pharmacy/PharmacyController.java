@@ -3,12 +3,12 @@ package info.mushonga.search.endpoint.controllers.pharmacy;
 import com.codahale.metrics.annotation.Timed;
 import info.mushonga.search.endpoint.config.app.errors.BadRequestAlertException;
 import info.mushonga.search.endpoint.config.app.util.HeaderUtil;
-import info.mushonga.search.iservice.specifications.PharmacyByUserId;
+import info.mushonga.search.iservice.specifications.pharmacy.PharmacyByUserId;
+import info.mushonga.search.iservice.specifications.product.PharmacyByProductId;
 import info.mushonga.search.model.pharmacy.Pharmacy;
 import info.mushonga.search.model.pharmacy.PharmacyDTO;
 import info.mushonga.search.model.product.Product;
 import info.mushonga.search.model.user.SystemUser;
-import info.mushonga.search.repository.pharmarcy.PharmacyRepository;
 import info.mushonga.search.service.pharmacy.IPharmacyService;
 import info.mushonga.search.service.user.ISystemUserService;
 import info.mushonga.search.utility.enums.UserType;
@@ -20,6 +20,7 @@ import javax.validation.Valid;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * The class to manage the pharmacies
@@ -202,7 +203,46 @@ public class PharmacyController {
                 .body(savedPharmacy);
     }
 
+    /**
+     * GET  /pharmacy_user/{id} : get all pharmacy by userId
+     *
+     * @return the ResponseEntity with status 201 (Created) and with the pharmacy
+     * , or with status 400 (Bad Request)
+     * @throws URISyntaxException if the pharmacy URI syntax is incorrect
+     */
+//    @GetMapping("/pharmacy_user/{id}")
+//    @Timed
+//    public ResponseEntity<List<Pharmacy>> getPharmacyByUserId(@PathVariable Long id) throws URISyntaxException {
+//        log.debug("REST request to get pharmacy : {}", "");
+//        SystemUser systemUser = systemUserService.getSystemUserById(id);
+//        PharmacyByUserId pharmacyByUserId = new PharmacyByUserId(systemUser);
+//        List<Pharmacy> pharmacies = pharmacyService.findAll(pharmacyByUserId);
+//        return ResponseEntity.created(new URI("/pharmacy_user/" + pharmacies.size()))
+//                .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, String.valueOf(pharmacies.size())))
+//                .body(pharmacies);
+//    }
+    /**
+     * GET  /pharmacy_product/{prodId} :get pharmacy by product.
+     *
+     * @param prodId the product id
+     * @return the ResponseEntity with status 201 (Created) and with body the  pharmacy
+     * , where the product is or with status 400 (Bad Request)
+     * @throws URISyntaxException if the pharmacy URI syntax is incorrect
+     */
+    @GetMapping("/pharmacy_product/{prodId}")
+    @Timed
+    public ResponseEntity<Optional<Pharmacy>> getPharmacyByProductId(@PathVariable Long prodId) throws URISyntaxException {
+        log.debug("REST request to get  pharmacy by product id: {}", prodId);
+        PharmacyByProductId pharmacyByProductId = new PharmacyByProductId(prodId);
+        Pharmacy pharmacyExists = new Pharmacy();
+        Optional<Pharmacy> pharmacy = pharmacyService.findOne(pharmacyByProductId);
 
+
+
+        return ResponseEntity.created(new URI("/api/pharmacy"))
+                .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME,String.valueOf(prodId)))
+                .body(pharmacy);
+    }
 
 
 

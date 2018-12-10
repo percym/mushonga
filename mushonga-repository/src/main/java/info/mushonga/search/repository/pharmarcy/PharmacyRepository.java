@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * @author percym
@@ -19,4 +20,6 @@ public interface PharmacyRepository extends JpaRepository<Pharmacy,Long>, JpaSpe
     Pharmacy findPharmacyByRegNumber(String regNumber);
 
     List<Pharmacy> findAll(Specification specification);
+
+    Optional<Pharmacy> findOne(Specification<Pharmacy> specification);
 }
