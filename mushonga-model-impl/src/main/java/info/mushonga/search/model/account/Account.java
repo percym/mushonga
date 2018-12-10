@@ -30,8 +30,7 @@ import java.util.Collection;
 @Table(schema = "data", name = "account"
         ,uniqueConstraints={
     @UniqueConstraint(columnNames = {"account_serial"} , name = "un_data_account_number")
-}
-)
+})
 @AttributeOverrides({
         @AttributeOverride(name = "id", column = @Column(name = "account_serial")),
         @AttributeOverride(name = "startDate", column = @Column(name = "account_start_date")),

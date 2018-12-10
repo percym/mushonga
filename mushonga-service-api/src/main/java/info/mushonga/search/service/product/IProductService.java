@@ -12,5 +12,7 @@ public interface IProductService  {
 
     Product save (Product save);
 
+    void delete(Long productId);
+
 
 }

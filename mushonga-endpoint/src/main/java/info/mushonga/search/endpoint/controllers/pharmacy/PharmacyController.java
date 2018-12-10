@@ -247,5 +247,26 @@ public class PharmacyController {
     }
 
 
+    /**
+     * DELETE  /pharmacy_product/{pharmacy_id}/{product_id} : delete product by id
+     *
+     * @param pharmacy_id pharmacy to delete from
+     * @param pharmacy_id product to delete
+     * @return the ResponseEntity with status 200 (Successful)
+     * , or with status 400 (Bad Request)
+     * @throws URISyntaxException if the delete URI syntax is incorrect
+     */
+    @PostMapping("pharmacy_product/{pharmacy_id}/{product_id}")
+    @Timed
+    public ResponseEntity<Pharmacy> deletePharmacyProductById(@PathVariable Long pharmacy_id , @PathVariable Long product_id ) throws URISyntaxException {
+        log.debug("REST request to get pharmacy : {}", "");
+        Pharmacy pharmacy = pharmacyService.findPharmacyById(pharmacy_id);
+        pharmacy.getProducts().removeIf(product -> product.getId() == product_id);
+        pharmacyService.save(pharmacy);
+
+        return ResponseEntity.created(new URI("/api/pharmacy/" + pharmacy.getId()))
+                .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, String.valueOf(pharmacy.getId())))
+                .body(pharmacy);
+    }
 
 }

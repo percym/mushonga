@@ -1,6 +1,7 @@
 package info.mushonga.search.endpoint.controllers.product;
 
 import com.codahale.metrics.annotation.Timed;
+import com.sun.xml.internal.ws.server.sei.MessageFiller;
 import info.mushonga.search.endpoint.config.app.errors.BadRequestAlertException;
 import info.mushonga.search.endpoint.config.app.util.HeaderUtil;
 import info.mushonga.search.model.pharmacy.Pharmacy;
@@ -34,7 +35,7 @@ public class ProductController {
     /**
      * PUT  /product: update product
      *
-     * @return the ResponseEntity with status 201 (Updated) and with the updated product
+     * @return the ResponseEntity with status 200 (Successful   ) and with the updated product
      * , or with status 400 (Bad Request)
      * @throws URISyntaxException if the product URI syntax is incorrect
      */
@@ -57,6 +58,22 @@ public class ProductController {
                 .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, String.valueOf(product.getId())))
                 .body(savedProduct);
     }
+
+    /**
+     * DELETE  /product/{id} : delete product by id
+     *
+     * @return the ResponseEntity with status 200 (Successful)
+     * , or with status 400 (Bad Request)
+     * @throws URISyntaxException if the delete URI syntax is incorrect
+     */
+    @DeleteMapping("/product/{id}")
+    @Timed
+    public ResponseEntity<Void> deleteProduct(@PathVariable Long id) throws URISyntaxException {
+        log.debug("REST request to get delete product : {}", id);
+        productService.delete(id);
+        return ResponseEntity.status(200).headers(HeaderUtil.createEntityDeletionAlert(ENTITY_NAME, id.toString())).build();
+    }
+
 
 
 }
