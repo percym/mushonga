@@ -40,5 +40,10 @@
             <artifactId>mushonga-model-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-search-orm</artifactId>
+            <version>5.10.5.Final</version>
+        </dependency>
     </dependencies>
 </project>

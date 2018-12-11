@@ -4,6 +4,10 @@ import info.mushonga.search.imodel.general.IProductDescription;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.hibernate.envers.Audited;
+import org.hibernate.search.annotations.Analyze;
+import org.hibernate.search.annotations.Field;
+import org.hibernate.search.annotations.Index;
+import org.hibernate.search.annotations.Store;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
@@ -21,6 +25,7 @@ public class ProductDescription extends GeneralNaming implements IProductDescrip
 
     private static final long serialVersionUID = 6911937956855157542L;
 
+    @Field(index= Index.YES, analyze= Analyze.YES, store= Store.NO)
     @Column(name = "zz_product_description")
     private String productDescription;
 

@@ -4,6 +4,10 @@ import info.mushonga.search.imodel.general.IGenericNaming;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.hibernate.envers.Audited;
+import org.hibernate.search.annotations.Analyze;
+import org.hibernate.search.annotations.Field;
+import org.hibernate.search.annotations.Index;
+import org.hibernate.search.annotations.Store;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
@@ -27,6 +31,7 @@ public abstract class GeneralNaming extends Active implements IGenericNaming {
     @Column(name = "zz_generic_code", length = 10)
     private String genericCode;
 
+    @Field(index= Index.YES, analyze= Analyze.YES, store= Store.NO)
     @NotNull
     @Column(name = "zz_generic_description", unique = true)
     private String genericName;

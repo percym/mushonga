@@ -1,0 +1,1485 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.5.14
+-- Dumped by pg_dump version 9.5.14
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: audit; Type: SCHEMA; Schema: -; Owner: postgres
+--
+
+CREATE SCHEMA audit;
+
+
+ALTER SCHEMA audit OWNER TO postgres;
+
+--
+-- Name: data; Type: SCHEMA; Schema: -; Owner: postgres
+--
+
+CREATE SCHEMA data;
+
+
+ALTER SCHEMA data OWNER TO postgres;
+
+--
+-- Name: static; Type: SCHEMA; Schema: -; Owner: postgres
+--
+
+CREATE SCHEMA static;
+
+
+ALTER SCHEMA static OWNER TO postgres;
+
+--
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- Name: account_aud; Type: TABLE; Schema: audit; Owner: postgres2
+--
+
+CREATE TABLE audit.account_aud (
+    account_serial bigint NOT NULL,
+    rev integer NOT NULL,
+    revtype smallint,
+    account_created_by character varying(255),
+    account_updated_by character varying(255),
+    account_end_date timestamp without time zone,
+    account_start_date timestamp without time zone,
+    account_amount_balance numeric(19,2),
+    account_expiry_date date,
+    account_search_balance numeric(19,2),
+    account_number character varying(255)
+);
+
+
+ALTER TABLE audit.account_aud OWNER TO postgres2;
+
+--
+-- Name: account_payments_aud; Type: TABLE; Schema: audit; Owner: postgres2
+--
+
+CREATE TABLE audit.account_payments_aud (
+    rev integer NOT NULL,
+    account_account_serial bigint NOT NULL,
+    payments_payment_serial bigint NOT NULL,
+    revtype smallint
+);
+
+
+ALTER TABLE audit.account_payments_aud OWNER TO postgres2;
+
+--
+-- Name: account_search_transactions_aud; Type: TABLE; Schema: audit; Owner: postgres2
+--
+
+CREATE TABLE audit.account_search_transactions_aud (
+    rev integer NOT NULL,
+    account_account_serial bigint NOT NULL,
+    search_transactions_search_serial bigint NOT NULL,
+    revtype smallint
+);
+
+
+ALTER TABLE audit.account_search_transactions_aud OWNER TO postgres2;
+
+--
+-- Name: address_aud; Type: TABLE; Schema: audit; Owner: postgres2
+--
+
+CREATE TABLE audit.address_aud (
+    add_serial bigint NOT NULL,
+    rev integer NOT NULL,
+    revtype smallint,
+    add_created_by character varying(255),
+    add_updated_by character varying(255),
+    add_end_date timestamp without time zone,
+    add_start_date timestamp without time zone,
+    add_city character varying(50),
+    add_country_code character varying(2),
+    add_line1 character varying(50),
+    add_line2 character varying(50),
+    add_line3 character varying(50),
+    add_postal_code character varying(50),
+    add_suburb character varying(50),
+    add_type character varying(10)
+);
+
+
+ALTER TABLE audit.address_aud OWNER TO postgres2;
+
+--
+-- Name: logo_aud; Type: TABLE; Schema: audit; Owner: postgres2
+--
+
+CREATE TABLE audit.logo_aud (
+    logo_serial bigint NOT NULL,
+    rev integer NOT NULL,
+    revtype smallint,
+    file_download_uri character varying(255),
+    file_name character varying(255),
+    file_type character varying(255),
+    size bigint
+);
+
+
+ALTER TABLE audit.logo_aud OWNER TO postgres2;
+
+--
+-- Name: payment_aud; Type: TABLE; Schema: audit; Owner: postgres2
+--
+
+CREATE TABLE audit.payment_aud (
+    payment_serial bigint NOT NULL,
+    rev integer NOT NULL,
+    revtype smallint,
+    payment_created_by character varying(255),
+    payment_updated_by character varying(255),
+    payment_end_date timestamp without time zone,
+    payment_start_date timestamp without time zone,
+    payment_amount_balance numeric(19,2),
+    payment_expiry_date date,
+    payment_search_balance numeric(19,2),
+    payment_amount_paid numeric(12,2) DEFAULT 0.00,
+    payment_balance_bought numeric(12,2) DEFAULT 0.00,
+    payment_payment_method character varying(15)
+);
+
+
+ALTER TABLE audit.payment_aud OWNER TO postgres2;
+
+--
+-- Name: pharmacy_aud; Type: TABLE; Schema: audit; Owner: postgres2
+--
+
+CREATE TABLE audit.pharmacy_aud (
+    pharmacy_serial bigint NOT NULL,
+    rev integer NOT NULL,
+    revtype smallint,
+    pharmacy_created_by character varying(255),
+    pharmacy_updated_by character varying(255),
+    pharmacy_end_date timestamp without time zone,
+    pharmacy_start_date timestamp without time zone,
+    pharmacy_is_active boolean,
+    pharmacy_registered_number character varying(100),
+    pharmacy_registered_name character varying(100),
+    pharmacy_trading_name character varying(100),
+    address_add_serial bigint,
+    logo_logo_serial bigint
+);
+
+
+ALTER TABLE audit.pharmacy_aud OWNER TO postgres2;
+
+--
+-- Name: pharmacy_products_aud; Type: TABLE; Schema: audit; Owner: postgres2
+--
+
+CREATE TABLE audit.pharmacy_products_aud (
+    rev integer NOT NULL,
+    pharmacy_pharmacy_serial bigint NOT NULL,
+    products_product_serial bigint NOT NULL,
+    revtype smallint
+);
+
+
+ALTER TABLE audit.pharmacy_products_aud OWNER TO postgres2;
+
+--
+-- Name: pharmacy_system_users_aud; Type: TABLE; Schema: audit; Owner: postgres2
+--
+
+CREATE TABLE audit.pharmacy_system_users_aud (
+    rev integer NOT NULL,
+    pharmacies_pharmacy_serial bigint NOT NULL,
+    system_users_system_user_serial bigint NOT NULL,
+    revtype smallint
+);
+
+
+ALTER TABLE audit.pharmacy_system_users_aud OWNER TO postgres2;
+
+--
+-- Name: product_aud; Type: TABLE; Schema: audit; Owner: postgres2
+--
+
+CREATE TABLE audit.product_aud (
+    product_serial bigint NOT NULL,
+    rev integer NOT NULL,
+    revtype smallint,
+    product_created_by character varying(255),
+    product_updated_by character varying(255),
+    product_end_date timestamp without time zone,
+    product_start_date timestamp without time zone,
+    active boolean,
+    product_generic_code character varying(255),
+    product_generic_name character varying(255),
+    product_description character varying(255),
+    product_last_searched_date timestamp without time zone,
+    product_total_searched_times numeric(19,2),
+    product_item_balance numeric(19,2),
+    product_item_price numeric(19,2)
+);
+
+
+ALTER TABLE audit.product_aud OWNER TO postgres2;
+
+--
+-- Name: revinfo; Type: TABLE; Schema: audit; Owner: postgres2
+--
+
+CREATE TABLE audit.revinfo (
+    rev integer NOT NULL,
+    revtstmp bigint
+);
+
+
+ALTER TABLE audit.revinfo OWNER TO postgres2;
+
+--
+-- Name: search_transaction_aud; Type: TABLE; Schema: audit; Owner: postgres2
+--
+
+CREATE TABLE audit.search_transaction_aud (
+    search_serial bigint NOT NULL,
+    rev integer NOT NULL,
+    revtype smallint,
+    search_created_by character varying(255),
+    search_updated_by character varying(255),
+    search_end_date timestamp without time zone,
+    search_start_date timestamp without time zone,
+    search_amount_balance numeric(19,2),
+    search_expiry_date date,
+    search_search_balance numeric(19,2),
+    transaction_balance_after_search numeric(12,2) DEFAULT 0.00,
+    search_transaction_term character varying(255),
+    transaction_total_query_results numeric(12,2) DEFAULT 0.00,
+    transaction_cost numeric(12,2) DEFAULT 0.00
+);
+
+
+ALTER TABLE audit.search_transaction_aud OWNER TO postgres2;
+
+--
+-- Name: system_user_aud; Type: TABLE; Schema: audit; Owner: postgres2
+--
+
+CREATE TABLE audit.system_user_aud (
+    system_user_serial bigint NOT NULL,
+    rev integer NOT NULL,
+    revtype smallint,
+    system_user_created_by character varying(255),
+    system_user_updated_by character varying(255),
+    system_user_end_date timestamp without time zone,
+    system_user_start_date timestamp without time zone,
+    system_user_is_active boolean,
+    user_account_type character varying(15),
+    user_email character varying(255),
+    user_password character varying(150),
+    user_phone character varying(20),
+    user_username character varying(50),
+    user_user_type character varying(15),
+    account_account_serial bigint,
+    pharmacy_pharmacy_serial bigint
+);
+
+
+ALTER TABLE audit.system_user_aud OWNER TO postgres2;
+
+--
+-- Name: system_user_pham_aud; Type: TABLE; Schema: audit; Owner: postgres2
+--
+
+CREATE TABLE audit.system_user_pham_aud (
+    system_user_serial bigint NOT NULL,
+    rev integer NOT NULL,
+    revtype smallint,
+    system_user_created_by character varying(255),
+    system_user_updated_by character varying(255),
+    system_user_end_date timestamp without time zone,
+    system_user_start_date timestamp without time zone,
+    system_user_is_active boolean,
+    account bytea,
+    account_type character varying(255),
+    user_email character varying(255),
+    user_password character varying(1),
+    pharmacy bytea,
+    user_phone character varying(20),
+    user_username character varying(50),
+    user_type character varying(255)
+);
+
+
+ALTER TABLE audit.system_user_pham_aud OWNER TO postgres2;
+
+--
+-- Name: account; Type: TABLE; Schema: data; Owner: postgres2
+--
+
+CREATE TABLE data.account (
+    account_serial bigint NOT NULL,
+    account_created_by character varying(50),
+    account_updated_by character varying(50),
+    account_end_date timestamp without time zone,
+    account_start_date timestamp without time zone,
+    account_amount_balance numeric(19,2),
+    account_expiry_date date,
+    account_search_balance numeric(19,2),
+    account_number character varying(255) NOT NULL
+);
+
+
+ALTER TABLE data.account OWNER TO postgres2;
+
+--
+-- Name: account_payments; Type: TABLE; Schema: data; Owner: postgres2
+--
+
+CREATE TABLE data.account_payments (
+    account_account_serial bigint NOT NULL,
+    payments_payment_serial bigint NOT NULL
+);
+
+
+ALTER TABLE data.account_payments OWNER TO postgres2;
+
+--
+-- Name: account_search_transactions; Type: TABLE; Schema: data; Owner: postgres2
+--
+
+CREATE TABLE data.account_search_transactions (
+    account_account_serial bigint NOT NULL,
+    search_transactions_search_serial bigint NOT NULL
+);
+
+
+ALTER TABLE data.account_search_transactions OWNER TO postgres2;
+
+--
+-- Name: account_serial_seq; Type: SEQUENCE; Schema: data; Owner: postgres2
+--
+
+CREATE SEQUENCE data.account_serial_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE data.account_serial_seq OWNER TO postgres2;
+
+--
+-- Name: hibernate_sequence; Type: SEQUENCE; Schema: data; Owner: postgres2
+--
+
+CREATE SEQUENCE data.hibernate_sequence
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE data.hibernate_sequence OWNER TO postgres2;
+
+--
+-- Name: logo; Type: TABLE; Schema: data; Owner: postgres2
+--
+
+CREATE TABLE data.logo (
+    logo_serial bigint NOT NULL,
+    file_download_uri character varying(255) NOT NULL,
+    file_name character varying(255) NOT NULL,
+    file_type character varying(255) NOT NULL,
+    size bigint NOT NULL
+);
+
+
+ALTER TABLE data.logo OWNER TO postgres2;
+
+--
+-- Name: logo_serial_seq; Type: SEQUENCE; Schema: data; Owner: postgres2
+--
+
+CREATE SEQUENCE data.logo_serial_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE data.logo_serial_seq OWNER TO postgres2;
+
+--
+-- Name: payment; Type: TABLE; Schema: data; Owner: postgres2
+--
+
+CREATE TABLE data.payment (
+    payment_serial bigint NOT NULL,
+    payment_created_by character varying(50),
+    payment_updated_by character varying(50),
+    payment_end_date timestamp without time zone,
+    payment_start_date timestamp without time zone,
+    payment_amount_balance numeric(19,2),
+    payment_expiry_date date,
+    payment_search_balance numeric(19,2),
+    payment_amount_paid numeric(12,2) DEFAULT 0.00 NOT NULL,
+    payment_balance_bought numeric(12,2) DEFAULT 0.00 NOT NULL,
+    payment_payment_method character varying(15) NOT NULL
+);
+
+
+ALTER TABLE data.payment OWNER TO postgres2;
+
+--
+-- Name: payment_serial_seq; Type: SEQUENCE; Schema: data; Owner: postgres2
+--
+
+CREATE SEQUENCE data.payment_serial_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE data.payment_serial_seq OWNER TO postgres2;
+
+--
+-- Name: pharmacy; Type: TABLE; Schema: data; Owner: postgres2
+--
+
+CREATE TABLE data.pharmacy (
+    pharmacy_serial bigint NOT NULL,
+    pharmacy_created_by character varying(50),
+    pharmacy_updated_by character varying(50),
+    pharmacy_end_date timestamp without time zone,
+    pharmacy_start_date timestamp without time zone,
+    pharmacy_is_active boolean NOT NULL,
+    pharmacy_registered_number character varying(100) NOT NULL,
+    pharmacy_registered_name character varying(100) NOT NULL,
+    pharmacy_trading_name character varying(100) NOT NULL,
+    address_add_serial bigint NOT NULL,
+    logo_logo_serial bigint
+);
+
+
+ALTER TABLE data.pharmacy OWNER TO postgres2;
+
+--
+-- Name: pharmacy_products; Type: TABLE; Schema: data; Owner: postgres2
+--
+
+CREATE TABLE data.pharmacy_products (
+    pharmacy_pharmacy_serial bigint NOT NULL,
+    products_product_serial bigint NOT NULL
+);
+
+
+ALTER TABLE data.pharmacy_products OWNER TO postgres2;
+
+--
+-- Name: pharmacy_serial_seq; Type: SEQUENCE; Schema: data; Owner: postgres2
+--
+
+CREATE SEQUENCE data.pharmacy_serial_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE data.pharmacy_serial_seq OWNER TO postgres2;
+
+--
+-- Name: pharmacy_system_users; Type: TABLE; Schema: data; Owner: postgres2
+--
+
+CREATE TABLE data.pharmacy_system_users (
+    pharmacies_pharmacy_serial bigint NOT NULL,
+    system_users_system_user_serial bigint NOT NULL
+);
+
+
+ALTER TABLE data.pharmacy_system_users OWNER TO postgres2;
+
+--
+-- Name: product; Type: TABLE; Schema: data; Owner: postgres2
+--
+
+CREATE TABLE data.product (
+    product_serial bigint NOT NULL,
+    product_created_by character varying(50),
+    product_updated_by character varying(50),
+    product_end_date timestamp without time zone,
+    product_start_date timestamp without time zone,
+    active boolean NOT NULL,
+    product_generic_code character varying(10) NOT NULL,
+    product_generic_name character varying(255) NOT NULL,
+    product_description character varying(255),
+    product_last_searched_date timestamp without time zone,
+    product_total_searched_times numeric(19,2),
+    product_item_balance numeric(19,2),
+    product_item_price numeric(19,2)
+);
+
+
+ALTER TABLE data.product OWNER TO postgres2;
+
+--
+-- Name: product_serial_seq; Type: SEQUENCE; Schema: data; Owner: postgres2
+--
+
+CREATE SEQUENCE data.product_serial_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE data.product_serial_seq OWNER TO postgres2;
+
+--
+-- Name: search_transaction; Type: TABLE; Schema: data; Owner: postgres2
+--
+
+CREATE TABLE data.search_transaction (
+    search_serial bigint NOT NULL,
+    search_created_by character varying(50),
+    search_updated_by character varying(50),
+    search_end_date timestamp without time zone,
+    search_start_date timestamp without time zone,
+    search_amount_balance numeric(19,2),
+    search_expiry_date date,
+    search_search_balance numeric(19,2),
+    transaction_balance_after_search numeric(12,2) DEFAULT 0.00 NOT NULL,
+    search_transaction_term character varying(255) NOT NULL,
+    transaction_total_query_results numeric(12,2) DEFAULT 0.00 NOT NULL,
+    transaction_cost numeric(12,2) DEFAULT 0.00 NOT NULL
+);
+
+
+ALTER TABLE data.search_transaction OWNER TO postgres2;
+
+--
+-- Name: search_transaction_serial_seq; Type: SEQUENCE; Schema: data; Owner: postgres2
+--
+
+CREATE SEQUENCE data.search_transaction_serial_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE data.search_transaction_serial_seq OWNER TO postgres2;
+
+--
+-- Name: system_user; Type: TABLE; Schema: data; Owner: postgres2
+--
+
+CREATE TABLE data.system_user (
+    system_user_serial bigint NOT NULL,
+    system_user_created_by character varying(50),
+    system_user_updated_by character varying(50),
+    system_user_end_date timestamp without time zone,
+    system_user_start_date timestamp without time zone,
+    system_user_is_active boolean NOT NULL,
+    user_account_type character varying(15) NOT NULL,
+    user_email character varying(255),
+    user_password character varying(150),
+    user_phone character varying(20),
+    user_username character varying(80) NOT NULL,
+    user_user_type character varying(15) NOT NULL,
+    account_account_serial bigint,
+    pharmacy_pharmacy_serial bigint
+);
+
+
+ALTER TABLE data.system_user OWNER TO postgres2;
+
+--
+-- Name: system_user_pham; Type: TABLE; Schema: data; Owner: postgres2
+--
+
+CREATE TABLE data.system_user_pham (
+    system_user_serial bigint NOT NULL,
+    system_user_created_by character varying(50),
+    system_user_updated_by character varying(50),
+    system_user_end_date timestamp without time zone,
+    system_user_start_date timestamp without time zone,
+    system_user_is_active boolean NOT NULL,
+    account bytea,
+    account_type character varying(255) NOT NULL,
+    user_email character varying(255),
+    user_password character varying(1),
+    pharmacy bytea,
+    user_phone character varying(20),
+    user_username character varying(80) NOT NULL,
+    user_type character varying(255) NOT NULL
+);
+
+
+ALTER TABLE data.system_user_pham OWNER TO postgres2;
+
+--
+-- Name: system_user_serial_seq; Type: SEQUENCE; Schema: data; Owner: postgres2
+--
+
+CREATE SEQUENCE data.system_user_serial_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE data.system_user_serial_seq OWNER TO postgres2;
+
+--
+-- Name: add_serial_seq; Type: SEQUENCE; Schema: static; Owner: postgres2
+--
+
+CREATE SEQUENCE static.add_serial_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE static.add_serial_seq OWNER TO postgres2;
+
+--
+-- Name: address; Type: TABLE; Schema: static; Owner: postgres2
+--
+
+CREATE TABLE static.address (
+    add_serial bigint NOT NULL,
+    add_created_by character varying(50),
+    add_updated_by character varying(50),
+    add_end_date timestamp without time zone,
+    add_start_date timestamp without time zone,
+    add_city character varying(50),
+    add_country_code character varying(2) NOT NULL,
+    add_line1 character varying(50),
+    add_line2 character varying(50),
+    add_line3 character varying(50),
+    add_postal_code character varying(50),
+    add_suburb character varying(50),
+    add_type character varying(10) NOT NULL
+);
+
+
+ALTER TABLE static.address OWNER TO postgres2;
+
+--
+-- Data for Name: account_aud; Type: TABLE DATA; Schema: audit; Owner: postgres2
+--
+
+COPY audit.account_aud (account_serial, rev, revtype, account_created_by, account_updated_by, account_end_date, account_start_date, account_amount_balance, account_expiry_date, account_search_balance, account_number) FROM stdin;
+1	1	0	\N	\N	2018-12-06 11:34:24.843	2018-12-06 11:34:24.843	\N	\N	\N	1
+2	2	0	\N	\N	2018-12-06 11:34:24.879	2018-12-06 11:34:24.879	\N	\N	\N	1
+\.
+
+
+--
+-- Data for Name: account_payments_aud; Type: TABLE DATA; Schema: audit; Owner: postgres2
+--
+
+COPY audit.account_payments_aud (rev, account_account_serial, payments_payment_serial, revtype) FROM stdin;
+\.
+
+
+--
+-- Data for Name: account_search_transactions_aud; Type: TABLE DATA; Schema: audit; Owner: postgres2
+--
+
+COPY audit.account_search_transactions_aud (rev, account_account_serial, search_transactions_search_serial, revtype) FROM stdin;
+\.
+
+
+--
+-- Data for Name: address_aud; Type: TABLE DATA; Schema: audit; Owner: postgres2
+--
+
+COPY audit.address_aud (add_serial, rev, revtype, add_created_by, add_updated_by, add_end_date, add_start_date, add_city, add_country_code, add_line1, add_line2, add_line3, add_postal_code, add_suburb, add_type) FROM stdin;
+1	3	0	\N	\N	2018-12-06 11:38:17.961	2018-12-06 11:38:17.961	Harare	DZ	14	Bakers	Avenue	263	Medicine	HOME
+\.
+
+
+--
+-- Data for Name: logo_aud; Type: TABLE DATA; Schema: audit; Owner: postgres2
+--
+
+COPY audit.logo_aud (logo_serial, rev, revtype, file_download_uri, file_name, file_type, size) FROM stdin;
+\.
+
+
+--
+-- Data for Name: payment_aud; Type: TABLE DATA; Schema: audit; Owner: postgres2
+--
+
+COPY audit.payment_aud (payment_serial, rev, revtype, payment_created_by, payment_updated_by, payment_end_date, payment_start_date, payment_amount_balance, payment_expiry_date, payment_search_balance, payment_amount_paid, payment_balance_bought, payment_payment_method) FROM stdin;
+\.
+
+
+--
+-- Data for Name: pharmacy_aud; Type: TABLE DATA; Schema: audit; Owner: postgres2
+--
+
+COPY audit.pharmacy_aud (pharmacy_serial, rev, revtype, pharmacy_created_by, pharmacy_updated_by, pharmacy_end_date, pharmacy_start_date, pharmacy_is_active, pharmacy_registered_number, pharmacy_registered_name, pharmacy_trading_name, address_add_serial, logo_logo_serial) FROM stdin;
+1	3	0	\N	\N	2018-12-06 11:38:17.963	2018-12-06 11:38:17.964	t	23255	Mushonga	mushonga.info	1	\N
+1	5	1	\N	\N	2018-12-10 08:45:22.193	2018-12-06 11:38:17.964	t	23255	Mushonga Info	mushonga.info	1	\N
+1	6	1	\N	\N	2018-12-10 09:28:27.878	2018-12-06 11:38:17.964	t	23255	Mushonga Info	mushonga.info	1	\N
+1	9	1	\N	\N	2018-12-10 09:28:27.878	2018-12-06 11:38:17.964	t	23255	Mushonga Info	mushonga.info	1	\N
+1	10	1	\N	\N	2018-12-10 09:28:27.878	2018-12-06 11:38:17.964	t	23255	Mushonga Info	mushonga.info	1	\N
+1	13	1	\N	\N	2018-12-10 09:28:27.878	2018-12-06 11:38:17.964	t	23255	Mushonga Info	mushonga.info	1	\N
+1	14	1	\N	\N	2018-12-10 09:28:27.878	2018-12-06 11:38:17.964	t	23255	Mushonga Info	mushonga.info	1	\N
+1	15	1	\N	\N	2018-12-10 09:28:27.878	2018-12-06 11:38:17.964	t	23255	Mushonga Info	mushonga.info	1	\N
+\.
+
+
+--
+-- Data for Name: pharmacy_products_aud; Type: TABLE DATA; Schema: audit; Owner: postgres2
+--
+
+COPY audit.pharmacy_products_aud (rev, pharmacy_pharmacy_serial, products_product_serial, revtype) FROM stdin;
+6	1	1	0
+9	1	2	0
+10	1	3	0
+13	1	1	2
+14	1	2	2
+15	1	3	2
+\.
+
+
+--
+-- Data for Name: pharmacy_system_users_aud; Type: TABLE DATA; Schema: audit; Owner: postgres2
+--
+
+COPY audit.pharmacy_system_users_aud (rev, pharmacies_pharmacy_serial, system_users_system_user_serial, revtype) FROM stdin;
+3	1	1	0
+\.
+
+
+--
+-- Data for Name: product_aud; Type: TABLE DATA; Schema: audit; Owner: postgres2
+--
+
+COPY audit.product_aud (product_serial, rev, revtype, product_created_by, product_updated_by, product_end_date, product_start_date, active, product_generic_code, product_generic_name, product_description, product_last_searched_date, product_total_searched_times, product_item_balance, product_item_price) FROM stdin;
+1	6	0	\N	\N	2018-12-10 09:28:27.873	2018-12-10 09:28:27.873	t		Rocephin	Rocephine	\N	\N	20.00	1.00
+1	8	1	\N	\N	2018-12-10 09:29:08.251	2018-12-10 09:28:27.873	t		Rocephin	Rocephine	\N	\N	22.00	1.00
+2	9	0	\N	\N	2018-12-10 10:31:09.934	2018-12-10 10:31:09.934	t		Rocephin	Rocephine	\N	\N	22.00	1.00
+3	10	0	\N	\N	2018-12-10 10:44:07.578	2018-12-10 10:44:07.578	t		Rocephin	Rocephine	\N	\N	22.00	1.00
+1	11	1	\N	\N	2018-12-10 11:35:36.368	2018-12-10 09:28:27.873	t		Rocephin	Rocephine	\N	\N	52.00	1.00
+1	13	2	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+2	14	2	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+3	15	2	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+\.
+
+
+--
+-- Data for Name: revinfo; Type: TABLE DATA; Schema: audit; Owner: postgres2
+--
+
+COPY audit.revinfo (rev, revtstmp) FROM stdin;
+1	1544096064864
+2	1544096064883
+3	1544096297978
+4	1544096297997
+5	1544431522231
+6	1544434107886
+7	1544434131026
+8	1544434148257
+9	1544437869975
+10	1544438647640
+11	1544441736383
+12	1544451243459
+13	1544453673007
+14	1544454311440
+15	1544454376923
+\.
+
+
+--
+-- Data for Name: search_transaction_aud; Type: TABLE DATA; Schema: audit; Owner: postgres2
+--
+
+COPY audit.search_transaction_aud (search_serial, rev, revtype, search_created_by, search_updated_by, search_end_date, search_start_date, search_amount_balance, search_expiry_date, search_search_balance, transaction_balance_after_search, search_transaction_term, transaction_total_query_results, transaction_cost) FROM stdin;
+\.
+
+
+--
+-- Data for Name: system_user_aud; Type: TABLE DATA; Schema: audit; Owner: postgres2
+--
+
+COPY audit.system_user_aud (system_user_serial, rev, revtype, system_user_created_by, system_user_updated_by, system_user_end_date, system_user_start_date, system_user_is_active, user_account_type, user_email, user_password, user_phone, user_username, user_user_type, account_account_serial, pharmacy_pharmacy_serial) FROM stdin;
+1	1	0	anonymousUser	anonymousUser	2018-12-06 11:34:24.857	2018-12-06 11:34:24.857	t	BRONZE	mugadzap@gmail.com	$2a$12$RFT7lwhRJAWtiD5QfX1t7e4Wsc2FlrjtAnVyEVXvSrBewxnYSsZy2	string	string	ADMIN	1	\N
+1	2	1	anonymousUser	anonymousUser	2018-12-06 11:34:24.881	2018-12-06 11:34:24.857	t	BRONZE	mugadzap@gmail.com	$2a$12$RFT7lwhRJAWtiD5QfX1t7e4Wsc2FlrjtAnVyEVXvSrBewxnYSsZy2	string	string	ADMIN	2	\N
+1	3	1	\N	anonymousUser	2018-12-06 11:38:17.966	2018-12-06 11:34:24.857	t	BRONZE	mugadzap@gmail.com	$2a$12$RFT7lwhRJAWtiD5QfX1t7e4Wsc2FlrjtAnVyEVXvSrBewxnYSsZy2	string	string	PHARMACY	2	\N
+1	4	1	\N	anonymousUser	2018-12-06 11:38:17.995	2018-12-06 11:34:24.857	t	BRONZE	mugadzap@gmail.com	$2a$12$RFT7lwhRJAWtiD5QfX1t7e4Wsc2FlrjtAnVyEVXvSrBewxnYSsZy2	string	string	PHARMACY	2	1
+1	5	1	\N	anonymousUser	2018-12-10 08:45:22.215	2018-12-06 11:34:24.857	t	BRONZE	mugadzap@gmail.com	$2a$12$RFT7lwhRJAWtiD5QfX1t7e4Wsc2FlrjtAnVyEVXvSrBewxnYSsZy2	string	string	PHARMACY	2	1
+1	6	1	\N	anonymousUser	2018-12-10 09:28:27.88	2018-12-06 11:34:24.857	t	BRONZE	mugadzap@gmail.com	$2a$12$RFT7lwhRJAWtiD5QfX1t7e4Wsc2FlrjtAnVyEVXvSrBewxnYSsZy2	string	string	PHARMACY	2	1
+1	7	1	\N	anonymousUser	2018-12-10 09:28:51.021	2018-12-06 11:34:24.857	t	BRONZE	mugadzap@gmail.com	$2a$12$RFT7lwhRJAWtiD5QfX1t7e4Wsc2FlrjtAnVyEVXvSrBewxnYSsZy2	string	string	PHARMACY	2	1
+1	8	1	\N	anonymousUser	2018-12-10 09:29:08.253	2018-12-06 11:34:24.857	t	BRONZE	mugadzap@gmail.com	$2a$12$RFT7lwhRJAWtiD5QfX1t7e4Wsc2FlrjtAnVyEVXvSrBewxnYSsZy2	string	string	PHARMACY	2	1
+1	12	1	\N	anonymousUser	2018-12-10 14:14:03.442	2018-12-06 11:34:24.857	t	BRONZE	mugadzap@gmail.com	$2a$12$yqVEzYOBQRrxMRBQdckFSeCt5rQ7SvIGFSDOQXtpy5GPAT8kqcGTO	string	string	PHARMACY	2	1
+1	13	1	\N	anonymousUser	2018-12-10 14:54:32.978	2018-12-06 11:34:24.857	t	BRONZE	mugadzap@gmail.com	$2a$12$RFT7lwhRJAWtiD5QfX1t7e4Wsc2FlrjtAnVyEVXvSrBewxnYSsZy2	string	string	PHARMACY	2	1
+\.
+
+
+--
+-- Data for Name: system_user_pham_aud; Type: TABLE DATA; Schema: audit; Owner: postgres2
+--
+
+COPY audit.system_user_pham_aud (system_user_serial, rev, revtype, system_user_created_by, system_user_updated_by, system_user_end_date, system_user_start_date, system_user_is_active, account, account_type, user_email, user_password, pharmacy, user_phone, user_username, user_type) FROM stdin;
+\.
+
+
+--
+-- Data for Name: account; Type: TABLE DATA; Schema: data; Owner: postgres2
+--
+
+COPY data.account (account_serial, account_created_by, account_updated_by, account_end_date, account_start_date, account_amount_balance, account_expiry_date, account_search_balance, account_number) FROM stdin;
+1	\N	\N	2018-12-06 11:34:24.843	2018-12-06 11:34:24.843	\N	\N	\N	1
+2	\N	\N	2018-12-06 11:34:24.879	2018-12-06 11:34:24.879	\N	\N	\N	1
+\.
+
+
+--
+-- Data for Name: account_payments; Type: TABLE DATA; Schema: data; Owner: postgres2
+--
+
+COPY data.account_payments (account_account_serial, payments_payment_serial) FROM stdin;
+\.
+
+
+--
+-- Data for Name: account_search_transactions; Type: TABLE DATA; Schema: data; Owner: postgres2
+--
+
+COPY data.account_search_transactions (account_account_serial, search_transactions_search_serial) FROM stdin;
+\.
+
+
+--
+-- Name: account_serial_seq; Type: SEQUENCE SET; Schema: data; Owner: postgres2
+--
+
+SELECT pg_catalog.setval('data.account_serial_seq', 2, true);
+
+
+--
+-- Name: hibernate_sequence; Type: SEQUENCE SET; Schema: data; Owner: postgres2
+--
+
+SELECT pg_catalog.setval('data.hibernate_sequence', 15, true);
+
+
+--
+-- Data for Name: logo; Type: TABLE DATA; Schema: data; Owner: postgres2
+--
+
+COPY data.logo (logo_serial, file_download_uri, file_name, file_type, size) FROM stdin;
+\.
+
+
+--
+-- Name: logo_serial_seq; Type: SEQUENCE SET; Schema: data; Owner: postgres2
+--
+
+SELECT pg_catalog.setval('data.logo_serial_seq', 1, false);
+
+
+--
+-- Data for Name: payment; Type: TABLE DATA; Schema: data; Owner: postgres2
+--
+
+COPY data.payment (payment_serial, payment_created_by, payment_updated_by, payment_end_date, payment_start_date, payment_amount_balance, payment_expiry_date, payment_search_balance, payment_amount_paid, payment_balance_bought, payment_payment_method) FROM stdin;
+\.
+
+
+--
+-- Name: payment_serial_seq; Type: SEQUENCE SET; Schema: data; Owner: postgres2
+--
+
+SELECT pg_catalog.setval('data.payment_serial_seq', 1, false);
+
+
+--
+-- Data for Name: pharmacy; Type: TABLE DATA; Schema: data; Owner: postgres2
+--
+
+COPY data.pharmacy (pharmacy_serial, pharmacy_created_by, pharmacy_updated_by, pharmacy_end_date, pharmacy_start_date, pharmacy_is_active, pharmacy_registered_number, pharmacy_registered_name, pharmacy_trading_name, address_add_serial, logo_logo_serial) FROM stdin;
+1	\N	\N	2018-12-10 09:28:27.878	2018-12-06 11:38:17.964	t	23255	Mushonga Info	mushonga.info	1	\N
+\.
+
+
+--
+-- Data for Name: pharmacy_products; Type: TABLE DATA; Schema: data; Owner: postgres2
+--
+
+COPY data.pharmacy_products (pharmacy_pharmacy_serial, products_product_serial) FROM stdin;
+\.
+
+
+--
+-- Name: pharmacy_serial_seq; Type: SEQUENCE SET; Schema: data; Owner: postgres2
+--
+
+SELECT pg_catalog.setval('data.pharmacy_serial_seq', 2, true);
+
+
+--
+-- Data for Name: pharmacy_system_users; Type: TABLE DATA; Schema: data; Owner: postgres2
+--
+
+COPY data.pharmacy_system_users (pharmacies_pharmacy_serial, system_users_system_user_serial) FROM stdin;
+1	1
+\.
+
+
+--
+-- Data for Name: product; Type: TABLE DATA; Schema: data; Owner: postgres2
+--
+
+COPY data.product (product_serial, product_created_by, product_updated_by, product_end_date, product_start_date, active, product_generic_code, product_generic_name, product_description, product_last_searched_date, product_total_searched_times, product_item_balance, product_item_price) FROM stdin;
+\.
+
+
+--
+-- Name: product_serial_seq; Type: SEQUENCE SET; Schema: data; Owner: postgres2
+--
+
+SELECT pg_catalog.setval('data.product_serial_seq', 3, true);
+
+
+--
+-- Data for Name: search_transaction; Type: TABLE DATA; Schema: data; Owner: postgres2
+--
+
+COPY data.search_transaction (search_serial, search_created_by, search_updated_by, search_end_date, search_start_date, search_amount_balance, search_expiry_date, search_search_balance, transaction_balance_after_search, search_transaction_term, transaction_total_query_results, transaction_cost) FROM stdin;
+\.
+
+
+--
+-- Name: search_transaction_serial_seq; Type: SEQUENCE SET; Schema: data; Owner: postgres2
+--
+
+SELECT pg_catalog.setval('data.search_transaction_serial_seq', 1, false);
+
+
+--
+-- Data for Name: system_user; Type: TABLE DATA; Schema: data; Owner: postgres2
+--
+
+COPY data.system_user (system_user_serial, system_user_created_by, system_user_updated_by, system_user_end_date, system_user_start_date, system_user_is_active, user_account_type, user_email, user_password, user_phone, user_username, user_user_type, account_account_serial, pharmacy_pharmacy_serial) FROM stdin;
+1	\N	anonymousUser	2018-12-10 14:54:32.978	2018-12-06 11:34:24.857	t	BRONZE	mugadzap@gmail.com	$2a$12$RFT7lwhRJAWtiD5QfX1t7e4Wsc2FlrjtAnVyEVXvSrBewxnYSsZy2	string	string	PHARMACY	2	1
+\.
+
+
+--
+-- Data for Name: system_user_pham; Type: TABLE DATA; Schema: data; Owner: postgres2
+--
+
+COPY data.system_user_pham (system_user_serial, system_user_created_by, system_user_updated_by, system_user_end_date, system_user_start_date, system_user_is_active, account, account_type, user_email, user_password, pharmacy, user_phone, user_username, user_type) FROM stdin;
+\.
+
+
+--
+-- Name: system_user_serial_seq; Type: SEQUENCE SET; Schema: data; Owner: postgres2
+--
+
+SELECT pg_catalog.setval('data.system_user_serial_seq', 1, true);
+
+
+--
+-- Name: add_serial_seq; Type: SEQUENCE SET; Schema: static; Owner: postgres2
+--
+
+SELECT pg_catalog.setval('static.add_serial_seq', 2, true);
+
+
+--
+-- Data for Name: address; Type: TABLE DATA; Schema: static; Owner: postgres2
+--
+
+COPY static.address (add_serial, add_created_by, add_updated_by, add_end_date, add_start_date, add_city, add_country_code, add_line1, add_line2, add_line3, add_postal_code, add_suburb, add_type) FROM stdin;
+1	\N	\N	2018-12-06 11:38:17.961	2018-12-06 11:38:17.961	Harare	DZ	14	Bakers	Avenue	263	Medicine	HOME
+\.
+
+
+--
+-- Name: account_aud_pkey; Type: CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.account_aud
+    ADD CONSTRAINT account_aud_pkey PRIMARY KEY (account_serial, rev);
+
+
+--
+-- Name: account_payments_aud_pkey; Type: CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.account_payments_aud
+    ADD CONSTRAINT account_payments_aud_pkey PRIMARY KEY (rev, account_account_serial, payments_payment_serial);
+
+
+--
+-- Name: account_search_transactions_aud_pkey; Type: CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.account_search_transactions_aud
+    ADD CONSTRAINT account_search_transactions_aud_pkey PRIMARY KEY (rev, account_account_serial, search_transactions_search_serial);
+
+
+--
+-- Name: address_aud_pkey; Type: CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.address_aud
+    ADD CONSTRAINT address_aud_pkey PRIMARY KEY (add_serial, rev);
+
+
+--
+-- Name: logo_aud_pkey; Type: CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.logo_aud
+    ADD CONSTRAINT logo_aud_pkey PRIMARY KEY (logo_serial, rev);
+
+
+--
+-- Name: payment_aud_pkey; Type: CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.payment_aud
+    ADD CONSTRAINT payment_aud_pkey PRIMARY KEY (payment_serial, rev);
+
+
+--
+-- Name: pharmacy_aud_pkey; Type: CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.pharmacy_aud
+    ADD CONSTRAINT pharmacy_aud_pkey PRIMARY KEY (pharmacy_serial, rev);
+
+
+--
+-- Name: pharmacy_products_aud_pkey; Type: CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.pharmacy_products_aud
+    ADD CONSTRAINT pharmacy_products_aud_pkey PRIMARY KEY (rev, pharmacy_pharmacy_serial, products_product_serial);
+
+
+--
+-- Name: pharmacy_system_users_aud_pkey; Type: CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.pharmacy_system_users_aud
+    ADD CONSTRAINT pharmacy_system_users_aud_pkey PRIMARY KEY (rev, pharmacies_pharmacy_serial, system_users_system_user_serial);
+
+
+--
+-- Name: product_aud_pkey; Type: CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.product_aud
+    ADD CONSTRAINT product_aud_pkey PRIMARY KEY (product_serial, rev);
+
+
+--
+-- Name: revinfo_pkey; Type: CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.revinfo
+    ADD CONSTRAINT revinfo_pkey PRIMARY KEY (rev);
+
+
+--
+-- Name: search_transaction_aud_pkey; Type: CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.search_transaction_aud
+    ADD CONSTRAINT search_transaction_aud_pkey PRIMARY KEY (search_serial, rev);
+
+
+--
+-- Name: system_user_aud_pkey; Type: CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.system_user_aud
+    ADD CONSTRAINT system_user_aud_pkey PRIMARY KEY (system_user_serial, rev);
+
+
+--
+-- Name: system_user_pham_aud_pkey; Type: CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.system_user_pham_aud
+    ADD CONSTRAINT system_user_pham_aud_pkey PRIMARY KEY (system_user_serial, rev);
+
+
+--
+-- Name: account_pkey; Type: CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.account
+    ADD CONSTRAINT account_pkey PRIMARY KEY (account_serial);
+
+
+--
+-- Name: logo_pkey; Type: CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.logo
+    ADD CONSTRAINT logo_pkey PRIMARY KEY (logo_serial);
+
+
+--
+-- Name: payment_pkey; Type: CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.payment
+    ADD CONSTRAINT payment_pkey PRIMARY KEY (payment_serial);
+
+
+--
+-- Name: pharmacy_pkey; Type: CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.pharmacy
+    ADD CONSTRAINT pharmacy_pkey PRIMARY KEY (pharmacy_serial);
+
+
+--
+-- Name: product_pkey; Type: CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.product
+    ADD CONSTRAINT product_pkey PRIMARY KEY (product_serial);
+
+
+--
+-- Name: search_transaction_pkey; Type: CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.search_transaction
+    ADD CONSTRAINT search_transaction_pkey PRIMARY KEY (search_serial);
+
+
+--
+-- Name: system_user_pham_pkey; Type: CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.system_user_pham
+    ADD CONSTRAINT system_user_pham_pkey PRIMARY KEY (system_user_serial);
+
+
+--
+-- Name: system_user_pkey; Type: CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.system_user
+    ADD CONSTRAINT system_user_pkey PRIMARY KEY (system_user_serial);
+
+
+--
+-- Name: uk_bjwvxl6m4emwqfbkl3hdveuu4; Type: CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.system_user
+    ADD CONSTRAINT uk_bjwvxl6m4emwqfbkl3hdveuu4 UNIQUE (user_email);
+
+
+--
+-- Name: uk_exq072teyt73ljntnm11ehhnk; Type: CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.pharmacy_system_users
+    ADD CONSTRAINT uk_exq072teyt73ljntnm11ehhnk UNIQUE (system_users_system_user_serial);
+
+
+--
+-- Name: uk_fc26lpoy54vtkv4wx8c177pxj; Type: CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.account_search_transactions
+    ADD CONSTRAINT uk_fc26lpoy54vtkv4wx8c177pxj UNIQUE (search_transactions_search_serial);
+
+
+--
+-- Name: uk_hew0jx09hkwlsbvl5hjkjk27q; Type: CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.system_user
+    ADD CONSTRAINT uk_hew0jx09hkwlsbvl5hjkjk27q UNIQUE (user_username);
+
+
+--
+-- Name: uk_me6v464209semiq39osnixprb; Type: CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.pharmacy_products
+    ADD CONSTRAINT uk_me6v464209semiq39osnixprb UNIQUE (products_product_serial);
+
+
+--
+-- Name: uk_puagsopp9uln02mwr2vq0cl0n; Type: CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.account_payments
+    ADD CONSTRAINT uk_puagsopp9uln02mwr2vq0cl0n UNIQUE (payments_payment_serial);
+
+
+--
+-- Name: un_data_system_user; Type: CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.system_user
+    ADD CONSTRAINT un_data_system_user UNIQUE (user_email, user_username);
+
+
+--
+-- Name: address_pkey; Type: CONSTRAINT; Schema: static; Owner: postgres2
+--
+
+ALTER TABLE ONLY static.address
+    ADD CONSTRAINT address_pkey PRIMARY KEY (add_serial);
+
+
+--
+-- Name: fk1404s36ry1bv1girg7swlp33s; Type: FK CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.search_transaction_aud
+    ADD CONSTRAINT fk1404s36ry1bv1girg7swlp33s FOREIGN KEY (rev) REFERENCES audit.revinfo(rev);
+
+
+--
+-- Name: fk1uumpbl0vkiohnbo3v2pp4qsj; Type: FK CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.payment_aud
+    ADD CONSTRAINT fk1uumpbl0vkiohnbo3v2pp4qsj FOREIGN KEY (rev) REFERENCES audit.revinfo(rev);
+
+
+--
+-- Name: fk4y4f260s66rcego352kwqpc5k; Type: FK CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.logo_aud
+    ADD CONSTRAINT fk4y4f260s66rcego352kwqpc5k FOREIGN KEY (rev) REFERENCES audit.revinfo(rev);
+
+
+--
+-- Name: fk5tkg8wcurnu5gw4stl4vf1bc2; Type: FK CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.system_user_pham_aud
+    ADD CONSTRAINT fk5tkg8wcurnu5gw4stl4vf1bc2 FOREIGN KEY (rev) REFERENCES audit.revinfo(rev);
+
+
+--
+-- Name: fk7y3xwsjle9upebncgwe7hlnuv; Type: FK CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.pharmacy_system_users_aud
+    ADD CONSTRAINT fk7y3xwsjle9upebncgwe7hlnuv FOREIGN KEY (rev) REFERENCES audit.revinfo(rev);
+
+
+--
+-- Name: fk9vwllld6jlw5xys1ay911oh1x; Type: FK CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.product_aud
+    ADD CONSTRAINT fk9vwllld6jlw5xys1ay911oh1x FOREIGN KEY (rev) REFERENCES audit.revinfo(rev);
+
+
+--
+-- Name: fkaexie5n0kol2mjlvo03ii45d0; Type: FK CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.account_aud
+    ADD CONSTRAINT fkaexie5n0kol2mjlvo03ii45d0 FOREIGN KEY (rev) REFERENCES audit.revinfo(rev);
+
+
+--
+-- Name: fkcc7vlgg86eqe1dmvivbkv046v; Type: FK CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.address_aud
+    ADD CONSTRAINT fkcc7vlgg86eqe1dmvivbkv046v FOREIGN KEY (rev) REFERENCES audit.revinfo(rev);
+
+
+--
+-- Name: fkdeihcja34bj50b436dlriavwi; Type: FK CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.pharmacy_aud
+    ADD CONSTRAINT fkdeihcja34bj50b436dlriavwi FOREIGN KEY (rev) REFERENCES audit.revinfo(rev);
+
+
+--
+-- Name: fkfixhpa3omvg4cuquarspdg2rm; Type: FK CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.account_payments_aud
+    ADD CONSTRAINT fkfixhpa3omvg4cuquarspdg2rm FOREIGN KEY (rev) REFERENCES audit.revinfo(rev);
+
+
+--
+-- Name: fkid0qagpw9lbt1o7vry3cod6gh; Type: FK CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.system_user_aud
+    ADD CONSTRAINT fkid0qagpw9lbt1o7vry3cod6gh FOREIGN KEY (rev) REFERENCES audit.revinfo(rev);
+
+
+--
+-- Name: fkltpyyj90gw8io1t4fulactjsa; Type: FK CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.account_search_transactions_aud
+    ADD CONSTRAINT fkltpyyj90gw8io1t4fulactjsa FOREIGN KEY (rev) REFERENCES audit.revinfo(rev);
+
+
+--
+-- Name: fkpxvynebhk7f147fhpfd7x5fpn; Type: FK CONSTRAINT; Schema: audit; Owner: postgres2
+--
+
+ALTER TABLE ONLY audit.pharmacy_products_aud
+    ADD CONSTRAINT fkpxvynebhk7f147fhpfd7x5fpn FOREIGN KEY (rev) REFERENCES audit.revinfo(rev);
+
+
+--
+-- Name: fk1vd4bmjp5e4x0durukl6ini13; Type: FK CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.system_user
+    ADD CONSTRAINT fk1vd4bmjp5e4x0durukl6ini13 FOREIGN KEY (account_account_serial) REFERENCES data.account(account_serial);
+
+
+--
+-- Name: fk2ed4gys8ytn5t3dia4uy5um9d; Type: FK CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.account_payments
+    ADD CONSTRAINT fk2ed4gys8ytn5t3dia4uy5um9d FOREIGN KEY (account_account_serial) REFERENCES data.account(account_serial);
+
+
+--
+-- Name: fk431q57ppx5n3277rvs23r5udn; Type: FK CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.pharmacy_products
+    ADD CONSTRAINT fk431q57ppx5n3277rvs23r5udn FOREIGN KEY (products_product_serial) REFERENCES data.product(product_serial);
+
+
+--
+-- Name: fk4k2xffv9o3auufnduo0qar6e0; Type: FK CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.pharmacy_system_users
+    ADD CONSTRAINT fk4k2xffv9o3auufnduo0qar6e0 FOREIGN KEY (system_users_system_user_serial) REFERENCES data.system_user(system_user_serial);
+
+
+--
+-- Name: fk5u4jmb0ch8lqdocnauqc27o9e; Type: FK CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.pharmacy_system_users
+    ADD CONSTRAINT fk5u4jmb0ch8lqdocnauqc27o9e FOREIGN KEY (pharmacies_pharmacy_serial) REFERENCES data.pharmacy(pharmacy_serial);
+
+
+--
+-- Name: fkab5b84i8lio1mlr35cwm22jmr; Type: FK CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.account_payments
+    ADD CONSTRAINT fkab5b84i8lio1mlr35cwm22jmr FOREIGN KEY (payments_payment_serial) REFERENCES data.payment(payment_serial);
+
+
+--
+-- Name: fkcd74ma3ooss807uym7kubjucg; Type: FK CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.account_search_transactions
+    ADD CONSTRAINT fkcd74ma3ooss807uym7kubjucg FOREIGN KEY (search_transactions_search_serial) REFERENCES data.search_transaction(search_serial);
+
+
+--
+-- Name: fkcgoocxb9eu2k96mv4tico1l9g; Type: FK CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.system_user
+    ADD CONSTRAINT fkcgoocxb9eu2k96mv4tico1l9g FOREIGN KEY (pharmacy_pharmacy_serial) REFERENCES data.pharmacy(pharmacy_serial);
+
+
+--
+-- Name: fkjfe7xafrel0gwo4y221u0e8j; Type: FK CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.pharmacy
+    ADD CONSTRAINT fkjfe7xafrel0gwo4y221u0e8j FOREIGN KEY (logo_logo_serial) REFERENCES data.logo(logo_serial);
+
+
+--
+-- Name: fko01ouw094s4b3schu7gg5miav; Type: FK CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.account_search_transactions
+    ADD CONSTRAINT fko01ouw094s4b3schu7gg5miav FOREIGN KEY (account_account_serial) REFERENCES data.account(account_serial);
+
+
+--
+-- Name: fkonxpmdyk3gdbhkq8trakm4vj1; Type: FK CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.pharmacy_products
+    ADD CONSTRAINT fkonxpmdyk3gdbhkq8trakm4vj1 FOREIGN KEY (pharmacy_pharmacy_serial) REFERENCES data.pharmacy(pharmacy_serial);
+
+
+--
+-- Name: fkp3lmc47o3d6jm8ws0wyqggo1w; Type: FK CONSTRAINT; Schema: data; Owner: postgres2
+--
+
+ALTER TABLE ONLY data.pharmacy
+    ADD CONSTRAINT fkp3lmc47o3d6jm8ws0wyqggo1w FOREIGN KEY (address_add_serial) REFERENCES static.address(add_serial);
+
+
+--
+-- PostgreSQL database dump complete
+--
+
