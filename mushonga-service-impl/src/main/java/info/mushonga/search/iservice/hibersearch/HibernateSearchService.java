@@ -47,8 +47,15 @@ public class HibernateSearchService  {
 	public List<Product> fuzzySearch(String searchTerm){
 
 		FullTextEntityManager fullTextEntityManager = Search.getFullTextEntityManager(entityManager);
-		QueryBuilder qb = fullTextEntityManager.getSearchFactory().buildQueryBuilder().forEntity(Product.class).get();
-		Query luceneQuery = qb.keyword().fuzzy().withEditDistanceUpTo(1).withPrefixLength(1).onFields("genericCode", "lastname")
+		QueryBuilder qb = fullTextEntityManager.getSearchFactory()
+				.buildQueryBuilder()
+				.forEntity(Product.class)
+				.get();
+		Query luceneQuery = qb.keyword()
+				.fuzzy()
+				.withEditDistanceUpTo(1)
+				.withPrefixLength(1)
+				.onFields("genericName", "productDescription")
 				.matching(searchTerm).createQuery();
 
 		javax.persistence.Query jpaQuery = fullTextEntityManager.createFullTextQuery(luceneQuery, Product.class);
