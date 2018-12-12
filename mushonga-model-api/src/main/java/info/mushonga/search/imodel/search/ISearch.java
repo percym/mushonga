@@ -5,6 +5,7 @@ import info.mushonga.search.imodel.general.IAuditingEntity;
 import info.mushonga.search.imodel.general.ITimeActiveRecordEntity;
 import info.mushonga.search.imodel.product.IProduct;
 
+import java.math.BigDecimal;
 import java.util.Collection;
 
 /**

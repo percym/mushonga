@@ -14,5 +14,7 @@ public interface IProductService  {
 
     void delete(Long productId);
 
+    List<Product> saveAll(List<Product> products);
+
 
 }

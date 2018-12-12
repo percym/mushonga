@@ -33,5 +33,10 @@ public class IProductServiceImpl  implements IProductService{
         productRepository.deleteById(productId);
     }
 
+    @Override
+    public List<Product> saveAll(List<Product> products) {
+        return productRepository.saveAll(products);
+    }
+
 
 }

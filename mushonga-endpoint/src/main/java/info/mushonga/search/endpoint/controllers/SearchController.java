@@ -1,21 +1,18 @@
 package info.mushonga.search.endpoint.controllers;
 
 import com.codahale.metrics.annotation.Timed;
-import info.mushonga.search.endpoint.config.app.errors.BadRequestAlertException;
 import info.mushonga.search.endpoint.config.app.util.HeaderUtil;
 import info.mushonga.search.iservice.func.ProductFunctions;
 import info.mushonga.search.iservice.hibersearch.HibernateSearchService;
 import info.mushonga.search.model.product.Product;
-import info.mushonga.search.repository.product.ProductRepository;
+import info.mushonga.search.service.product.IProductService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.time.LocalDateTime;
 import java.util.List;
 
 /**
@@ -36,21 +33,23 @@ public class SearchController {
     @Autowired
     HibernateSearchService service;
 
-    @Autowired
-    private ProductRepository productRepository;
+    private final IProductService productService;
+
+    public SearchController(IProductService productService) {
+        this.productService = productService;
+    }
 
     @PostMapping("/search/{searchTerm}")
     @Timed
     public ResponseEntity<List<Product>> putProduct(@PathVariable String  searchTerm) throws URISyntaxException {
-        log.debug("REST request to update product : {}", "");
+        log.debug("REST request to search for products : {}", searchTerm);
 
         List<Product> products = service.fuzzySearch(searchTerm);
         if (!products.isEmpty()){
             products.forEach(product -> productFunctions.addMetrics(product));
         }
 
-        productRepository.saveAll(products);
-
+        productService.saveAll(products);
 
 
         return ResponseEntity.created(new URI("/product"))
