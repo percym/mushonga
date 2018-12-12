@@ -1,7 +1,7 @@
-package info.mushonga.search.model.account;
+package info.mushonga.search.model.search;
 
 
-import info.mushonga.search.imodel.account.ISearchTransaction;
+import info.mushonga.search.imodel.search.ISearchTransaction;
 import info.mushonga.search.model.general.Costing;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

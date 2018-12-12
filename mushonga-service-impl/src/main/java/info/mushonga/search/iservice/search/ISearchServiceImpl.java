@@ -11,11 +11,11 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Service
 @Transactional
-public class IsearchServiceImpl implements ISearchService{
+public class ISearchServiceImpl implements ISearchService{
 
     private final SearchRepository searchRepository;
 
-    public IsearchServiceImpl(SearchRepository searchRepository) {
+    public ISearchServiceImpl(SearchRepository searchRepository) {
         this.searchRepository = searchRepository;
     }
 

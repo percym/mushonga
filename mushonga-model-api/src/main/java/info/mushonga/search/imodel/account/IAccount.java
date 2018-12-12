@@ -2,6 +2,7 @@ package info.mushonga.search.imodel.account;
 
 
 import info.mushonga.search.imodel.general.ICosting;
+import info.mushonga.search.imodel.search.ISearchTransaction;
 
 import java.util.Collection;
 
@@ -11,7 +12,7 @@ import java.util.Collection;
  * @param <T> any class that extends IPayment
  * @param <T> any class that extends ITransaction
  */
-public interface IAccount <T extends IPayment, U extends  ISearchTransaction> extends ICosting {
+public interface IAccount <T extends IPayment, U extends ISearchTransaction> extends ICosting {
 
     /**
      * Returns the accountNumber for this account.

@@ -2,9 +2,12 @@ package info.mushonga.search.model.search;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import info.mushonga.search.imodel.search.ISearch;
+import info.mushonga.search.model.general.Active;
 import info.mushonga.search.model.general.AuditingEntityBean;
 import info.mushonga.search.model.product.Product;
+import info.mushonga.search.model.product.ProductConsumption;
 import info.mushonga.search.model.user.SystemUser;
+import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
@@ -23,6 +26,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 @Entity
+@Data
 @Audited
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
@@ -39,7 +43,7 @@ import java.util.Collection;
         @AttributeOverride(name = "active" , column = @Column(name = "search_active"))
 })
 @SequenceGenerator(name = "default_seq", schema = "data", sequenceName = "product_serial_seq", allocationSize = 1)
-public class Search extends AuditingEntityBean implements ISearch<Product> {
+public class Search extends Active implements ISearch<ProductConsumption> {
 
     @NotNull
     @Column(name = "search_search_term")
@@ -47,7 +51,7 @@ public class Search extends AuditingEntityBean implements ISearch<Product> {
 
     @Valid
     @OneToMany(fetch = FetchType.LAZY,   cascade = {CascadeType.ALL})
-    private Collection<Product> products = new ArrayList<>();
+    private Collection<ProductConsumption> products ;
 
 
 }

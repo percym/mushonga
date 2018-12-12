@@ -4,6 +4,7 @@ package info.mushonga.search.model.account;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import info.mushonga.search.imodel.account.IAccount;
 import info.mushonga.search.model.general.Costing;
+import info.mushonga.search.model.search.SearchTransaction;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;

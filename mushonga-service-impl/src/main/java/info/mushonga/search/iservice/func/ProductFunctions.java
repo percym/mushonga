@@ -21,9 +21,6 @@ public class ProductFunctions {
     public Product addMetrics(Product product){
         product.setLastSearchedDate(LocalDateTime.now());
         product.setTotalSearchedTimes(product.getTotalSearchedTimes().add(BigDecimal.ONE));
-
-
-
         return product;
 
     }

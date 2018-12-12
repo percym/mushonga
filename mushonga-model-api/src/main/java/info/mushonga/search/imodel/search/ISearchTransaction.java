@@ -1,4 +1,4 @@
-package info.mushonga.search.imodel.account;
+package info.mushonga.search.imodel.search;
 
 
 import info.mushonga.search.imodel.general.ICosting;
