@@ -8,12 +8,17 @@ import info.mushonga.search.model.pharmacy.Pharmacy;
 import info.mushonga.search.model.product.Product;
 import info.mushonga.search.service.product.IProductService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.List;
 
 /**
  * The Product controller
@@ -74,6 +79,17 @@ public class ProductController {
         return ResponseEntity.status(200).headers(HeaderUtil.createEntityDeletionAlert(ENTITY_NAME, id.toString())).build();
     }
 
-
+    /**
+     * GET  /client : get all the Product.
+     *
+     * @return the ResponseEntity with status 200 (OK) and the list of Product in body
+     */
+    @GetMapping("/product")
+    @Timed
+    public ResponseEntity<List<Product>> getAllProducts() {
+        log.debug("REST request to get a page of Product");
+        List<Product> products = productService.findAll();
+        return new ResponseEntity<>(products, null, HttpStatus.OK);
+    }
 
 }

@@ -38,5 +38,10 @@ public class IProductServiceImpl  implements IProductService{
         return productRepository.saveAll(products);
     }
 
+    @Override
+    public List<Product> findAll() {
+        return productRepository.findAll();
+    }
+
 
 }

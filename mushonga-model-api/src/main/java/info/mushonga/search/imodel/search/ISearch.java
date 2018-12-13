@@ -41,4 +41,17 @@ public interface ISearch <T extends IProduct>extends IAuditingEntity, ITimeActiv
      * @param  products  searched for this search.
      */
     void setProducts(Collection<T> products);
+
+    /*Returns the userId for this search.
+     *
+     * @return the userId  for this search.
+     */
+    Long getUserId();
+
+    /**
+     * Sets the userId for this search.
+     *
+     * @param  userId  for this search.
+     */
+    void setUserId(Long userId);
 }

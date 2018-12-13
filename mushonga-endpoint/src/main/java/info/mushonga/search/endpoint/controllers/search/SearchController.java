@@ -49,9 +49,9 @@ public class SearchController {
         this.searchTransactionService = searchTransactionService;
     }
 
-    @PostMapping("/search/{searchTerm}")
+    @PostMapping("/search/{searchTerm}/{userId}")
     @Timed
-    public ResponseEntity<List<Product>> putProduct(@PathVariable String  searchTerm) throws URISyntaxException {
+    public ResponseEntity<List<Product>> putProduct(@PathVariable String  searchTerm , @PathVariable Long userId) throws URISyntaxException {
         log.debug("REST request to search for products : {}", searchTerm);
         Search search = new Search();
 
@@ -62,6 +62,7 @@ public class SearchController {
 
         search.setActive(true);
         search.setSearchTerm(searchTerm);
+        search.setUserId(userId);
         for (Product prod:products){
             ProductConsumption product = new ProductConsumption();
             product.setActive(prod.getActive());
@@ -74,6 +75,7 @@ public class SearchController {
              search.getProducts().add(product);
             }
         }
+
         searchService.save(search);
 
 

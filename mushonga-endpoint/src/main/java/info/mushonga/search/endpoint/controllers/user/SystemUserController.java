@@ -178,5 +178,4 @@ public class SystemUserController {
             this.systemUser = systemUser;
         }
     }
-
 }

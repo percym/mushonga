@@ -1,12 +1,8 @@
 package info.mushonga.search.model.search;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import info.mushonga.search.imodel.search.ISearch;
 import info.mushonga.search.model.general.Active;
-import info.mushonga.search.model.general.AuditingEntityBean;
-import info.mushonga.search.model.product.Product;
 import info.mushonga.search.model.product.ProductConsumption;
-import info.mushonga.search.model.user.SystemUser;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -21,8 +17,6 @@ import org.hibernate.envers.Audited;
 import javax.persistence.*;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
-import java.util.ArrayList;
 import java.util.Collection;
 
 @Entity
@@ -42,7 +36,7 @@ import java.util.Collection;
         @AttributeOverride(name = "endDate" , column = @Column(name = "search_endDate")),
         @AttributeOverride(name = "active" , column = @Column(name = "search_active"))
 })
-@SequenceGenerator(name = "default_seq", schema = "data", sequenceName = "product_serial_seq", allocationSize = 1)
+@SequenceGenerator(name = "default_seq", schema = "data", sequenceName = "search_serial_seq", allocationSize = 1)
 public class Search extends Active implements ISearch<ProductConsumption> {
 
     @NotNull
@@ -52,6 +46,10 @@ public class Search extends Active implements ISearch<ProductConsumption> {
     @Valid
     @OneToMany(fetch = FetchType.LAZY,   cascade = {CascadeType.ALL})
     private Collection<ProductConsumption> products ;
+
+    @NotNull
+    @Column(name = "search_user_id",nullable = false)
+    Long userId;
 
 
 }
