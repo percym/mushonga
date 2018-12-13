@@ -23,6 +23,6 @@ public interface IPharmacyService {
 
     Optional<Pharmacy> findOne(Specification<Pharmacy> specification);
 
-
+    Pharmacy getOne(Long pharmId );
 
 }

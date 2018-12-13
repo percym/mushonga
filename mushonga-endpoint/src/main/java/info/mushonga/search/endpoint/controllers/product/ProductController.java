@@ -14,6 +14,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
 import java.net.URI;
@@ -80,7 +81,7 @@ public class ProductController {
     }
 
     /**
-     * GET  /client : get all the Product.
+     * GET  /product : get all the Product.
      *
      * @return the ResponseEntity with status 200 (OK) and the list of Product in body
      */

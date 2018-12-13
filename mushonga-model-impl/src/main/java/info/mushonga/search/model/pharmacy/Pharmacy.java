@@ -38,7 +38,7 @@ import java.util.Collection;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
-@Table(schema = "data", name = "pharmacy")
+@Table(schema = "data", name = "pharmacy"    , uniqueConstraints = {@UniqueConstraint(columnNames = {"pharmacy_registered_name"}, name = "un_data_pharmacy")})
 @AttributeOverrides({
         @AttributeOverride(name = "id", column = @Column(name = "pharmacy_serial")),
         @AttributeOverride(name = "startDate", column = @Column(name = "pharmacy_start_date")),

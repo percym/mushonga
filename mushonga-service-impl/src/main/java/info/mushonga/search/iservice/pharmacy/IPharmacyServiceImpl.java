@@ -58,5 +58,10 @@ public class IPharmacyServiceImpl implements IPharmacyService {
         return pharmacyRepository.findOne(specification);
     }
 
+    @Override
+    public Pharmacy getOne(Long pharmId) {
+        return pharmacyRepository.getOne(pharmId);
+    }
+
 
 }

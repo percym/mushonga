@@ -3,7 +3,6 @@ package info.mushonga.search.endpoint.controllers.pharmacy;
 import com.codahale.metrics.annotation.Timed;
 import info.mushonga.search.endpoint.config.app.errors.BadRequestAlertException;
 import info.mushonga.search.endpoint.config.app.util.HeaderUtil;
-import info.mushonga.search.imodel.user.ISystemUser;
 import info.mushonga.search.iservice.specifications.pharmacy.PharmacyByUserId;
 import info.mushonga.search.iservice.specifications.product.PharmacyByProductId;
 import info.mushonga.search.model.pharmacy.Pharmacy;
@@ -14,10 +13,18 @@ import info.mushonga.search.service.pharmacy.IPharmacyService;
 import info.mushonga.search.service.user.ISystemUserService;
 import info.mushonga.search.utility.enums.UserType;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
+import java.io.*;
+import java.math.BigDecimal;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
@@ -38,6 +45,7 @@ public class PharmacyController {
 
     private final IPharmacyService pharmacyService;
     private final ISystemUserService systemUserService;
+
     public PharmacyController(IPharmacyService pharmacyService, ISystemUserService systemUserService) {
         this.pharmacyService = pharmacyService;
         this.systemUserService = systemUserService;
@@ -190,15 +198,15 @@ public class PharmacyController {
         if (pharmacy.getId()<= 0){
             throw new BadRequestAlertException("Invalid pharmacy id", ENTITY_NAME, "  pharmacy id is 0 ");
         }
-
-        if (product.getId()!= null){
-            throw new BadRequestAlertException("Invalid product id", ENTITY_NAME, "  product id null ");
-        }
+        product.setTotalSearchedTimes(BigDecimal.ZERO);
 
         pharmacy.getProducts().add(product);
 
         Pharmacy savedPharmacy = pharmacyService.save(pharmacy);
 
+        if (product.getId()!= null){
+            throw new BadRequestAlertException("Invalid product id", ENTITY_NAME, "  product id null ");
+        }
         return ResponseEntity.created(new URI("/pharmacy_product/"+ pharmId))
                 .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, String.valueOf(pharmacy.getId())))
                 .body(savedPharmacy);
@@ -268,5 +276,41 @@ public class PharmacyController {
                 .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, String.valueOf(pharmacy.getId())))
                 .body(pharmacy);
     }
+
+    /**
+     * POST  /product : get all the Product.
+     *
+     * @return the ResponseEntity with status 200 (OK) and the list of Product in body
+     */
+    @PostMapping("/product/{pharmId}")
+    @Timed
+    public ResponseEntity<Void> addProducts(MultipartFile stockFile, @PathVariable Long pharmId) throws IOException,URISyntaxException {
+        log.debug("REST request to get a page of Product");
+        Pharmacy pharmacy = pharmacyService.getOne(pharmId);
+        InputStream stockStream = stockFile.getInputStream();
+        File currDir = new File(".");
+        String path = currDir.getAbsolutePath();
+        String fileLocation = path.substring(0, path.length() - 1) + stockFile.getOriginalFilename();
+        FileOutputStream f = new FileOutputStream(fileLocation);
+        int ch = 0;
+        while ((ch = stockStream.read()) != -1) {
+            f.write(ch);
+        }
+        f.flush();
+        f.close();
+        FileInputStream file = new FileInputStream(new File(fileLocation));
+        Workbook workbook = new XSSFWorkbook(file);
+        Sheet sheet = workbook.getSheetAt(0);
+        int rowCount = 7;
+        for (int i =0 ;i < rowCount;i++) {
+            Row row = sheet.getRow(i);
+            for (int j = 0; j < row.getLastCellNum(); j++) {
+                String data = row.getCell(j).getStringCellValue() + "|| ";
+                System.out.println(data);
+            }
+        }
+        return ResponseEntity.status(200).headers(HeaderUtil.createEntityDeletionAlert(ENTITY_NAME, String.valueOf(rowCount))).build();
+    }
+
 
 }
