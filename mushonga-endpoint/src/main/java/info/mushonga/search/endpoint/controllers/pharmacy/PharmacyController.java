@@ -20,6 +20,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.http.ResponseEntity;
+import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -287,68 +288,73 @@ public class PharmacyController {
      */
     @PostMapping("/product/{pharmId}")
     @Timed
-    public ResponseEntity<Void> addProducts(MultipartFile stockFile, @PathVariable Long pharmId) throws IOException,URISyntaxException {
+    public ResponseEntity<Pharmacy> addProducts(MultipartFile stockFile, @PathVariable Long pharmId) throws IOException,URISyntaxException {
         log.debug("REST request to get a page of Product");
         Pharmacy pharmacy = pharmacyService.getOne(pharmId);
-        InputStream stockStream = stockFile.getInputStream();
-        List<Product> products = new ArrayList<>();
-        File currDir = new File(".");
-        String path = currDir.getAbsolutePath();
-        String fileLocation = path.substring(0, path.length() - 1) + stockFile.getOriginalFilename();
-        FileOutputStream f = new FileOutputStream(fileLocation);
-        int ch = 0;
-        while ((ch = stockStream.read()) != -1) {
-            f.write(ch);
-        }
-        f.flush();
-        f.close();
-        FileInputStream file = new FileInputStream(new File(fileLocation));
-        Workbook workbook = new XSSFWorkbook(file);
-        Sheet firstSheet = workbook.getSheetAt(0);
-
-        Iterator<Row> iterator = firstSheet.iterator();
-        while(iterator.hasNext()){
-            Row nextRow = iterator.next();
-            Iterator<Cell> cellIterator = nextRow.cellIterator();
-            Product product = new Product();
-
-            while(cellIterator.hasNext()){
-                Cell nextCell = cellIterator.next();
-                int columnIndex = nextCell.getColumnIndex();
-
-                switch (columnIndex){
-                    case 0:
-                        product.setActive(true);
-                        product.setGenericCode(nextCell.getStringCellValue());
-                        break;
-                    case 1:
-                        product.setGenericName(nextCell.getStringCellValue());
-                        break;
-                    case 2:
-                        product.setProductDescription(nextCell.getStringCellValue());
-                        break;
-                    case 3:
-                        product.setItemBalance(BigDecimal.valueOf(nextCell.getNumericCellValue()));
-                        break;
-                    case 4:
-                        product.setItemPrice(BigDecimal.valueOf(nextCell.getNumericCellValue()));
-                        break;
-
-                     }
+        if (!ObjectUtils.isEmpty(pharmacy)) {
+            pharmacy.getProducts().clear();
+            InputStream stockStream = stockFile.getInputStream();
+            List<Product> products = new ArrayList<>();
+            File currDir = new File(".");
+            String path = currDir.getAbsolutePath();
+            String fileLocation = path.substring(0, path.length() - 1) + stockFile.getOriginalFilename();
+            FileOutputStream f = new FileOutputStream(fileLocation);
+            int ch = 0;
+            while ((ch = stockStream.read()) != -1) {
+                f.write(ch);
             }
+            f.flush();
+            f.close();
+            FileInputStream file = new FileInputStream(new File(fileLocation));
+            Workbook workbook = new XSSFWorkbook(file);
+            Sheet firstSheet = workbook.getSheetAt(0);
 
-        }
+            Iterator<Row> iterator = firstSheet.iterator();
+            while (iterator.hasNext()) {
+                Row nextRow = iterator.next();
+                Iterator<Cell> cellIterator = nextRow.cellIterator();
+                Product product = new Product();
 
+                while (cellIterator.hasNext()) {
+                    Cell nextCell = cellIterator.next();
+                    int columnIndex = nextCell.getColumnIndex();
 
-        int rowCount = 7;
-        for (int i =0 ;i < rowCount;i++) {
-            Row row = firstSheet.getRow(i);
-            for (int j = 2; j < row.getLastCellNum(); j++) {
-                String data = row.getCell(j).getStringCellValue() + "|| ";
-                System.out.println(data);
+                    switch (columnIndex) {
+                        case 0:
+                            product.setId(0L);
+                            product.setActive(true);
+                            Double genCode =nextCell.getNumericCellValue();
+                            product.setGenericCode(genCode.toString());
+                            product.setTotalSearchedTimes(BigDecimal.ZERO);
+                            break;
+                        case 1:
+                            product.setGenericName(nextCell.getStringCellValue());
+                            break;
+                        case 2:
+                            product.setProductDescription(nextCell.getStringCellValue());
+                            break;
+                        case 3:
+                            product.setItemBalance(BigDecimal.valueOf(nextCell.getNumericCellValue()));
+                            break;
+                        case 4:
+                            product.setItemPrice(BigDecimal.valueOf(nextCell.getNumericCellValue()));
+                            break;
+//                        case 5:
+//                            Double productId = nextCell.getNumericCellValue();
+//                            product.setId(productId.longValue());
+//                            break;
+                    }
+                }
+                products.add(product);
             }
+            for (Product prod : products) {
+                            pharmacy.getProducts().add(prod);
+                }
+            pharmacyService.save(pharmacy);
         }
-        return ResponseEntity.status(200).headers(HeaderUtil.createEntityDeletionAlert(ENTITY_NAME, String.valueOf(rowCount))).build();
+        return ResponseEntity.created(new URI("/api/pharmacy/" + pharmacy.getId()))
+                .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, String.valueOf(pharmacy.getId())))
+                .body(pharmacy);
     }
 
 
