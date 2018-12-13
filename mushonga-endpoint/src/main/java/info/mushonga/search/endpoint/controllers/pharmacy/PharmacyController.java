@@ -14,6 +14,7 @@ import info.mushonga.search.service.user.ISystemUserService;
 import info.mushonga.search.utility.enums.UserType;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -27,6 +28,8 @@ import java.io.*;
 import java.math.BigDecimal;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
 
@@ -288,6 +291,7 @@ public class PharmacyController {
         log.debug("REST request to get a page of Product");
         Pharmacy pharmacy = pharmacyService.getOne(pharmId);
         InputStream stockStream = stockFile.getInputStream();
+        List<Product> products = new ArrayList<>();
         File currDir = new File(".");
         String path = currDir.getAbsolutePath();
         String fileLocation = path.substring(0, path.length() - 1) + stockFile.getOriginalFilename();
@@ -300,11 +304,46 @@ public class PharmacyController {
         f.close();
         FileInputStream file = new FileInputStream(new File(fileLocation));
         Workbook workbook = new XSSFWorkbook(file);
-        Sheet sheet = workbook.getSheetAt(0);
+        Sheet firstSheet = workbook.getSheetAt(0);
+
+        Iterator<Row> iterator = firstSheet.iterator();
+        while(iterator.hasNext()){
+            Row nextRow = iterator.next();
+            Iterator<Cell> cellIterator = nextRow.cellIterator();
+            Product product = new Product();
+
+            while(cellIterator.hasNext()){
+                Cell nextCell = cellIterator.next();
+                int columnIndex = nextCell.getColumnIndex();
+
+                switch (columnIndex){
+                    case 0:
+                        product.setActive(true);
+                        product.setGenericCode(nextCell.getStringCellValue());
+                        break;
+                    case 1:
+                        product.setGenericName(nextCell.getStringCellValue());
+                        break;
+                    case 2:
+                        product.setProductDescription(nextCell.getStringCellValue());
+                        break;
+                    case 3:
+                        product.setItemBalance(BigDecimal.valueOf(nextCell.getNumericCellValue()));
+                        break;
+                    case 4:
+                        product.setItemPrice(BigDecimal.valueOf(nextCell.getNumericCellValue()));
+                        break;
+
+                     }
+            }
+
+        }
+
+
         int rowCount = 7;
         for (int i =0 ;i < rowCount;i++) {
-            Row row = sheet.getRow(i);
-            for (int j = 0; j < row.getLastCellNum(); j++) {
+            Row row = firstSheet.getRow(i);
+            for (int j = 2; j < row.getLastCellNum(); j++) {
                 String data = row.getCell(j).getStringCellValue() + "|| ";
                 System.out.println(data);
             }
