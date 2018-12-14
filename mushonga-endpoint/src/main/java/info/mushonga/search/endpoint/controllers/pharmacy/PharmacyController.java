@@ -286,9 +286,9 @@ public class PharmacyController {
      *
      * @return the ResponseEntity with status 200 (OK) and the list of Product in body
      */
-    @PostMapping("/product/{pharmId}")
+    @PostMapping("/pharmacy_bulk_product/{pharmId}")
     @Timed
-    public ResponseEntity<Pharmacy> addProducts(MultipartFile stockFile, @PathVariable Long pharmId) throws IOException,URISyntaxException {
+    public ResponseEntity<Pharmacy> addPharmacyProductsBulk(MultipartFile stockFile, @PathVariable Long pharmId) throws IOException,URISyntaxException {
         log.debug("REST request to get a page of Product");
         Pharmacy pharmacy = pharmacyService.getOne(pharmId);
         if (!ObjectUtils.isEmpty(pharmacy)) {

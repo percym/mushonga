@@ -8,6 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8340012d-1543-44ec-808e-6735844a3fc8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/pharmacy/PharmacyController.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/pharmacy/PharmacyController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/dashboard-service-impl/target/" />
     <ignored path="$PROJECT_DIR$/dashboard-model-impl/target/" />
@@ -39,7 +40,7 @@
       <file leaf-file-name="SearchController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/search/SearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="882">
+            <state relative-caret-position="2034">
               <caret line="137" column="35" lean-forward="false" selection-start-line="137" selection-start-column="35" selection-end-line="137" selection-end-column="35" />
               <folding />
             </state>
@@ -79,7 +80,7 @@
       <file leaf-file-name="PharmacySearchDTO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/pharmacy/PharmacySearchDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
+            <state relative-caret-position="252">
               <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -111,7 +112,7 @@
       <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/product/ProductController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
+            <state relative-caret-position="1296">
               <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
               <folding />
             </state>
@@ -121,7 +122,7 @@
       <file leaf-file-name="SearchResult.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/search/SearchResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
+            <state relative-caret-position="360">
               <caret line="20" column="65" lean-forward="false" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -133,13 +134,13 @@
       <file leaf-file-name="PharmacyController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/pharmacy/PharmacyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3543">
-              <caret line="49" column="3" lean-forward="false" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="51" />
+            <state relative-caret-position="678">
+              <caret line="288" column="40" lean-forward="false" selection-start-line="288" selection-start-column="40" selection-end-line="288" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getPharmacyByProductId#0;class#PharmacyController#0" expanded="false" />
                 <element signature="method#deletePharmacyProductById#0;class#PharmacyController#0" expanded="false" />
-                <element signature="method#addProducts#0;class#PharmacyController#0" expanded="false" />
+                <element signature="method#addPharmacyProductsBulk#0;class#PharmacyController#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -225,11 +226,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/mushonga-service-impl/src/main/java/info/mushonga/search/iservice/func/ProductFunctions.java" />
         <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/search/SearchResult.java" />
-        <option value="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/pharmacy/PharmacyController.java" />
         <option value="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/search/ISearchResult.java" />
         <option value="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/search/SearchController.java" />
         <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/pharmacy/PharmacySearchDTO.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/pharmacy/PharmacyController.java" />
       </list>
     </option>
   </component>
@@ -254,8 +255,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="918" />
     <option name="y" value="27" />
-    <option name="width" value="910" />
-    <option name="height" value="1034" />
+    <option name="width" value="900" />
+    <option name="height" value="1041" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -272,8 +273,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -346,8 +345,10 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -688,16 +689,16 @@
       <workItem from="1544700133756" duration="13816000" />
       <workItem from="1544769660240" duration="7737000" />
       <workItem from="1544785140330" duration="1401000" />
-      <workItem from="1544790529909" duration="1534000" />
+      <workItem from="1544790529909" duration="2540000" />
+      <workItem from="1544793845673" duration="673000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193532000" />
+    <option name="totallyTimeSpent" value="195211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -717,9 +718,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42993632" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30360934" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24946922" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24946922" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18802084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1069,7 +1070,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/search/SearchResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="360">
           <caret line="20" column="65" lean-forward="false" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1110,7 +1111,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/pharmacy/PharmacySearchDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="252">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1136,7 +1137,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/search/SearchController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
+        <state relative-caret-position="2034">
           <caret line="137" column="35" lean-forward="false" selection-start-line="137" selection-start-column="35" selection-end-line="137" selection-end-column="35" />
           <folding />
         </state>
@@ -1144,7 +1145,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/product/ProductController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
+        <state relative-caret-position="1296">
           <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
           <folding />
         </state>
@@ -1152,13 +1153,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/pharmacy/PharmacyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3543">
-          <caret line="49" column="3" lean-forward="false" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="51" />
+        <state relative-caret-position="678">
+          <caret line="288" column="40" lean-forward="false" selection-start-line="288" selection-start-column="40" selection-end-line="288" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getPharmacyByProductId#0;class#PharmacyController#0" expanded="false" />
             <element signature="method#deletePharmacyProductById#0;class#PharmacyController#0" expanded="false" />
-            <element signature="method#addProducts#0;class#PharmacyController#0" expanded="false" />
+            <element signature="method#addPharmacyProductsBulk#0;class#PharmacyController#0" expanded="false" />
           </folding>
         </state>
       </provider>
