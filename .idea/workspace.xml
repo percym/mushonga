@@ -7,7 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8340012d-1543-44ec-808e-6735844a3fc8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/pharmacy/PharmacyController.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/pharmacy/PharmacyController.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/dashboard-service-impl/target/" />
     <ignored path="$PROJECT_DIR$/dashboard-model-impl/target/" />
@@ -39,7 +39,7 @@
       <file leaf-file-name="SearchController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/search/SearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
+            <state relative-caret-position="1206">
               <caret line="84" column="10" lean-forward="false" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
               <folding />
             </state>
@@ -49,7 +49,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mushonga-endpoint/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2397">
+            <state relative-caret-position="2520">
               <caret line="140" column="21" lean-forward="false" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="21" />
               <folding />
             </state>
@@ -59,7 +59,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
+            <state relative-caret-position="1854">
               <caret line="103" column="42" lean-forward="false" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
               <folding />
             </state>
@@ -69,7 +69,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mushonga-web/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
+            <state relative-caret-position="1314">
               <caret line="73" column="19" lean-forward="false" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
               <folding />
             </state>
@@ -79,8 +79,8 @@
       <file leaf-file-name="PharmacyController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/pharmacy/PharmacyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="327" column="73" lean-forward="false" selection-start-line="327" selection-start-column="73" selection-end-line="327" selection-end-column="73" />
+            <state relative-caret-position="18">
+              <caret line="310" column="0" lean-forward="false" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,7 +91,7 @@
       <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/product/ProductController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
+            <state relative-caret-position="1332">
               <caret line="95" column="1" lean-forward="false" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
               <folding />
             </state>
@@ -101,7 +101,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mushonga-service-impl/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
+            <state relative-caret-position="756">
               <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
               <folding />
             </state>
@@ -111,7 +111,7 @@
       <file leaf-file-name="ProductFunctions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mushonga-service-impl/src/main/java/info/mushonga/search/iservice/func/ProductFunctions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
+            <state relative-caret-position="288">
               <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
@@ -365,9 +365,9 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -705,15 +705,16 @@
       <workItem from="1544078612642" duration="50843000" />
       <workItem from="1544691533450" duration="4637000" />
       <workItem from="1544696199134" duration="1118000" />
-      <workItem from="1544700133756" duration="12677000" />
+      <workItem from="1544700133756" duration="13816000" />
+      <workItem from="1544769660240" duration="130000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181721000" />
+    <option name="totallyTimeSpent" value="182990000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="918" y="27" width="1920" height="1053" extended-state="6" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -812,7 +813,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
           <caret line="46" column="21" lean-forward="false" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1052,7 +1052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="40" column="126" lean-forward="false" selection-start-line="40" selection-start-column="126" selection-end-line="40" selection-end-column="126" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1060,7 +1059,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1105,13 +1103,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mushonga-endpoint/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2397">
+        <state relative-caret-position="2520">
           <caret line="140" column="21" lean-forward="false" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="21" />
           <folding />
         </state>
@@ -1119,7 +1116,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mushonga-service-impl/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
+        <state relative-caret-position="756">
           <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
           <folding />
         </state>
@@ -1127,7 +1124,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
+        <state relative-caret-position="1854">
           <caret line="103" column="42" lean-forward="false" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
           <folding />
         </state>
@@ -1135,7 +1132,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mushonga-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="1314">
           <caret line="73" column="19" lean-forward="false" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
           <folding />
         </state>
@@ -1143,7 +1140,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/product/ProductController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
+        <state relative-caret-position="1332">
           <caret line="95" column="1" lean-forward="false" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
           <folding />
         </state>
@@ -1151,7 +1148,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/search/SearchController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
+        <state relative-caret-position="1206">
           <caret line="84" column="10" lean-forward="false" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
           <folding />
         </state>
@@ -1159,7 +1156,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mushonga-service-impl/src/main/java/info/mushonga/search/iservice/func/ProductFunctions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
+        <state relative-caret-position="288">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
@@ -1167,8 +1164,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/pharmacy/PharmacyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="327" column="73" lean-forward="false" selection-start-line="327" selection-start-column="73" selection-end-line="327" selection-end-column="73" />
+        <state relative-caret-position="18">
+          <caret line="310" column="0" lean-forward="false" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
