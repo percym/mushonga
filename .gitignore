@@ -6,5 +6,5 @@
 .idea
 *.jar
 .idea/
-/.idea/*
+.idea/*
 .idea/workspace.xml
