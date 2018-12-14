@@ -6,6 +6,7 @@ import info.mushonga.search.iservice.func.ProductFunctions;
 import info.mushonga.search.iservice.hibersearch.HibernateSearchService;
 import info.mushonga.search.iservice.specifications.product.PharmacyByProductId;
 import info.mushonga.search.model.pharmacy.Pharmacy;
+import info.mushonga.search.model.pharmacy.PharmacySearchDTO;
 import info.mushonga.search.model.product.Product;
 import info.mushonga.search.model.product.ProductConsumption;
 import info.mushonga.search.model.search.Search;
@@ -60,9 +61,10 @@ public class SearchController {
 
     @PostMapping("/search/{searchTerm}/{userId}")
     @Timed
-    public ResponseEntity<List<Product>> searchProductUserId(@PathVariable String searchTerm, @PathVariable Long userId) throws URISyntaxException {
+    public ResponseEntity<List<PharmacySearchDTO>> searchProductUserId(@PathVariable String searchTerm, @PathVariable Long userId) throws URISyntaxException {
         log.debug("REST request to search for products : {}", searchTerm);
         Search search = new Search();
+        List<PharmacySearchDTO> searchResults = new ArrayList<>();
 
         List<Product> products = service.fuzzySearch(searchTerm);
         if (!products.isEmpty()) {
@@ -93,19 +95,24 @@ public class SearchController {
 
         productService.saveAll(products);
 
+        for (Product product: products)
+        {
+            searchResults.add(getSearchResult(product));
+        }
 
-        return ResponseEntity.created(new URI("/product"))
+
+        return ResponseEntity.created(new URI("/search/"+searchTerm +"/"+userId))
                 .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, String.valueOf(products.size())))
-                .body(products);
+                .body(searchResults);
     }
 
 
     @PostMapping("/search/{searchTerm}")
     @Timed
-    public ResponseEntity<List<SearchResult>> searchProduct(@PathVariable String searchTerm) throws URISyntaxException {
+    public ResponseEntity<List<PharmacySearchDTO>> searchProductUserId(@PathVariable String searchTerm) throws URISyntaxException {
         log.debug("REST request to search for products : {}", searchTerm);
         Search search = new Search();
-        List<SearchResult> searchResults = new ArrayList<>();
+        List<PharmacySearchDTO> searchResults = new ArrayList<>();
 
         List<Product> products = service.fuzzySearch(searchTerm);
         if (!products.isEmpty()) {
@@ -142,15 +149,15 @@ public class SearchController {
         }
 
 
-        return ResponseEntity.created(new URI("/search/"+searchTerm))
+        return ResponseEntity.created(new URI("/product"))
                 .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, String.valueOf(products.size())))
                 .body(searchResults);
     }
 
-    private SearchResult getSearchResult(Product product) {
+    private PharmacySearchDTO getSearchResult(Product product) {
         PharmacyByProductId pharmacyByProductId = new PharmacyByProductId(product.getId());
         Pharmacy pharmacyExists = new Pharmacy();
-        SearchResult searchResult = new SearchResult();
+        PharmacySearchDTO searchResult = new PharmacySearchDTO();
         Optional<Pharmacy> pharmacy = pharmacyService.findOne(pharmacyByProductId);
         if (pharmacy.isPresent()) {
             pharmacyExists = pharmacy.get();
