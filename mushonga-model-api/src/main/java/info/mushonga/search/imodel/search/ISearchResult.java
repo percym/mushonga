@@ -18,7 +18,7 @@ public interface ISearchResult  extends IAuditingEntity,ITimeActiveRecordEntity{
      *
      * @return the product found in search.
      */
-    IProduct product();
+    IProduct getProduct();
 
     /**
      * Sets the product found in search..

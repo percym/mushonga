@@ -7,7 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8340012d-1543-44ec-808e-6735844a3fc8" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/search/SearchResult.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/pharmacy/PharmacyController.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/pharmacy/PharmacyController.java" />
+      <change beforePath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/search/SearchController.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/search/SearchController.java" />
+      <change beforePath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/search/ISearchResult.java" afterPath="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/search/ISearchResult.java" />
     </list>
     <ignored path="$PROJECT_DIR$/dashboard-service-impl/target/" />
     <ignored path="$PROJECT_DIR$/dashboard-model-impl/target/" />
@@ -36,54 +40,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SearchController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SearchController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/search/SearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1206">
-              <caret line="84" column="10" lean-forward="false" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
+            <state relative-caret-position="241">
+              <caret line="161" column="0" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mushonga-endpoint/pom.xml">
+      <file leaf-file-name="SystemUserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/user/SystemUserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2520">
-              <caret line="140" column="21" lean-forward="false" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="21" />
+            <state relative-caret-position="-651">
+              <caret line="80" column="43" lean-forward="false" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="Search.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/search/Search.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1854">
-              <caret line="103" column="42" lean-forward="false" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
+            <state relative-caret-position="430">
+              <caret line="47" column="30" lean-forward="false" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mushonga-web/pom.xml">
+      <file leaf-file-name="ISearchResult.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/search/ISearchResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1314">
-              <caret line="73" column="19" lean-forward="false" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+            <state relative-caret-position="300">
+              <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PharmacyController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/pharmacy/PharmacyController.java">
+      <file leaf-file-name="ITimeActiveRecordEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/general/ITimeActiveRecordEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="310" column="0" lean-forward="false" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,49 +93,56 @@
       <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/product/ProductController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1332">
-              <caret line="95" column="1" lean-forward="false" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
+            <state relative-caret-position="1253">
+              <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mushonga-service-impl/pom.xml">
+      <file leaf-file-name="IAuditingEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/general/IAuditingEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+            <state relative-caret-position="180">
+              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductFunctions.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mushonga-service-impl/src/main/java/info/mushonga/search/iservice/func/ProductFunctions.java">
+      <file leaf-file-name="SearchResult.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/search/SearchResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="353">
+              <caret line="20" column="65" lean-forward="false" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pharmacy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/pharmacy/Pharmacy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="38" column="6" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="39" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mushonga-utility/pom.xml">
+      <file leaf-file-name="PharmacyController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/pharmacy/PharmacyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="29" column="19" lean-forward="false" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JWTFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/config/jwt/JWTFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="342">
+              <caret line="49" column="3" lean-forward="false" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getPharmacyByProductId#0;class#PharmacyController#0" expanded="false" />
+                <element signature="method#deletePharmacyProductById#0;class#PharmacyController#0" expanded="false" />
+                <element signature="method#addProducts#0;class#PharmacyController#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -143,8 +152,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -172,7 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/user/SystemUserDTO.java" />
         <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/pharmacy/PharmacyDTO.java" />
         <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/user/SystemUser.java" />
         <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/account/Account.java" />
@@ -190,7 +198,6 @@
         <option value="$PROJECT_DIR$/mushonga-service-impl/src/main/java/info/mushonga/search/iservice/hibersearch/HibernateSearchService.java" />
         <option value="$PROJECT_DIR$/mushonga-utility/src/main/java/info/mushonga/search/utility/func/ProductFunctions.java" />
         <option value="$PROJECT_DIR$/mushonga-service-impl/src/main/java/func/ProductFunctions.java" />
-        <option value="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/search/ISearchResult.java" />
         <option value="$PROJECT_DIR$/mushonga-service-api/src/main/java/info/mushonga/search/service/search/ISearchService.java" />
         <option value="$PROJECT_DIR$/mushonga-service-impl/src/main/java/info/mushonga/search/iservice/search/IsearchServiceImpl.java" />
         <option value="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/SearchController.java" />
@@ -213,7 +220,6 @@
         <option value="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/user/SystemUserController.java" />
         <option value="$PROJECT_DIR$/mushonga-service-api/src/main/java/info/mushonga/search/service/product/IProductService.java" />
         <option value="$PROJECT_DIR$/mushonga-service-impl/src/main/java/info/mushonga/search/iservice/product/IProductServiceImpl.java" />
-        <option value="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/search/SearchController.java" />
         <option value="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/product/ProductController.java" />
         <option value="$PROJECT_DIR$/mushonga-service-api/src/main/java/info/mushonga/search/service/pharmacy/IPharmacyService.java" />
         <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/pharmacy/Pharmacy.java" />
@@ -222,7 +228,10 @@
         <option value="$PROJECT_DIR$/mushonga-utility/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/mushonga-service-impl/src/main/java/info/mushonga/search/iservice/func/ProductFunctions.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/search/SearchResult.java" />
         <option value="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/pharmacy/PharmacyController.java" />
+        <option value="$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/search/ISearchResult.java" />
+        <option value="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/search/SearchController.java" />
       </list>
     </option>
   </component>
@@ -315,6 +324,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -353,12 +372,48 @@
             <path>
               <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
               <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
-              <item name="mushonga-utility" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
               <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
-              <item name="mushonga-web" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-model-impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-model-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-model-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-model-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
+              <item name="mushonga-model-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -706,12 +761,12 @@
       <workItem from="1544691533450" duration="4637000" />
       <workItem from="1544696199134" duration="1118000" />
       <workItem from="1544700133756" duration="13816000" />
-      <workItem from="1544769660240" duration="130000" />
+      <workItem from="1544769660240" duration="5979000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182990000" />
+    <option name="totallyTimeSpent" value="188839000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -735,7 +790,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42993632" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42993632" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24946922" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18802084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -802,27 +857,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="46" column="21" lean-forward="false" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mushonga-web/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mushonga-web/src/main/java/info/mushonga/search/web/MushongaWebApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -879,13 +913,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/search/ISearchResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/account/IAccount.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -904,13 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-206">
           <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/search/SearchTransaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1005,13 +1025,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/search/Search.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="54" column="1" lean-forward="false" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/account/Payment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
@@ -1038,20 +1051,6 @@
         <state relative-caret-position="295">
           <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/user/SystemUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="80" column="43" lean-forward="false" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/pharmacy/Pharmacy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="40" column="126" lean-forward="false" selection-start-line="40" selection-start-column="126" selection-end-line="40" selection-end-column="126" />
         </state>
       </provider>
     </entry>
@@ -1138,22 +1137,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/product/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1332">
-          <caret line="95" column="1" lean-forward="false" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/search/SearchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1206">
-          <caret line="84" column="10" lean-forward="false" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mushonga-service-impl/src/main/java/info/mushonga/search/iservice/func/ProductFunctions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1162,13 +1145,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/search/SearchTransaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/search/Search.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="47" column="30" lean-forward="false" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/general/ITimeActiveRecordEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/general/IAuditingEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/pharmacy/Pharmacy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="38" column="6" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="39" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/product/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1253">
+          <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/pharmacy/PharmacyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="310" column="0" lean-forward="false" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
+        <state relative-caret-position="342">
+          <caret line="49" column="3" lean-forward="false" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getPharmacyByProductId#0;class#PharmacyController#0" expanded="false" />
+            <element signature="method#deletePharmacyProductById#0;class#PharmacyController#0" expanded="false" />
+            <element signature="method#addProducts#0;class#PharmacyController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-impl/src/main/java/info/mushonga/search/model/search/SearchResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="20" column="65" lean-forward="false" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-model-api/src/main/java/info/mushonga/search/imodel/search/ISearchResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/user/SystemUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-651">
+          <caret line="80" column="43" lean-forward="false" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/search/SearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="161" column="0" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

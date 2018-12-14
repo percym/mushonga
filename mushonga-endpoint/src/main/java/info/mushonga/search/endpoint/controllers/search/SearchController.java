@@ -4,9 +4,13 @@ import com.codahale.metrics.annotation.Timed;
 import info.mushonga.search.endpoint.config.app.util.HeaderUtil;
 import info.mushonga.search.iservice.func.ProductFunctions;
 import info.mushonga.search.iservice.hibersearch.HibernateSearchService;
+import info.mushonga.search.iservice.specifications.product.PharmacyByProductId;
+import info.mushonga.search.model.pharmacy.Pharmacy;
 import info.mushonga.search.model.product.Product;
 import info.mushonga.search.model.product.ProductConsumption;
 import info.mushonga.search.model.search.Search;
+import info.mushonga.search.model.search.SearchResult;
+import info.mushonga.search.service.pharmacy.IPharmacyService;
 import info.mushonga.search.service.product.IProductService;
 import info.mushonga.search.service.search.ISearchService;
 import info.mushonga.search.service.search.ISearchTransactionService;
@@ -17,7 +21,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Search endpoint management
@@ -41,29 +47,32 @@ public class SearchController {
 
     private final ISearchService searchService;
 
+    private final IPharmacyService pharmacyService;
+
     private final ISearchTransactionService searchTransactionService;
 
-    public SearchController(IProductService productService, ISearchService searchService, ISearchTransactionService searchTransactionService) {
+    public SearchController(IProductService productService, ISearchService searchService, IPharmacyService pharmacyService, ISearchTransactionService searchTransactionService) {
         this.productService = productService;
         this.searchService = searchService;
+        this.pharmacyService = pharmacyService;
         this.searchTransactionService = searchTransactionService;
     }
 
     @PostMapping("/search/{searchTerm}/{userId}")
     @Timed
-    public ResponseEntity<List<Product>> searchProductUserId(@PathVariable String  searchTerm , @PathVariable Long userId) throws URISyntaxException {
+    public ResponseEntity<List<Product>> searchProductUserId(@PathVariable String searchTerm, @PathVariable Long userId) throws URISyntaxException {
         log.debug("REST request to search for products : {}", searchTerm);
         Search search = new Search();
 
         List<Product> products = service.fuzzySearch(searchTerm);
-        if (!products.isEmpty()){
+        if (!products.isEmpty()) {
             products.forEach(product -> productFunctions.addMetrics(product));
         }
 
         search.setActive(true);
         search.setSearchTerm(searchTerm);
         search.setUserId(userId);
-        for (Product prod:products){
+        for (Product prod : products) {
             ProductConsumption product = new ProductConsumption();
             product.setActive(prod.getActive());
             product.setGenericCode(prod.getGenericCode());
@@ -71,50 +80,7 @@ public class SearchController {
             product.setItemBalance(prod.getItemBalance());
             product.setItemPrice(prod.getItemPrice());
             product.setTotalSearchedTimes(prod.getTotalSearchedTimes());
-            if(!(search.getProducts()==null)) {
-             search.getProducts().add(product);
-            }
-        }
-
-        searchService.save(search);
-
-
-//        searchTransactionService.save()
-
-
-        productService.saveAll(products);
-
-
-
-        return ResponseEntity.created(new URI("/product"))
-                .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, String.valueOf(products.size())))
-                .body(products);
-    }
-
-
-    @PostMapping("/search/{searchTerm}")
-    @Timed
-    public ResponseEntity<List<Product>> searchProduct(@PathVariable String  searchTerm ) throws URISyntaxException {
-        log.debug("REST request to search for products : {}", searchTerm);
-        Search search = new Search();
-
-        List<Product> products = service.fuzzySearch(searchTerm);
-        if (!products.isEmpty()){
-            products.forEach(product -> productFunctions.addMetrics(product));
-        }
-
-        search.setActive(true);
-        search.setSearchTerm(searchTerm);
-        search.setUserId(0L);
-        for (Product prod:products){
-            ProductConsumption product = new ProductConsumption();
-            product.setActive(prod.getActive());
-            product.setGenericCode(prod.getGenericCode());
-            product.setGenericName(prod.getGenericName());
-            product.setItemBalance(prod.getItemBalance());
-            product.setItemPrice(prod.getItemPrice());
-            product.setTotalSearchedTimes(prod.getTotalSearchedTimes());
-            if(!(search.getProducts()==null)) {
+            if (!(search.getProducts() == null)) {
                 search.getProducts().add(product);
             }
         }
@@ -128,13 +94,80 @@ public class SearchController {
         productService.saveAll(products);
 
 
-
         return ResponseEntity.created(new URI("/product"))
                 .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, String.valueOf(products.size())))
                 .body(products);
     }
 
 
+    @PostMapping("/search/{searchTerm}")
+    @Timed
+    public ResponseEntity<List<SearchResult>> searchProduct(@PathVariable String searchTerm) throws URISyntaxException {
+        log.debug("REST request to search for products : {}", searchTerm);
+        Search search = new Search();
+        List<SearchResult> searchResults = new ArrayList<>();
+
+        List<Product> products = service.fuzzySearch(searchTerm);
+        if (!products.isEmpty()) {
+            products.forEach(product -> productFunctions.addMetrics(product));
+        }
+
+        search.setActive(true);
+        search.setSearchTerm(searchTerm);
+        search.setUserId(0L);
+        for (Product prod : products) {
+            ProductConsumption product = new ProductConsumption();
+            product.setActive(prod.getActive());
+            product.setGenericCode(prod.getGenericCode());
+            product.setGenericName(prod.getGenericName());
+            product.setItemBalance(prod.getItemBalance());
+            product.setItemPrice(prod.getItemPrice());
+            product.setTotalSearchedTimes(prod.getTotalSearchedTimes());
+            if (!(search.getProducts() == null)) {
+                search.getProducts().add(product);
+            }
+        }
+
+        searchService.save(search);
 
 
+//        searchTransactionService.save()
+
+
+        productService.saveAll(products);
+
+        for (Product product: products)
+        {
+            searchResults.add(getSearchResult(product));
+        }
+
+
+        return ResponseEntity.created(new URI("/search/"+searchTerm))
+                .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, String.valueOf(products.size())))
+                .body(searchResults);
+    }
+
+    private SearchResult getSearchResult(Product product) {
+        PharmacyByProductId pharmacyByProductId = new PharmacyByProductId(product.getId());
+        Pharmacy pharmacyExists = new Pharmacy();
+        SearchResult searchResult = new SearchResult();
+        Optional<Pharmacy> pharmacy = pharmacyService.findOne(pharmacyByProductId);
+        if (pharmacy.isPresent()) {
+            pharmacyExists = pharmacy.get();
+            Pharmacy searchPharmacy = new Pharmacy();
+            searchPharmacy.setRegNumber(pharmacyExists.getRegNumber());
+            searchPharmacy.setTradingName(pharmacyExists.getTradingName());
+            searchPharmacy.setRegisteredName(pharmacyExists.getRegisteredName());
+            searchPharmacy.setAddress(pharmacyExists.getAddress());
+//            pharmacyExists.getProducts().clear();
+//            pharmacyExists.getSystemUsers().clear();
+//            pharmacyExists.getProducts().add(product);
+            searchResult.setPharmacy(searchPharmacy);
+            searchResult.setProduct(product);
+            return searchResult;
+        }else {
+            return null;
+        }
+
+    }
 }

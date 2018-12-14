@@ -339,10 +339,6 @@ public class PharmacyController {
                         case 4:
                             product.setItemPrice(BigDecimal.valueOf(nextCell.getNumericCellValue()));
                             break;
-//                        case 5:
-//                            Double productId = nextCell.getNumericCellValue();
-//                            product.setId(productId.longValue());
-//                            break;
                     }
                 }
                 products.add(product);
