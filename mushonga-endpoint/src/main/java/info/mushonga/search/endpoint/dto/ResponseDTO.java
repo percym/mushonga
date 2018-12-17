@@ -10,11 +10,7 @@ import lombok.Data;
 @Data
 public class ResponseDTO {
 
-    String browseurl;
+    String message;
 
-    String pollurl;
-
-    String status;
-
-    String hash;
+    Boolean success;
 }

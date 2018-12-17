@@ -4,6 +4,7 @@ import com.codahale.metrics.annotation.Timed;
 import info.mushonga.search.endpoint.config.app.util.ApplicationProperties;
 import info.mushonga.search.endpoint.config.app.util.HeaderUtil;
 import info.mushonga.search.endpoint.dto.PaymentDTO;
+import info.mushonga.search.endpoint.dto.ResponseDTO;
 import info.mushonga.search.model.product.Product;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +19,9 @@ import java.net.URISyntaxException;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
+
+import static java.lang.Boolean.FALSE;
+import static java.lang.Boolean.TRUE;
 
 /**
  * The controller for managing payments
@@ -40,8 +44,9 @@ public class PaymentsController {
 
     @PostMapping("/payment/ecocash")
     @Timed
-    public ResponseEntity<String> payElectronic(@Valid @RequestBody PaymentDTO paymentDTO) throws URISyntaxException {
+    public ResponseEntity<ResponseDTO> payElectronic(@Valid @RequestBody PaymentDTO paymentDTO) throws URISyntaxException {
         log.debug("REST request to update product : {}", "");
+        ResponseDTO responseDTO = new ResponseDTO();
 
         String intergrationID = applicationProperties.getINTEGRATION_ID();
         String reference= LocalDateTime.now().toString();
@@ -53,7 +58,7 @@ public class PaymentsController {
         String status =((paymentDTO.getStatus()== null)? " " : paymentDTO.getStatus());
         String hash =((paymentDTO.getHash()== null)? " " : paymentDTO.getHash());
         String phone =((paymentDTO.getNumberToDeductFrom()== null)? " " : paymentDTO.getNumberToDeductFrom());
-        String account =((paymentDTO.getAccount()== null)? " " : paymentDTO.getAccount()); // account to pay
+        Long account =((paymentDTO.getAccountId())); // account to pay
 
 
         String paynowTransactionUrl = "https://www.paynow.co.zw/interface/remotetransaction";
@@ -87,12 +92,22 @@ public class PaymentsController {
         RestTemplate restTemplate = new RestTemplate();
         String response =restTemplate.postForObject(builder.toUriString(),null,String.class);
 //        String response =restTemplate.postForObject(builder.toUriString(),null,String.class,vars);
+          String respStatus = response.substring(0,10);
+          if (respStatus.contains("Err")){
+              //error has happened
+              responseDTO.setMessage("Error occurred");
+              responseDTO.setSuccess(FALSE);
 
+          }else{
+              //error has not happened
+              responseDTO.setMessage("Payment done");
+              responseDTO.setSuccess(TRUE);
+          }
 
 
         return ResponseEntity.created(new URI("/payment/electronic"))
                 .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, String.valueOf(response)))
-                .body(response);
+                .body(responseDTO);
     }
 
 
