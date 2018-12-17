@@ -50,6 +50,7 @@ import java.util.Collection;
         @AttributeOverride(name = "active", column = @Column(name = "pharmacy_is_active"))
 })
 @SequenceGenerator(name = "default_seq", schema = "data", sequenceName = "pharmacy_serial_seq", allocationSize = 1)
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Pharmacy extends Active implements IPharmacy<Product,SystemUser> {
 
     @NotNull

@@ -91,6 +91,11 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>3.15</version>
 		</dependency>
+		<dependency>
+			<groupId>zw.paynow</groupId>
+			<artifactId>java-sdk</artifactId>
+			<version>LATEST</version>
+		</dependency>
 
 	</dependencies>
 	<build>

@@ -20,4 +20,9 @@ public class ApplicationProperties {
 
     private long tokenValidityInSeconds;
 
-}
+    private String INTEGRATION_ID;
+
+    private String INTEGRATION_KEY;
+
+
+    }
