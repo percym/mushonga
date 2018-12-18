@@ -139,10 +139,5 @@
             <artifactId>jackson-datatype-joda</artifactId>
             <version>2.9.6</version>
         </dependency>
-        <dependency>
-            <groupId>zw.paynow</groupId>
-            <artifactId>java-sdk</artifactId>
-            <version>LATEST</version>
-        </dependency>
     </dependencies>
 </project>

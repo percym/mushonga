@@ -6,13 +6,14 @@ import info.mushonga.search.endpoint.config.app.util.HeaderUtil;
 import info.mushonga.search.endpoint.dto.PaymentDTO;
 import info.mushonga.search.endpoint.dto.ResponseDTO;
 import info.mushonga.search.model.account.Payment;
-import info.mushonga.search.model.product.Product;
 import info.mushonga.search.utility.enums.PaymentMethod;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
+import webdev.core.InitResponse;
+import webdev.payments.Paynow;
 
 import javax.validation.Valid;
 import java.math.BigDecimal;
@@ -119,5 +120,53 @@ public class PaymentsController {
     }
 
 
+    @PostMapping("/payment/paynow/ecocash/")
+    @Timed
+    public ResponseEntity<ResponseDTO> payElectronicData(@Valid @RequestBody PaymentDTO paymentDTO) throws URISyntaxException {
 
+        String intergrationID = applicationProperties.getINTEGRATION_ID();
+        String intergrationKey = applicationProperties.getINTEGRATION_KEY();
+        String reference= LocalDateTime.now().toString();
+        BigDecimal amount = (paymentDTO.getAmount().compareTo(BigDecimal.ZERO) <= 0)?BigDecimal.ZERO : paymentDTO.getAmount();
+        String additionalinfo =((paymentDTO.getAdditionalinfo()== null)? " " : paymentDTO.getAdditionalinfo());
+        String returnurl =((paymentDTO.getReturnurl()== null)? " " : paymentDTO.getReturnurl());
+        String resulturl =((paymentDTO.getResulturl()== null)? " " : paymentDTO.getResulturl());
+        String authemail =((paymentDTO.getAuthemail()== null)? " " : paymentDTO.getAuthemail());
+        String status =((paymentDTO.getStatus()== null)? " " : paymentDTO.getStatus());
+        String hash =((paymentDTO.getHash()== null)? " " : paymentDTO.getHash());
+        String phone =((paymentDTO.getNumberToDeductFrom()== null)? " " : paymentDTO.getNumberToDeductFrom());
+        Long account =((paymentDTO.getAccountId())); // account to pay
+
+
+        Paynow paynow = new Paynow(intergrationID, intergrationKey);
+
+        paynow.setResultUrl("http://example.com/gateways/paynow/update");
+        paynow.setReturnUrl("http://example.com/return?gateway=paynow");
+
+        webdev.payments.Payment payment = paynow.createPayment(reference,"percymdev@gmail.com");
+
+        payment.add("Bananas", 2.5);
+
+
+        InitResponse response = paynow.sendMobile(payment,"0777285200","ecocash");
+
+        if(response.success())
+        {
+            // Get the url to redirect the user to so they can make payment
+            String link = response.redirectLink();
+
+            // Get the poll url of the transaction
+            String pollUrl = response.pollUrl();
+        }
+        else
+        {
+            // Something went wrong
+            System.out.println(response);
+        }
+
+        return ResponseEntity.created(new URI("/payment/electronic"))
+                .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, String.valueOf(response)))
+                .body(new ResponseDTO());
+
+    }
 }

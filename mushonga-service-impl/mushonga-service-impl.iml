@@ -140,5 +140,6 @@
     <orderEntry type="library" name="Maven: stax:stax-api:1.0.1" level="project" />
     <orderEntry type="library" name="Maven: com.github.virtuald:curvesapi:1.04" level="project" />
     <orderEntry type="library" name="Maven: zw.paynow:java-sdk:LATEST" level="project" />
+    <orderEntry type="library" name="zw.paynow.sdk1" level="project" />
   </component>
 </module>

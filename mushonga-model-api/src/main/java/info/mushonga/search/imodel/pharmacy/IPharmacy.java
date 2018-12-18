@@ -2,6 +2,7 @@ package info.mushonga.search.imodel.pharmacy;
 
 
 import info.mushonga.search.imodel.address.IAddress;
+import info.mushonga.search.imodel.address.IContactDetails;
 import info.mushonga.search.imodel.general.IActive;
 import info.mushonga.search.imodel.logo.ILogo;
 import info.mushonga.search.imodel.product.IProduct;
@@ -66,10 +67,25 @@ public interface IPharmacy<T extends IProduct,U extends ISystemUser> extends IAc
     void setRegNumber(String regNumber);
 
     /**
+     * Returns the {@link IContactDetails contactDetails} for this pharmacy.
+     *
+     * @return the {@link IContactDetails contactDetails} for this pharmacy.
+     */
+    IContactDetails getContactDetails();
+
+    /**
+     * Sets the {@link IContactDetails contactDetails} for this pharmacy.
+     *
+     * @param contactDetails the {@link IContactDetails contactDetails} for this pharmacy.
+     */
+    void setContactDetails(IContactDetails contactDetails);
+
+    /**
      * Gets the {@link IAddress address} for this pharmacy.
      *
      * @returns address the {@link IAddress address} for this pharmacy.
      */
+
 
     IAddress getAddress();
 
@@ -80,6 +96,8 @@ public interface IPharmacy<T extends IProduct,U extends ISystemUser> extends IAc
      */
 
     void setAddress(IAddress address);
+
+
 
     /**
      * Returns the list of {@link IProduct products} for this pharmacy.

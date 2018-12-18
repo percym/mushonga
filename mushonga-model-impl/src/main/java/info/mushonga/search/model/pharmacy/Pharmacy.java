@@ -5,11 +5,13 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
 import info.mushonga.search.imodel.address.IAddress;
+import info.mushonga.search.imodel.address.IContactDetails;
 import info.mushonga.search.imodel.logo.ILogo;
 import info.mushonga.search.imodel.pharmacy.IPharmacy;
 import info.mushonga.search.imodel.user.IPharmacySystemUser;
 import info.mushonga.search.imodel.user.ISystemUser;
 import info.mushonga.search.model.address.Address;
+import info.mushonga.search.model.address.ContactDetails;
 import info.mushonga.search.model.general.Active;
 import info.mushonga.search.model.logo.Logo;
 import info.mushonga.search.model.product.Product;
@@ -67,6 +69,12 @@ public class Pharmacy extends Active implements IPharmacy<Product,SystemUser> {
     @Size(max = 100)
     @Column(name = "pharmacy_registered_number", length = 100)
     private String regNumber;
+
+
+    @Valid
+    @JsonDeserialize(as = ContactDetails.class)
+    @OneToOne(fetch = FetchType.EAGER, targetEntity = ContactDetails.class, cascade = CascadeType.ALL)
+    private IContactDetails contactDetails;
 
     @Valid
     @NotNull

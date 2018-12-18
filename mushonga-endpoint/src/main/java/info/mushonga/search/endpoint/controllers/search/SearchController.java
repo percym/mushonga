@@ -63,6 +63,7 @@ public class SearchController {
     @Timed
     public ResponseEntity<List<PharmacySearchDTO>> searchProductUserId( @PathVariable Long userId,@PathVariable String searchTerm) throws URISyntaxException {
         log.debug("REST request to search for products : {}", searchTerm);
+
         Search search = new Search();
         List<PharmacySearchDTO> searchResults = new ArrayList<>();
 
@@ -91,8 +92,6 @@ public class SearchController {
 
 
 //        searchTransactionService.save()
-
-
         productService.saveAll(products);
 
         for (Product product: products)
