@@ -59,9 +59,9 @@ public class SearchController {
         this.searchTransactionService = searchTransactionService;
     }
 
-    @PostMapping("/search/{searchTerm}/{userId}")
+    @PostMapping("/search/{userId}/{searchTerm}")
     @Timed
-    public ResponseEntity<List<PharmacySearchDTO>> searchProductUserId(@PathVariable String searchTerm, @PathVariable Long userId) throws URISyntaxException {
+    public ResponseEntity<List<PharmacySearchDTO>> searchProductUserId( @PathVariable Long userId,@PathVariable String searchTerm) throws URISyntaxException {
         log.debug("REST request to search for products : {}", searchTerm);
         Search search = new Search();
         List<PharmacySearchDTO> searchResults = new ArrayList<>();
@@ -100,8 +100,7 @@ public class SearchController {
             searchResults.add(getSearchResult(product));
         }
 
-
-        return ResponseEntity.created(new URI("/search/"+searchTerm +"/"+userId))
+        return ResponseEntity.created(new URI("/search/"+userId+"/"))
                 .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, String.valueOf(products.size())))
                 .body(searchResults);
     }

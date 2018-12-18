@@ -5,7 +5,9 @@ import info.mushonga.search.endpoint.config.app.util.ApplicationProperties;
 import info.mushonga.search.endpoint.config.app.util.HeaderUtil;
 import info.mushonga.search.endpoint.dto.PaymentDTO;
 import info.mushonga.search.endpoint.dto.ResponseDTO;
+import info.mushonga.search.model.account.Payment;
 import info.mushonga.search.model.product.Product;
+import info.mushonga.search.utility.enums.PaymentMethod;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -47,6 +49,7 @@ public class PaymentsController {
     public ResponseEntity<ResponseDTO> payElectronic(@Valid @RequestBody PaymentDTO paymentDTO) throws URISyntaxException {
         log.debug("REST request to update product : {}", "");
         ResponseDTO responseDTO = new ResponseDTO();
+
 
         String intergrationID = applicationProperties.getINTEGRATION_ID();
         String reference= LocalDateTime.now().toString();
@@ -100,6 +103,11 @@ public class PaymentsController {
 
           }else{
               //error has not happened
+
+              Payment payment = new Payment();
+              payment.setAmountBalance(amount);
+              payment.setPaymentMethod(PaymentMethod.ECOCASH);
+
               responseDTO.setMessage("Payment done");
               responseDTO.setSuccess(TRUE);
           }
