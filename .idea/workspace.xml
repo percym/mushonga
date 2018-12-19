@@ -6,31 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8340012d-1543-44ec-808e-6735844a3fc8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dashboard_web_war.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dashboard_web_war_exploded.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dova_dashboard_war.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dova_dashboard_war_exploded.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Lost code" afterPath="$PROJECT_DIR$/Lost code" />
-      <change beforePath="$PROJECT_DIR$/mushonga-endpoint/mushonga-endpoint.iml" afterPath="$PROJECT_DIR$/mushonga-endpoint/mushonga-endpoint.iml" />
-      <change beforePath="$PROJECT_DIR$/mushonga-endpoint/pom.xml" afterPath="$PROJECT_DIR$/mushonga-endpoint/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/Payment/PaymentsController.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/Payment/PaymentsController.java" />
-      <change beforePath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/product/ProductController.java" afterPath="$PROJECT_DIR$/mushonga-endpoint/src/main/java/info/mushonga/search/endpoint/controllers/product/ProductController.java" />
-      <change beforePath="$PROJECT_DIR$/mushonga-info.iml" afterPath="$PROJECT_DIR$/mushonga-info.iml" />
-      <change beforePath="$PROJECT_DIR$/mushonga-model-api/mushonga-model-api.iml" afterPath="$PROJECT_DIR$/mushonga-model-api/mushonga-model-api.iml" />
-      <change beforePath="$PROJECT_DIR$/mushonga-model-api/pom.xml" afterPath="$PROJECT_DIR$/mushonga-model-api/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/mushonga-model-impl/mushonga-model-impl.iml" afterPath="$PROJECT_DIR$/mushonga-model-impl/mushonga-model-impl.iml" />
-      <change beforePath="$PROJECT_DIR$/mushonga-repository/mushonga-repository.iml" afterPath="$PROJECT_DIR$/mushonga-repository/mushonga-repository.iml" />
-      <change beforePath="$PROJECT_DIR$/mushonga-service-api/mushonga-service-api.iml" afterPath="$PROJECT_DIR$/mushonga-service-api/mushonga-service-api.iml" />
-      <change beforePath="$PROJECT_DIR$/mushonga-service-impl/mushonga-service-impl.iml" afterPath="$PROJECT_DIR$/mushonga-service-impl/mushonga-service-impl.iml" />
-      <change beforePath="$PROJECT_DIR$/mushonga-utility/mushonga-utility.iml" afterPath="$PROJECT_DIR$/mushonga-utility/mushonga-utility.iml" />
-      <change beforePath="$PROJECT_DIR$/mushonga-web/mushonga-web.iml" afterPath="$PROJECT_DIR$/mushonga-web/mushonga-web.iml" />
-      <change beforePath="$PROJECT_DIR$/mushonga-web/pom.xml" afterPath="$PROJECT_DIR$/mushonga-web/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/mushonga-web/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/mushonga-web/src/main/resources/application.properties" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-    </list>
+    <list default="true" id="8340012d-1543-44ec-808e-6735844a3fc8" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/dashboard-service-impl/target/" />
     <ignored path="$PROJECT_DIR$/dashboard-model-impl/target/" />
     <ignored path="$PROJECT_DIR$/dashboard-endpoint/target/" />
@@ -358,32 +334,6 @@
             <path>
               <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
               <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
-              <item name="mushonga-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
-              <item name="mushonga-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
-              <item name="mushonga-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mushonga-info" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mushonga-info" type="462c0819:PsiDirectoryNode" />
-              <item name="mushonga-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -745,16 +695,15 @@
       <workItem from="1545138163079" duration="202000" />
       <workItem from="1545138384619" duration="219000" />
       <workItem from="1545138623319" duration="1062000" />
-      <workItem from="1545139863165" duration="19016000" />
+      <workItem from="1545139863165" duration="19299000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="254744000" />
+    <option name="totallyTimeSpent" value="255027000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="114" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -767,7 +716,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3269639" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3269639" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32590234" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -777,8 +726,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4968153" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5997877" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.190625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29511678" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.190625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
