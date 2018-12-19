@@ -27,4 +27,6 @@ public interface SystemUserRepository extends JpaRepository<SystemUser, Long>, J
 
     List<SystemUser>findAllByUserType(UserType userType);
 
+    SystemUser getSystemUserById(Long id);
+
 }

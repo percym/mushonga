@@ -41,7 +41,7 @@ public class ISystemUserServiceImpl implements ISystemUserService {
 
     @Override
     public SystemUser getSystemUserById(Long id) {
-        return systemUserRepository.getOne(id);
+        return systemUserRepository.getSystemUserById(id);
     }
 
     @Override

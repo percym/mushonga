@@ -15,7 +15,6 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 public class PaymentDTO {
 
-
     @NotNull
     private BigDecimal amount;
 
@@ -23,7 +22,6 @@ public class PaymentDTO {
     String numberToDeductFrom;
 
     @NotNull
-    Long accountId;
-
+    Long userId;
 
 }
