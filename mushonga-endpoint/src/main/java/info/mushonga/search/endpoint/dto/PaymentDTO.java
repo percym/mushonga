@@ -20,24 +20,6 @@ public class PaymentDTO {
     private BigDecimal amount;
 
     @NotNull
-    private String additionalinfo;
-
-    @NotNull
-    private String returnurl;
-
-    @NotNull
-    private String resulturl;
-
-    @NotNull
-    private String authemail;
-
-    @NotNull
-    private String status;
-
-    @NotNull
-    private String hash;
-
-    @NotNull
     String numberToDeductFrom;
 
     @NotNull
