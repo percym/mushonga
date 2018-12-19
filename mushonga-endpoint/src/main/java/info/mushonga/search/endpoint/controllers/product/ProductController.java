@@ -1,20 +1,14 @@
 package info.mushonga.search.endpoint.controllers.product;
 
 import com.codahale.metrics.annotation.Timed;
-import com.sun.xml.internal.ws.server.sei.MessageFiller;
 import info.mushonga.search.endpoint.config.app.errors.BadRequestAlertException;
 import info.mushonga.search.endpoint.config.app.util.HeaderUtil;
-import info.mushonga.search.model.pharmacy.Pharmacy;
 import info.mushonga.search.model.product.Product;
 import info.mushonga.search.service.product.IProductService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
 import java.net.URI;

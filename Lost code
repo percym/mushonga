@@ -7,3 +7,11 @@
     @OneToOne(fetch = FetchType.EAGER , cascade = CascadeType.ALL, targetEntity = Logo.class)
     ILogo logo;
 
+
+
+ mvn install:install-file -Dfile=/home/percym/Desktop/mushonga-info/jars/zw.paynow.sdk.jar -DgroupId=zw.paynow -DartifactId=sdk -Dversion=0.1 -Dpackaging=jar
+
+[INFO] Installing /home/percym/Desktop/mushonga-info/jars/zw.paynow.sdk.jar to /home/percym/.m2/repository/zw/paynow/sdk/0.1/sdk-0.1.jar
+[INFO] Installing /tmp/mvninstall5537997261588893406.pom to /home/percym/.m2/repository/zw/paynow/sdk/0.1/sdk-0.1.pom
+
+Invalid Hash.  Hash should start with: 382AB0

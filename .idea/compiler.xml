@@ -45,6 +45,8 @@
       <module name="mushonga-service-impl" target="1.8" />
       <module name="mushonga-utility" target="1.8" />
       <module name="mushonga-web" target="1.8" />
+      <module name="zw.paynow.sdk_main" target="1.8" />
+      <module name="zw.paynow.sdk_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
