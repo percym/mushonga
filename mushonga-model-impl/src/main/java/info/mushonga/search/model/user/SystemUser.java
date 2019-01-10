@@ -67,6 +67,7 @@ public class SystemUser extends Active implements ISystemUser{
     private String password;
 
     @Email
+    @NotNull
     @Column(name = "user_email", unique = true)
     private String email;
 

@@ -1,6 +1,10 @@
 package info.mushonga.search.web;
 
 import info.mushonga.search.iservice.hibersearch.HibernateSearchConfiguration;
+import org.hibernate.Session;
+import org.hibernate.search.FullTextSession;
+import org.hibernate.search.MassIndexer;
+import org.hibernate.search.Search;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -37,4 +41,5 @@ public class MushongaWebApplication extends SpringBootServletInitializer {
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder(12);
     }
+
 }

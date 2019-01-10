@@ -5,7 +5,6 @@ import info.mushonga.search.endpoint.config.app.errors.BadRequestAlertException;
 import info.mushonga.search.endpoint.config.app.util.ApplicationProperties;
 import info.mushonga.search.endpoint.config.app.util.HeaderUtil;
 import info.mushonga.search.endpoint.dto.PaymentDTO;
-import info.mushonga.search.endpoint.dto.ResponseDTO;
 import info.mushonga.search.model.account.Account;
 import info.mushonga.search.model.account.Payment;
 import info.mushonga.search.model.user.SystemUser;
