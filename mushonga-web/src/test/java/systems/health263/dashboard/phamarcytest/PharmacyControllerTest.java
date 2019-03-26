@@ -2,51 +2,75 @@ package systems.health263.dashboard.phamarcytest;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import info.mushonga.search.endpoint.controllers.pharmacy.PharmacyController;
 import info.mushonga.search.model.address.Address;
 import info.mushonga.search.model.pharmacy.Pharmacy;
 import info.mushonga.search.model.pharmacy.PharmacyDTO;
 import info.mushonga.search.model.user.SystemUser;
+import info.mushonga.search.service.pharmacy.IPharmacyService;
+import info.mushonga.search.service.user.ISystemUserService;
 import info.mushonga.search.utility.enums.AccountType;
 import info.mushonga.search.utility.enums.AddressType;
 import info.mushonga.search.utility.enums.IndicatorISOCountryCode;
 import info.mushonga.search.utility.enums.UserType;
-import info.mushonga.search.web.MushongaWebApplication;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.ResultMatcher;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import static java.lang.Boolean.TRUE;
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 /**
+ * WebMvc unit Test
+ *
  * Test class for the {@link info.mushonga.search.endpoint.controllers.pharmacy.PharmacyController} Pharmacy service
  *
  * @author percym
  */
 @RunWith(SpringRunner.class)
-@ActiveProfiles("dev")
-@SpringBootTest(classes = MushongaWebApplication.class ,  webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
+@WebMvcTest( PharmacyController.class)
 public class PharmacyControllerTest {
 
-    private String staticURL = "http://localhost:";
+//    private String staticURL = "http://localhost:";
+//
+////    @LocalServerPort
+////    private int port;
+//
+//    @Autowired
+//    private TestRestTemplate testRestTemplate;
 
-    @LocalServerPort
-    private int port;
+    @Mock
+    IPharmacyService pharmacyServiceMock;
+
+    @Mock
+    ISystemUserService systemUserServiceMock;
 
     @Autowired
-    private TestRestTemplate testRestTemplate;
+    MockMvc mockMvc;
 
     public HttpHeaders httpHeaders;
 
@@ -74,11 +98,6 @@ public class PharmacyControllerTest {
         pharmAddress.setCity("Harare");
         pharmAddress.setType(AddressType.WORK);
 
-//        pharmacy = new Pharmacy();
-//        pharmacy.setRegisteredName("some pham");
-//        pharmacy.setTradingName("some pham");
-//        pharmacy.getSystemUsers().add(systemUser);
-
         pharmacyDTO = new PharmacyDTO();
         pharmacyDTO.setRegisteredName("some pham");
         pharmacyDTO.setTradingName("some pham");
@@ -93,26 +112,62 @@ public class PharmacyControllerTest {
         pharmacy.setRegNumber(pharmacyDTO.getRegNumber());
         pharmacy.setAddress(pharmacyDTO.getAddress());
 
+        mockMvc = MockMvcBuilders
+                .standaloneSetup(new PharmacyController(pharmacyServiceMock , systemUserServiceMock))
+                .build();
+
     }
 
     @Test
-    public void testSavePharmacy(){
-        String URI = "/pharmacy";
+    public void getPharmacy() throws Exception {
+        String URI = "/api/pharmacy/1";
         String jsonInput="";
         try {
           jsonInput = this.converttoJson(pharmacy);
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
-        HttpEntity<PharmacyDTO> httpEntity = new HttpEntity<PharmacyDTO>(pharmacyDTO,httpHeaders);
-        ResponseEntity<Pharmacy> responseEntity = testRestTemplate.exchange(getCompleteEndPoint(URI), HttpMethod.POST, httpEntity, Pharmacy.class);
-        assertThat(responseEntity).isEqualTo(jsonInput);
+//        HttpEntity<PharmacyDTO> httpEntity = new HttpEntity<PharmacyDTO>(pharmacyDTO,httpHeaders);
+//        ResponseEntity<Pharmacy> responseEntity = testRestTemplate.exchange(getCompleteEndPoint(URI), HttpMethod.POST, httpEntity, Pharmacy.class);
+//        assertThat(responseEntity).isEqualTo(jsonInput);
+//        when(pharmacyServiceMock.getOne(1L)).thenReturn(pharmacy);
+
+                mockMvc
+               .perform(MockMvcRequestBuilders.get(URI)
+                .accept(MediaType.APPLICATION_JSON))
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers.content().json(pharmacy.toString()))
+                .andDo(MockMvcResultHandlers.print());
+
     }
 
-    public String getCompleteEndPoint(String URI){
-        System.out.println("Complete URL--->" + (staticURL + port + URI));
-        return staticURL + port + URI;
+    @Test
+    public void savePharmacy() throws Exception {
+        String URI = "/api/pharmacy";
+        String jsonInput="";
+        try {
+            jsonInput = this.converttoJson(pharmacy);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+
+        Mockito.when(pharmacyServiceMock.save(pharmacy)).thenReturn(pharmacy);
+
+        mockMvc
+                .perform(MockMvcRequestBuilders.post(URI)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(jsonInput))
+                        .andExpect(MockMvcResultMatchers.status().isOk())
+                        .andExpect(MockMvcResultMatchers.content().json(jsonInput));
+
+
     }
+
+
+//    public String getCompleteEndPoint(String URI){
+//        System.out.println("Complete URL--->" + (staticURL + port + URI));
+//        return staticURL + port + URI;
+//    }
 
     public String converttoJson(Object object) throws JsonProcessingException {
         ObjectMapper objectMapper = new ObjectMapper();

@@ -5,6 +5,7 @@ import info.mushonga.search.endpoint.config.app.errors.BadRequestAlertException;
 import info.mushonga.search.endpoint.config.app.util.ApplicationProperties;
 import info.mushonga.search.endpoint.config.app.util.HeaderUtil;
 import info.mushonga.search.endpoint.dto.PaymentDTO;
+import info.mushonga.search.endpoint.dto.ResponseDTO;
 import info.mushonga.search.model.account.Account;
 import info.mushonga.search.model.account.Payment;
 import info.mushonga.search.model.user.SystemUser;
@@ -22,7 +23,7 @@ import java.math.BigDecimal;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+import static info.mushonga.search.utility.strings.StringUtils.generateStampFromTime ;
 
 /**
  * The controller for managing payments
@@ -48,11 +49,11 @@ public class PaymentsController {
 
     @PostMapping("/payment/paynow/ecocash")
     @Timed
-    public ResponseEntity<InitResponse> payElectronicData(@Valid @RequestBody PaymentDTO paymentDTO) throws URISyntaxException {
+    public ResponseEntity<ResponseDTO> payElectronicData(@Valid @RequestBody PaymentDTO paymentDTO) throws URISyntaxException {
 
         String intergrationID = applicationProperties.getINTEGRATION_ID();
         String intergrationKey = applicationProperties.getINTEGRATION_KEY();
-        String reference=  generateStampFromTime();
+        String reference= generateStampFromTime();
         BigDecimal amount = (paymentDTO.getAmount().compareTo(BigDecimal.ZERO) <= 0)?BigDecimal.ZERO : paymentDTO.getAmount();
         String phone =((paymentDTO.getNumberToDeductFrom()== null)? " " : paymentDTO.getNumberToDeductFrom());
         Long userId =((paymentDTO.getUserId())); // account to pay
@@ -77,14 +78,18 @@ public class PaymentsController {
         }
 
         InitResponse response = paynow.sendMobile(payment,phone,"ecocash");
+        ResponseDTO responseDTO = new ResponseDTO();
+        responseDTO.setSuccess(response.success());
+        responseDTO.setData(response.getData());
 
-        if(response.success())
-        {
+
+        if(responseDTO.getSuccess()){
+
             // Get the url to redirect the user to so they can make payment
-            String link = response.redirectLink();
+//            String link = response.redirectLink();
 
             // Get the poll url of the transaction
-            String pollUrl = response.pollUrl();
+//            String pollUrl = response.pollUrl();
 
             Payment accountPayment = new Payment();
                     accountPayment.setPaymentMethod(PaymentMethod.ECOCASH);
@@ -106,25 +111,10 @@ public class PaymentsController {
 
         return ResponseEntity.created(new URI("/payment/paynow/ecocash"))
                 .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, String.valueOf(response)))
-                .body(response);
+                .body(responseDTO);
 
     }
 
-    private String generateStampFromTime(){
-
-        LocalDateTime currentDateAndTime = LocalDateTime.now();
-        int year = currentDateAndTime.getYear();
-        int month = currentDateAndTime.getMonth().getValue();
-        int day = currentDateAndTime.getDayOfMonth();
-        int hour = currentDateAndTime.getHour();
-        int minute = currentDateAndTime.getMinute();
-        int second = currentDateAndTime.getSecond();
-        int nano = currentDateAndTime.getNano();
-
-        String formatted = "M"+String.valueOf(year)+String.valueOf(month)+String.valueOf(day)+String.valueOf(hour)+String.valueOf(minute)+String.valueOf(second)+String.valueOf(nano);
-
-        return formatted;
-    }
 
 
 }

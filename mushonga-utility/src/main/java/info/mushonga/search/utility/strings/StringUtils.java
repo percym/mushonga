@@ -2,6 +2,8 @@ package info.mushonga.search.utility.strings;
 
 import lombok.experimental.UtilityClass;
 
+import java.time.LocalDateTime;
+
 @UtilityClass
 public class StringUtils {
 
@@ -34,4 +36,21 @@ public class StringUtils {
         }
         return str;
     }
+
+    public static String generateStampFromTime(){
+
+        LocalDateTime currentDateAndTime = LocalDateTime.now();
+        int year = currentDateAndTime.getYear();
+        int month = currentDateAndTime.getMonth().getValue();
+        int day = currentDateAndTime.getDayOfMonth();
+        int hour = currentDateAndTime.getHour();
+        int minute = currentDateAndTime.getMinute();
+        int second = currentDateAndTime.getSecond();
+        int nano = currentDateAndTime.getNano();
+
+        String formatted = "M"+String.valueOf(year)+String.valueOf(month)+String.valueOf(day)+String.valueOf(hour)+String.valueOf(minute)+String.valueOf(second)+String.valueOf(nano);
+
+        return formatted;
+    }
+
 }

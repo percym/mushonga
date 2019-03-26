@@ -30,7 +30,7 @@ public class IPharmacyServiceImpl implements IPharmacyService {
 
     @Override
     public Pharmacy save(Pharmacy pharmacy) {
-        return em.merge(pharmacy);
+        return pharmacyRepository.save(pharmacy);
     }
 
     @Override

@@ -30,6 +30,7 @@
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.8.1" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.2.Final" level="project" />
+    <orderEntry type="library" name="Maven: zw.paynow:sdk:0.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-rest:2.1.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-json:2.1.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.7" level="project" />
@@ -120,6 +121,5 @@
     <orderEntry type="library" name="Maven: org.apache.xmlbeans:xmlbeans:2.6.0" level="project" />
     <orderEntry type="library" name="Maven: stax:stax-api:1.0.1" level="project" />
     <orderEntry type="library" name="Maven: com.github.virtuald:curvesapi:1.04" level="project" />
-    <orderEntry type="library" name="Maven: zw.paynow:sdk:0.1" level="project" />
   </component>
 </module>
